@@ -277,7 +277,7 @@ app.get("/openWithOutLoginneed", (req, res) => {
     res.render('openWithOutLogin');   // Redirect to login page (or homepage if you prefer)
 });
 
-//lones
+//Personal lones
 app.get("/openLoginLH",(req,res)=>{
     res.render('openLoginLH');
 });
@@ -308,6 +308,105 @@ app.get("/openLoginLAX",(req,res)=>{
 app.get("/openwithLoginLAX",(req,res)=>{
     res.render('openWithOutLoginLAX');
 });
+//Loans
+app.get("/openLLB",(req,res)=>{
+    res.render('openLLB');
+});
+app.get("/openWLLB",(req,res)=>{
+    res.render('openWLLB');
+});
+app.get("/openLLC",(req,res)=>{
+    res.render('openLLC');
+});
+app.get("/openWLLC",(req,res)=>{
+    res.render('openWLLC');
+});
+app.get("/openLLCh",(req,res)=>{
+    res.render('openLLCh');
+});
+app.get("/openWLLCh",(req,res)=>{
+    res.render('openWLLCh');
+});
+app.get("/openLLF",(req,res)=>{
+    res.render('openLLF');
+});
+app.get("/openWLLF",(req,res)=>{
+    res.render('openWLLF');
+});
+app.get("/openLLFu",(req,res)=>{
+    res.render('openLLFu');
+});
+app.get("/openWLLFu",(req,res)=>{
+    res.render('openWLLFu');
+});
+app.get("/openLLI",(req,res)=>{
+    res.render('openLLI');
+});
+app.get("/openWLLI",(req,res)=>{
+    res.render('openWLLI');
+});
+app.get("/openLLIn",(req,res)=>{
+    res.render('openLLIn');
+});
+app.get("/openWLLIn",(req,res)=>{
+    res.render('openWLLIn');
+});
+app.get("/openLLIc",(req,res)=>{
+    res.render('openLLIc');
+});
+app.get("/openWLLIc",(req,res)=>{
+    res.render('openWLLIc');
+});
+app.get("/openLLId",(req,res)=>{
+    res.render('openLLId');
+});
+app.get("/openWLLId",(req,res)=>{
+    res.render('openWLLId');
+});
+app.get("/openLLK",(req,res)=>{
+    res.render('openLLK');
+});
+app.get("/openWLLK",(req,res)=>{
+    res.render('openWLLK');
+});
+app.get("/openLLP",(req,res)=>{
+    res.render('openLLP');
+});
+app.get("/openWLLP",(req,res)=>{
+    res.render('openWLLP');
+});
+app.get("/openLLPo",(req,res)=>{
+    res.render('openLLPo');
+});
+app.get("/openWLLPo",(req,res)=>{
+    res.render('openWLLPo');
+});
+app.get("/openLLPi",(req,res)=>{
+    res.render('openLLPi');
+});
+app.get("/openWLLPi",(req,res)=>{
+    res.render('openWLLPi');
+});
+app.get("/openLLY",(req,res)=>{
+    res.render('openLLY');
+});
+app.get("/openWLLY",(req,res)=>{
+    res.render('openWLLY');
+});
+app.get("/openLLT",(req,res)=>{
+    res.render('openLLT');
+});
+app.get("/openWLLT",(req,res)=>{
+    res.render('openWLLT');
+});
+app.get("/openLLN",(req,res)=>{
+    res.render('openLLN');
+});
+app.get("/openWLLN",(req,res)=>{
+    res.render('openWLLN');
+});
+
+
 
 //gold loan
 app.get("/openLG",(req,res)=>{
