@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Airtel Thanks App - Quality Digital Services</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f2f4ff;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+.logo img {
+  width: 300px;
+  height: 80px;
+}
+
+.logo .highlight {
+  color: #f57c00;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #f57c00;
+  font-weight: 500;
+}
+
+.main-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  flex: 2;
+  background-color: #e8f1ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.info-card h2 {
+  margin-bottom: 15px;
+  color: #c60000;
+}
+
+.info-card h3 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.info-card ul, .info-card ol {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.app-logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.form-card {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 12px;
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e06b00;
+}
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="img/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <section class="info-card">
+      <img src="img/Indusind Bank Saving Account Opening.png" alt="Airtel Logo" class="app-logo"/>
+      <h2>IndusInd Bank Digital Savings Account</h2>
+      <h3>✅ Key Features & Benefits:</h3>
+      <ul>
+        <li>💳 5% Cashback on fuel, entertainment, dining & OTT with Delights Debit Card</li>
+        <li>🛍 5% Cashback on Amazon (T\&C apply)</li>
+        <li>🥘 20% OFF on Swiggy and 🛒 10% OFF on BigBasket</li>
+        <li>🎬 Buy 1 Get 1 Free movie tickets on BookMyShow</li>
+        <li>💼 Zero Balance Account (subject to IP funding)</li>
+        <li>⚡ Instant account number selection during signup</li>
+      </ul>
+      <h3>👥 Who Can Apply?</h3>
+      <ul>
+        <h2>📄 Documents Required:</h2>
+        <li>Aadhaar Card</li>
+        <li>PAN Card</li>
+        <li>Mobile number linked to Aadhaar</li>
+        <h2>✅ Eligibility Criteria:</h2>
+        <li>Indian citizen or resident</li>
+        <li>Minimum age: 18+ years (Guardian consent required for minors)</li>
+      </ul>
+      <h3> 📝 How to Apply:</h3>
+      <ul>
+        <li>✅ Choose your desired account number</li>
+        <li>🧾 Fill in your basic details</li>
+        <li>💸 Fund your account instantly</li>
+        <li>📹 Complete a simple Video KYC for full activation</li>
+      </ul>
+      <h3>📌 Terms & Conditions:</h3>
+      <ol>
+        <li>Benefits available only when applied via Quality Digital Services</li>
+        <li>Offers & cashback are subject to bank terms and may change without prior notice</li>
+        <li>Always use official instructions provided by Quality Digital Services* for eligibility</li>
+      </ol>
+    </section>
+
+    <section class="form-card">
+      <h2>Quality Digital Services</h2>
+      <form id="loanForm" method="post" action="https://script.google.com/macros/s/AKfycbwHqXoZArs_ZIICQnILiZmIYfmt9Q4QgnAbLgsKE6W2iOzqr5l8rpuSoeZy62Yn-6DIpQ/exec">
+        <label>Full Name:</label>
+        <input type="text" placeholder="Customer Full Name as Per Aadhaar Card" name="Customer Full Name as Per Aadhaar Card"/>
+
+        <label>Mobile Number:</label>
+        <input type="text" placeholder="Customer Mobile Number" name="Customer Mobile Number"/>
+
+        <label>Store</label><input value="INDUS BANK" name="Store"  readonly>
+
+        <label> Name</label>
+        <input type="text" placeholder="Enter Your name" name="staffname"/>
+        <label>Mobile Number</label>
+        <input type="text" placeholder="Enter Your Mobile Number" name="staffMobile">
+
+        <button type="submit">Continue Application</button>
+      </form>
+    </section>
+  </main>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // prevent default form submission
+
+      // Collect form data
+      const formData = new FormData(form);
+
+      // Convert to plain object
+      const data = {};
+      formData.forEach((value, key) => {
+        data[key] = value;
+      });
+
+      // Send data to Google Apps Script Web App
+      fetch("https://script.google.com/macros/s/AKfycbwHqXoZArs_ZIICQnILiZmIYfmt9Q4QgnAbLgsKE6W2iOzqr5l8rpuSoeZy62Yn-6DIpQ/exec", {
+        method: "POST",
+        body: new URLSearchParams(data)
+      })
+        .then(response => response.text())
+        .then(text => {
+          alert("Form submitted successfully!");
+          form.reset();
+        })
+        .catch(error => {
+          console.error("Error:", error);
+          alert("An error occurred while submitting the form.");
+        });
+    });
+  });
+</script>
+</body>
+</html>
