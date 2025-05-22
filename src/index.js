@@ -478,8 +478,8 @@ app.get("/openWLBAA",(req,res)=>{
 app.get("/openLBAY",(req,res)=>{
     res.render('openLBAY');
 });
-app.get("/openWLBAA",(req,res)=>{
-    res.render('openWLBAA');
+app.get("/openWLBAY",(req,res)=>{
+    res.render('openWLBAY');
 });
 app.get("/openLBAI",(req,res)=>{
     res.render('openLBAI');
