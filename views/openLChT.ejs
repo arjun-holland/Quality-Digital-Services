@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Airtel Thanks App - Quality Digital Services</title>
   <link rel="stylesheet" href="style.css"/>
-  <style>a
+  <style>
   * {
   margin: 0;
   padding: 0;
@@ -31,13 +31,13 @@ body {
   font-size: 22px;
   font-weight: bold;
 }
-
-.logo .highlight {
-  color: #f57c00;
-}
 .logo img {
   width: 300px;
   height: 80px;
+}
+
+.logo .highlight {
+  color: #f57c00;
 }
 
 .nav-links a {
@@ -130,7 +130,7 @@ button:hover {
 </style>
 </head>
 <body>
-  <header class="header">
+<header class="header">
     <div class="logo">
       <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
     <nav class="nav-links">
@@ -142,50 +142,8 @@ button:hover {
 
   <main class="main-container">
     <section class="info-card">
-      <img src="image/Credit Cards/HDFC TATA Neu Credit Card.png" alt="Airtel Logo" class="app-logo"/>
-      Tata Neu Infinity HDFC Bank Credit Card – Key Benefits*
-Promoted by Quality Digital Services
-
----
-
-Benefits:
-
-* 8 Complimentary Domestic + 4 Complimentary International Airport Lounge Access
-* Lifetime Free Credit Card – No Joining or Annual Fees
-* 5% back as NeuCoins on Tata Brand Group spends (BigBasket, Croma, TataCliq, AirAsia, etc.)
-* Additional 5% back as NeuCoins on Tata Neu App spends (after registering for NeuPass)
-* 1.5% back as NeuCoins on all other eligible spends
-* 1% Fuel Surcharge Waiver at all fuel stations across India
-* Note: 1 NeuCoin = ₹1. Redeemable on Tata Neu App
-
----
-
-Whom to Promote? (Eligibility):
-
-* Age: 21 to 60 years
-* Minimum Income: ₹1,00,000 per month (Salaried)
-* Minimum ITR: ₹12,00,000 per annum (Self-Employed)
-* Indian resident with a stable income and good credit profile
-
----
-
-How It Works:
-
-1. Visit the HDFC Bank Credit Card application page
-2. Select Tata Neu Infinity HDFC Bank Credit Card
-3. Click on Apply Now
-4. Fill in your personal, financial, and contact details
-5. Submit the form and complete OTP verification
-6. Upload documents and finish the application process
-
----
-
-Terms & Conditions:
-
-* Lounge access and NeuCoin benefits as per current offer structure
-* Earning rates are subject to change without prior notice – always stay updated
-* Card approval is subject to bank’s internal credit and verification policy
-      <h2>Tata Neu Infinity HDFC Bank Credit Card </h2>
+      <img src="image/HDFC TATA Neu Credit Card.png" alt="Airtel Logo" class="app-logo"/>
+        <h2>Tata Neu Infinity HDFC Bank Credit Card </h2>
       <h3>Benefits</h3>
       <ul>
         <li>8 Complimentary Domestic + 4 Complimentary International Airport Lounge Access</li>
@@ -210,10 +168,10 @@ Terms & Conditions:
       <h3>How It Works?</h3>
       <ol>
         <li>Visit the HDFC Bank Credit Card application page.</li>
-        <li>Select *Tata Neu Infinity HDFC Bank Credit Card</li>
+        <li>Select Tata Neu Infinity HDFC Bank Credit Card</li>
         <li>Complete PAN and Aadhaar verification.</li>
-        <li> Click on *Apply Now</li>
-        <li>Fill in your personal, financial, and contact details</li>
+        <li> Click on Apply Now</li>
+        <li>Fill in your personal, financial and contact details</li>
         <li>Submit the form and complete OTP verification</li>
         <li>Upload documents and finish the application process<li>
       </ol>
@@ -222,66 +180,13 @@ Terms & Conditions:
         <li>Lounge access and NeuCoin benefits as per current offer structure.</li>
         <li>Earning rates are subject to change without prior notice – always stay updated</li>
         <li>Card approval is subject to bank’s internal credit and verification policy</li>
-        
       </ul>
     </section>
 
-    <section class="form-card">
-      <h2>Quality Digital Services</h2>
-      <p id="responseMsg"></p>
-      <form id="loanForm" method="post">
-        <label>Full Name:</label>
-        <input type="text" placeholder="Customer Full Name as Per Aadhaar Card" name="fullname" />
-
-        <label>Mobile Number:</label>
-        <input type="text" placeholder="Customer Mobile Number" name="mobileNumber" />
-
-        <label>Store</label>
-        <select name="store">
-          <option>HDFC TATA NEU CREDIT CARD</option>
-        </select>
-
-        <label>Agent ID</label>
-        <input type="text" placeholder="Enter Your Agent ID" name="agentId" />
-
-        <button type="submit">Continue Application</button>
-      </form>
-    </section>
+   
   </main>
-
-    <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("loanForm");
-    const responseMsg = document.getElementById("responseMsg");
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // prevent default form submission
-
-      const formData = new FormData(form);
-      const data = new URLSearchParams();
-      for (const pair of formData.entries()) {
-        data.append(pair[0], pair[1]);
-      }
-
-      fetch(" https://script.google.com/macros/s/AKfycbyRW6YHxxLB2QkLi06X0ysirstHil9EzP3LEZs0bk3XYLihsSaZVkgmEe8hDvY31dXWCg/exec ", {
-        method: "POST",
-        body: data
-      })
-        .then((res) => res.text())
-        .then((text) => {
-          responseMsg.textContent = "Form submitted successfully!";
-          responseMsg.style.color = "green";
-          form.reset();
-        })
-        .catch((err) => {
-          console.error(err);
-          responseMsg.textContent = "Something went wrong!";
-          responseMsg.style.color = "red";
-        });
-    });
-  });
-</script>
-    </section>
-  </main>
+<br><br>
+   <a href="/ChTB" class="button" style="margin-left: 50%; text-decoration:none">Click Here To Continue</a>
+ 
 </body>
 </html>
