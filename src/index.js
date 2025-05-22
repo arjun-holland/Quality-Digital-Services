@@ -487,11 +487,11 @@ app.get("/openLBAI",(req,res)=>{
 app.get("/openWLBAI",(req,res)=>{
     res.render('openWLBAI');
 });
-app.get("/openLBAAx",(req,res)=>{//axis
-    res.render('openLBAAx');
+app.get("/openLBAx",(req,res)=>{//axis
+    res.render('openLBAx');
 });
-app.get("/openWLBAAx",(req,res)=>{
-    res.render('openWLBAAx');
+app.get("/openWLBAx",(req,res)=>{
+    res.render('openWLBAx');
 });
 app.get("/openLBAT",(req,res)=>{
     res.render('openLBAT');
