@@ -177,38 +177,6 @@ s</li>
   </main>
 <br><br>
   <button style="margin-left: 50%;">click here to Continue</button>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form");
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // prevent default form submission
-
-      // Collect form data
-      const formData = new FormData(form);
-
-      // Convert to plain object
-      const data = {};
-      formData.forEach((value, key) => {
-        data[key] = value;
-      });
-
-      // Send data to Google Apps Script Web App
-      fetch("https://script.google.com/macros/s/AKfycbzu4HvEq6b2910WsouyH-o2_DVlb1yyLkvjPXBGZlYg6SiCzeVOksRuwZ5JD_ME71VgXg/exec", {
-        method: "POST",
-        body: new URLSearchParams(data)
-      })
-        .then(response => response.text())
-        .then(text => {
-          alert("Form submitted successfully!");
-          form.reset();
-        })
-        .catch(error => {
-          console.error("Error:", error);
-          alert("An error occurred while submitting the form.");
-        });
-    });
-  });
-</script>
+  
 </body>
 </html>
