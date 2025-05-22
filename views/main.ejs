@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -6,6 +8,7 @@ body {
       margin: 0;
       padding-top: 0px;
       font-family: "Poppins", sans-serif;
+/*      font-weight: bold;*/
     }
      header {
       background-color: #fff;
@@ -110,64 +113,163 @@ body {
       margin-bottom: 8px;
       border-radius: 30px;
     }
+    h3{
+      font-weight: bold;
+    }
+    .earn{
+      color: black;
+      opacity: 40%;
+    }
+    .footer {
+      background-color: #06113C;
+      color: #fff;
+      padding: 40px 20px 20px;
+    }
 
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-column {
+      flex: 1;
+      min-width: 180px;
+      margin: 10px;
+    }
+
+    .footer-column h3 {
+      margin-bottom: 15px;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .footer-column a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      margin: 8px 0;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    .footer-column a:hover {
+      color: #fff;
+    }
+
+    .newsletter input[type="email"] {
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      width: 70%;
+      margin-right: 5px;
+    }
+
+    .newsletter button {
+      padding: 8px 16px;
+      background-color: #E8772E;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .newsletter button:hover {
+      background-color: #c96220;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      margin: 0 5px;
+      vertical-align: middle;
+      border-radius: 4px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #ccc;
+      margin-top: 10px;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: #ccc;
+    }
+
+    .footer-logo img {
+      height: 80px;
+      width: 300px;
+    } 
+
+    .footer-copy {
+      font-size: 13px;
+      color: #ccc;
+    }
   </style>
-  <header>
+    <header>
+      
+      <div class="logo">
+        <img src="image/main/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo" />
+      </div>
+      <nav>
+        <a href="/main">Home</a>
+        <a href="/aboutneeds">About Us</a>
+        <a href="/careerneeds">Careers</a>
+        <a href="/login">Login</a>
+      </nav>
     
-    <div class="logo">
-      <img src="Main Page Icons\Hiring_Poster1Artboard_8@4x[1](1).png" alt="Logo" />
-    </div>
-    <nav>
-      <a href="/main">Home</a>
-      <a href="/aboutneeds">About Us</a>
-      <a href="/careerneeds">Careers</a>
-      <a href="/login">Login</a>
-    </nav>
-  
-  </header>
+    </header>
 <div class="container">
     <h2 style="color: #fff; padding-right: 100px;">Earn With<span class="highlight"> Quality Digital Services</span>
       Upto<span class="highlight"> ₹1500</span> Per Application</h2>
     <div class="row">
         <div class="card" class="col-3">
-            <img src="Main Page Icons/Credit Cards Icon.png" alt="Credit Cards Icon">
+            <img src="image/main/Credit Cards Icon.png" alt="Credit Cards Icon">
             <h3>Credit Cards</h3>
             <p class="earn">Earn Upto ₹1110</p>
         </div>
     <div class="card" class="col-3" >
-      <img src="Main Page Icons/Bank Accounts Icon.png" alt="Bank Accounts Icon">
+      <img src="image/main/Bank Accounts Icon.png" alt="Bank Accounts Icon">
       <h3>Bank Accounts</h3>
       <p class="earn">Earn Upto ₹300</p>
     </div>
     <div class="card" class="col-3">
-      <img src="Main Page Icons/Mutual Funds Icon.png" alt="Mutual Fund Icon">
+      <img src="image/main/Mutual Funds Icon.png" alt="Mutual Fund Icon" style="width: 50px;">
       <h3>Mutual Fund</h3>
       <p class="earn">Earn Upto ₹150</p>
     </div>
     <div class="card" class="col-3">
-      <img src="Main Page Icons/Demat Accounts Icon.png" alt="Demat Accounts Icon">
+      <img src="image/main/Demat Accounts Icon.png" alt="Demat Accounts Icon">
       <h3>Demat Accounts</h3>
       <p class="earn">Earn Upto ₹100</p>
     </div>
   </div>
   <div class="row">
     <div class="card" class="col-3">
-      <img src="Main Page Icons/Loans Icon.png" alt="Loans Icon">
+      <img src="image/main/Loans Icon.png" alt="Loans Icon">
       <h3>Loans</h3>
       <p class="earn">Earn Upto ₹300</p>
     </div>
     <div class="card" class="col-3">
-      <img src="Main Page Icons/Gold Loans Icon.png" alt="Gold Loans Icon">
+      <img src="image/main/Gold Loans Icon.png" alt="Gold Loans Icon">
       <h3>Gold Loans</h3>
       <p class="earn">Earn Upto ₹3700</p>
     </div>
     <div class="card" class="col-3">
-      <img src="Main Page Icons/UPI Icon.png" alt="Bookings Icon">
+      <img src="image/main/UPI Icon.png" alt="Bookings Icon">
       <h3>Bookings</h3>
       <p class="earn">Earn Upto ₹300</p>
     </div>
     <div class="card" class="col-3">
-      <img src="Main Page Icons/Registration Icon.png" alt="New Registration Icon">
+      <img src="image/main/Registration Icon.png" alt="New Registration Icon" style="width: 50px; height: 50px;">
       <h3 style="font-size: 24px;">New Registration</h3>
       <p class="earn">Earn Upto ₹500</p>
     </div>
@@ -178,142 +280,142 @@ body {
     <div class="grid-container">
 
       <div class="grid-item">
-          <img src="Main Page Icons\Update  Address.png" alt="Update Address">
+          <img src="image/main/Update  Address.png" alt="Update Address">
         <div>update Adress</div>
       </div>
 
       <div class="grid-item">
-          <img src="Main Page Icons\Download Aadhaar.png" alt="Download Aadhaar" />
+          <img src="image/main/Download Aadhaar.png" alt="Download Aadhaar" />
         <div>Download Aadhar</div>
       </div>
 
       <div class="grid-item">
-          <img src="Main Page Icons\Lock Unlock Bio-metric.png" alt="Lock/Unlock Bio-metric" />
+          <img src="image/main/Lock Unlock Bio-metric.png" alt="Lock/Unlock Bio-metric" />
         <div>lock/unlock Bio Metrics</div>
       </div>
 
       <div class="grid-item">
-          <img src="Main Page Icons\Update History.png" alt="Update History" /></a>
+          <img src="image/main/Update History.png" alt="Update History" /></a>
         <div>
             Update History</div>
       </div>
       <div class="grid-item">
-          <img src="Main Page Icons\Apply PVC Card.png" alt="Apply PVC Card" /></a>
+          <img src="image/main/Apply PVC Card.png" alt="Apply PVC Card" /></a>
         <div>Apply PVC Card</div>
       </div>
       <div class="grid-item">
         
-          <img src="Main Page Icons\Mobile Number Update.png" alt="Mobile Number Update" /></a>
+          <img src="image/main/Mobile Number Update.png" alt="Mobile Number Update" /></a>
         <div>
             Mobile Number Update</div>
       </div>
       <div class="grid-item">
         
-          <img src="Main Page Icons\MSME Registration.png" alt="MSME Registration" /></a>
+          <img src="image/main/MSME Registration.png" alt="MSME Registration" /></a>
         <div>
              MSME Registration</div>
       </div>
       <div class="grid-item">
-          <img src="Main Page Icons\Fisheries Portal.png" alt="Fisheries Portal" /></a>
+          <img src="image/main/Fisheries Portal.png" alt="Fisheries Portal" /></a>
         <div>Fisheries
             Portal</div>
       </div>
       <div class="grid-item">
          
-          <img src="Main Page Icons\Voter ID Portal.png" alt="Voter ID Portal" /></a>
+          <img src="image/main/Voter ID Portal.png" alt="Voter ID Portal" /></a>
         <div>Voter ID
             Portal</div>
       </div>
       <div class="grid-item">
         
-          <img src="Main Page Icons\e-SHRAM Registration.png" alt="e-SHRAM Registration" /></a>
+          <img src="image/main/e-SHRAM Registration.png" alt="e-SHRAM Registration" /></a>
         <div>
             e-SHRAM Registration</div>
       </div>
       <div class="grid-item">
         
-          <img src="Main Page Icons\Re-Print Pan Card.png" alt="Re-Print Pan Card" /></a>
+          <img src="image/main/Re-Print Pan Card.png" alt="Re-Print Pan Card" /></a>
         <div>
             Re-Print Pan Card</div>
       </div>
       <div class="grid-item">
         
-          <img src="Main Page Icons\RTO Services.png" alt="RTO Services" /></a>
+          <img src="image/main/RTO Services.png" alt="RTO Services" /></a>
         <div>RTO
             Services</div>
       </div>
 
       <div class="grid-item">
        
-          <img src="Main Page Icons\Food License Services.png" alt="Food License" /></a>
+          <img src="image/main/Food License Services.png" alt="Food License" /></a>
         <div> Food
             License Services</div>
       </div>
       <div class="grid-item">
        
-          <img src="Main Page Icons\Free Pan Card Apply.png" alt="Free Pan Card" /></a>
+          <img src="image/main/Free Pan Card Apply.png" alt="Free Pan Card" /></a>
         <div>
             Free Pan Card Apply</div>
       </div>
       <div class="grid-item">
         
-          <img src="Main Page Icons\Aadhar + Pan Link.png" alt="Aadhar + Pan" /></a>
+          <img src="image/main/Aadhar + Pan Link.png" alt="Aadhar + Pan" /></a>
         <div>
           Aadhar + Pan Link</div>
       </div>
       <div class="grid-item">
         
-          <img src="Main Page Icons\GST Registration.png" alt="GST Registration" /></a>
+          <img src="image/main/GST Registration.png" alt="GST Registration" /></a>
         <div>
           GST Registration</div>
       </div>
       <div class="grid-item">
         
-          <img src="Main Page Icons\TTD Booking Services.png" alt="TTD Booking" /></a>
+          <img src="image/main/TTD Booking Services.png" alt="TTD Booking" /></a>
         <div>
             TTD Booking Services</div>
       </div>
       <div class="grid-item">
         
-          <img src="Main Page Icons\Passport Services.png" alt="Passport" /></a>
+          <img src="image/main/Passport Services.png" alt="Passport" /></a>
         <div> Passport Services</div>
       </div>
       <div class="grid-item">
         
-          <img src="Main Page Icons\HP Gas Services.png" alt="HP Gas" /></a>
+          <img src="image/main/HP Gas Services.png" alt="HP Gas" /></a>
         <div> 
             HP Gas Services</div>
       </div>
       <div class="grid-item">
         
-          <img src="Main Page Icons\Bharat Gas Services.png" alt="Bharat Gas" /></a>
+          <img src="image/main/Bharat Gas Services.png" alt="Bharat Gas" /></a>
         <div>
             Bharat Gas Services</div>
       </div>
       <div class="grid-item">
         
-          <img src="Main Page Icons\Income Tax Filing.png" alt="Income Tax" /></a>
+          <img src="image/main/Income Tax Filing.png" alt="Income Tax" /></a>
         <div> 
             Income Tax Filing</div>
       </div>
       <div class="grid-item">
-        <img src="Main Page Icons\Govt Disability Services.png" alt="Disability" /></a>
+        <img src="image/main/Govt Disability Services.png" alt="Disability" /></a>
       <div> Govt Disability Services</a></div>
       </div>
       <div class="grid-item">
-        <img src="Main Page Icons\PM Kisan Services.png" alt="PM Kisan" />
+        <img src="image/main/PM Kisan Services.png" alt="PM Kisan" />
       <div> PM Kisan Services</div>
       </div>
       <div class="grid-item">
-        <img src="Main Page Icons\E-way Bill System.png" alt="E-Way" /></a>
+        <img src="image/main/E-way Bill System.png" alt="E-Way" /></a>
       <div>E-way Bill System</div>
       </div>
       <div class="grid-item">
-          <img src="Main Page Icons\Birth and Death Certificates.png" alt="Birth and Death Certificate" /></a>
+          <img src="image/main/Birth and Death Certificates.png" alt="Birth and Death Certificate" /></a>
         <div>Birth&death Certificates</div>
       </div>
       <div class="grid-item">
-          <img src="Main Page Icons\EPFO Services.png" alt="EPFO services" /></a>
+          <img src="image/main/EPFO Services.png" alt="EPFO services" /></a>
         <div>EPFO Services</div>
       </div>
     </div>
@@ -325,60 +427,60 @@ body {
   <div class="grid-container">
     <div class="grid-item">
       
-        <img src="Main Page Icons\Current Bill Payment.png" alt="CURRENT BILL PAYMENT" /></a>
+        <img src="image/main/Current Bill Payment.png" alt="CURRENT BILL PAYMENT" /></a>
       <div> CURRENT BILL PAYMENT</div>
     </div>
     <div class="grid-item">
        
-        <img src="Main Page Icons\Labour Certificate.png" alt="LABOUR Certificate" /></a>
+        <img src="image/main/Labour Certificate.png" alt="LABOUR Certificate" /></a>
       <div> LABOUR Certificate</div>
     </div>
     <div class="grid-item">
        
-        <img src="Main Page Icons\Kalyana Lakshmi Pathakam Services.png" alt="KALYANA LAKSHMI Pathakam SERVICES" /></a>
+        <img src="image/main/Kalyana Lakshmi Pathakam Services.png" alt="KALYANA LAKSHMI Pathakam SERVICES" /></a>
       <div>KALYANA LAKSHMI Pathakam SERVICES</div>
     </div>
     <div class="grid-item">
        
-        <img src="Main Page Icons\Marriage Registration.png" alt="Marriage Registration" /></a>
+        <img src="image/main/Marriage Registration.png" alt="Marriage Registration" /></a>
       <div>Marriage Registration</div>
     </div>
     <div class="grid-item">
        
-        <img src="Main Page Icons\TS-e-STAMPS.png" alt="TS-E-STAMPS" /></a>
+        <img src="image/main/TS-e-STAMPS.png" alt="TS-E-STAMPS" /></a>
       <div>TS-E-STAMPS</div>
     </div>
     <div class="grid-item">
     
-        <img src="Main Page Icons\TS e-Challan Vehicle.png" alt="TS E-CHALAN Vehicle" /></a>
+        <img src="image/main/TS e-Challan Vehicle.png" alt="TS E-CHALAN Vehicle" /></a>
       <div>TS E-CHALAN Vehicle</div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\Dharani Portal.png" alt="Dharani Portal" /></a>
+        <img src="image/main/Dharani Portal.png" alt="Dharani Portal" /></a>
       <div>Dharani
           Portal</div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\TS Sand Portal.png" alt="TS Sand Portal" /></a>
+        <img src="image/main/TS Sand Portal.png" alt="TS Sand Portal" /></a>
       <div>
           TS Sand Portal</div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\TS Driving License.png" alt="TS Driving License" /></a>
+        <img src="image/main/TS Driving License.png" alt="TS Driving License" /></a>
       <div>TS Driving
           License</div>
     </div>
     <div class="grid-item">
        
-        <img src="Main Page Icons\Property Tax Dues GHMC.png" alt="Property Tax Dues GHMC" /></a>
+        <img src="image/main/Property Tax Dues GHMC.png" alt="Property Tax Dues GHMC" /></a>
       <div>Property Tax Dues GHMC</div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\Police Verification.png" alt="Police Verification" /></a>
+        <img src="image/main/Police Verification.png" alt="Police Verification" /></a>
       <div>Police Verification</div>
     </div>
 
@@ -388,37 +490,37 @@ body {
   <div class="grid-container">
     <div class="grid-item">
       
-        <img src="Main Page Icons\MeeSeva Services.png" alt="MeeSeva Services" /></a>
+        <img src="image/main/MeeSeva Services.png" alt="MeeSeva Services" /></a>
       <div>
           MeeSeva Services</div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\Change of Land use or NALA Convertion.png" alt="Change of Land use or NALA Convertion" /></a>
+        <img src="image/main/Change of Land use or NALA Convertion.png" alt="Change of Land use or NALA Convertion" /></a>
       <div>
           Change of Land use or NALA Convertion</div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\APCPDCL Current Bill Payment.png" alt="APCPDCL Current Bill Payment" /></a>
+        <img src="image/main/APCPDCL Current Bill Payment.png" alt="APCPDCL Current Bill Payment" /></a>
       <div> 
           Current Bill Payment</div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\APEPDCL Current Bill Payment.png" alt="APEPDCL Current Bill Payment" /></a>
+        <img src="image/main/APEPDCL Current Bill Payment.png" alt="APEPDCL Current Bill Payment" /></a>
       <div> 
           APEPDCL Current Bill Payment</div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\Search Adangal.png" alt="Search Adangal" /></a>
+        <img src="image/main/Search Adangal.png" alt="Search Adangal" /></a>
       <div> 
           Search Adangal</div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\AP Vehicle E-challan.png" alt="AP Vehicle E-challan" /></a>
+        <img src="image/main/AP Vehicle E-challan.png" alt="AP Vehicle E-challan" /></a>
       
        Ap Vehicle E-Challan
 
@@ -428,66 +530,119 @@ body {
   <div class="grid-container">
     <div class="grid-item">
      
-        <img src="Main Page Icons\flipkart.jpg" alt="Flipkart" /></a>
+        <img src="image/main/flipkart.jpg" alt="Flipkart" /></a>
       <div> Flipkart
       </div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\myntra.jpg" alt="Myntra" /></a>
+        <img src="image/main/myntra.jpg" alt="Myntra" /></a>
       <div> Myntra
       </div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\meesho.jpg" alt="Meesho" /></a>
+        <img src="image/main/meesho.jpg" alt="Meesho" /></a>
       <div>Meesho
       </div>
     </div>
     <div class="grid-item">
-        <img src="Main Page Icons\shopsy.jpg" alt="Shopsy" /></a>
+        <img src="image/main/shopsy.jpg" alt="Shopsy" /></a>
       <div>Shopsy
       </div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\hostinger.jpg" alt="Hostinger" /></a>
+        <img src="image/main/hostinger.jpg" alt="Hostinger" /></a>
       <div>Hostinger
       </div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\lenskart.jpg" alt="Lenskart" /></a>
+        <img src="image/main/lenskart.jpg" alt="Lenskart" /></a>
       <div>Lenskart
       </div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\go daddy.jpg" alt="GODADDY" /></a>
+        <img src="image/main/go daddy.jpg" alt="GODADDY" /></a>
       <div>GODADDY
       </div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\AJIO.jpg" alt="AJIO" /></a>
+        <img src="image/main/AJIO.jpg" alt="AJIO" /></a>
       <div>AJIO</div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\paise bazaar.jpg" alt="Paisa bazaar credit score" /></a>
+        <img src="image/main/paise bazaar.jpg" alt="Paisa bazaar credit score" /></a>
       <div>Paisa bazaar
           credit score</div>
     </div>
     <div class="grid-item">
      
-        <img src="Main Page Icons\irctc.jpg" alt="IRCTC" /></a>
+        <img src="image/main/irctc.jpg" alt="IRCTC" /></a>
       <div>IRCTC</div>
     </div>
     <div class="grid-item">
       
-        <img src="Main Page Icons\Apsrtc.jpg" alt="APSRTC" /></a>
+        <img src="image/main/Apsrtc.jpg" alt="APSRTC" /></a>
       <div>APSRTC</div>
     </div>
   </div>
+  <footer class="footer">
+    <div class="footer-container">
+
+     
+      <div class="footer-column">
+        <h3>Service</h3>
+        <a href="#">Bank Loans</a>
+        <a href="#">Personal Loans</a>
+        <a href="#">Business Loans</a>
+        <a href="#">Gold Loans</a>
+        <a href="#">Bookings</a>
+        <a href="#">Credit cards</a>
+        <a href="#">Demat Accounts</a>
+        <a href="#">Mutual Funds</a>
+
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <a href="/main">Home</a>
+        <a href="/aboutneeds">About</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="footer-column newsletter">
+        <h3>Newsletter</h3>
+        <input type="email" placeholder="Email Address">
+        <button>Subscribe</button>
+
+        <div class="social-icons">
+          <a href="Instagram"><img src="image/insta.jpeg" alt="Instagram">Instagram </a>
+          <a href="Facebook"><img src="image/fb.jpeg" alt="Facebook">Facebook</a>
+          <a href="Linkedin"><img src="image/link.jpeg" alt="LinkedIn">LinkedIn</a>
+          <a href="Blogger"><img src="image/blogg.jpeg" alt="Blogger">Blogger</a>
+          <a href="Google maps"><img src="image/map.jpeg" alt="Google Maps">Google Maps</a>
+        </div>
+
+        <p style="margin: 8px 0 0; font-size: 13px;">Mobile: +917382752900</p>
+        <p style="margin: 4px 0 0; font-size: 13px;">Email: tharuntejpaul@qualitycareer.in</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-logo">
+
+<img src="image/logo.png" alt="Company Logo">
+      </div>
+      <div class="footer-copy">
+      </div>
+    </div>
+
+  </footer>
 </body>
 </html>
