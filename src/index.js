@@ -512,6 +512,9 @@ app.get("/openLCH",(req,res)=>{//HBFC
 app.get("/openWLCH",(req,res)=>{
     res.render('openWLCH');
 });
+app.get("/CHB",(req,res)=>{//credit card HDFC button
+    res.render('CHB');
+});
 app.get("/openLCP",(req,res)=>{//pop
     res.render('openLCP');
 });
