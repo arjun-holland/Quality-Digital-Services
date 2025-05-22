@@ -204,61 +204,10 @@ Unlock Rewards & Savings on Every Spend</h2>
 Start earning rewards, discounts, lounge access, and much more – all in one card!</h3>
     </section>
 
-    <section class="form-card">
-      <h2>Quality Digital Services</h2>
-      <form method="post" action="https://script.google.com/macros/s/AKfycbzu4HvEq6b2910WsouyH-o2_DVlb1yyLkvjPXBGZlYg6SiCzeVOksRuwZ5JD_ME71VgXg/exec">
-        <label>Full Name:</label>
-        <input type="text" placeholder="Customer Full Name as Per Aadhaar Card" name="Customer Full Name as Per Aadhaar Card"/>
-
-        <label>Mobile Number:</label>
-        <input type="text" placeholder="Customer Mobile Number" name="Customer Mobile Number"/>
-
-        <label>Store</label>
-        <select name="store">
-          <option>AXIS REWARD CREDIT CARD</option>
-        </select>
-
-        <label> Name</label>
-        <input type="text" placeholder="Enter Your name" name="staffname"/>
-        <label>Mobile Number</label>
-        <input type="text" placeholder="Enter Your Mobile Number" name="staffMobile">
-
-        <button type="submit">Continue Application</button>
-      </form>
-    </section>
+   
   </main>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form");
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // prevent default form submission
-
-      // Collect form data
-      const formData = new FormData(form);
-
-      // Convert to plain object
-      const data = {};
-      formData.forEach((value, key) => {
-        data[key] = value;
-      });
-
-      // Send data to Google Apps Script Web App
-      fetch("https://script.google.com/macros/s/AKfycbzu4HvEq6b2910WsouyH-o2_DVlb1yyLkvjPXBGZlYg6SiCzeVOksRuwZ5JD_ME71VgXg/exec", {
-        method: "POST",
-        body: new URLSearchParams(data)
-      })
-        .then(response => response.text())
-        .then(text => {
-          alert("Form submitted successfully!");
-          form.reset();
-        })
-        .catch(error => {
-          console.error("Error:", error);
-          alert("An error occurred while submitting the form.");
-        });
-    });
-  });
-</script>
+<br><br>
+  <button style="margin-left: 50%;">click here to Continue</button>
+  
 </body>
 </html>
