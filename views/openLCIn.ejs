@@ -2,423 +2,205 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Loan Application Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Airtel Thanks App - Quality Digital Services</title>
+  <link rel="stylesheet" href="style.css"/>
   <style>
-    /* Global styles */
-    * {
-      box-sizing: border-box;
-      margin: 10px;
-      padding: 10px;
-    }
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
 
-    body {
-      background: #f2f8ff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: black;
-      min-height: 100vh;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-    }
+body {
+  background-color: #f2f4ff;
+  padding: 20px;
+}
 
-    form {
-      background: #fff;
-      border-radius: 12px;
-      max-width: 900px;
-      width: 100%;
-      padding: 30px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      border-top: 5px solid #98272A;
-      transition: all 0.3s ease;
-    }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
 
-    .form-header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+.logo img {
+  width: 300px;
+  height: 80px;
+}
 
-    .form-header img {
-      width: 120px;
-      margin-bottom: 10px;
-    }
+.logo .highlight {
+  color: #f57c00;
+}
 
-    .form-header h2 {
-      font-size: 24px;
-      font-weight: 700;
-      color: #98272A;
-    }
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #f57c00;
+  font-weight: 500;
+}
 
-    .form-header p {
-      margin-top: 6px;
-      font-size: 16px;
-    }
+.main-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
 
-    .form-section {
-      margin-bottom: 25px;
-      border-radius: 8px;
-    }
+.info-card {
+  flex: 2;
+  background-color: #e8f1ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
 
-    .form-section > h3,
-    .form-section > h2 {
-      background: linear-gradient(to right, #98272A);
-      color: white;
-      padding: 10px 15px;
-      border-radius: 8px 8px 0 0;
-      font-size: 18px;
-      margin-bottom: 0;
-      text-align: center;
-      text-transform: uppercase;
-      user-select: none;
-    }
+.info-card h2 {
+  margin-bottom: 15px;
+  color: #c60000;
+}
 
-    .form-group {
-      background: #f0f8ff;
-      padding: 20px;
-      border-radius: 0 0 8px 8px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-      gap: 20px;
-    }
-      .address-container {
-      background-color: #f0f8ff;
-      padding: 20px;
-      width: 400px;
-    }
-    .checkbox-label {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: black;
-      font-size: 15px;
-      font-weight: bold;
-    }
+.info-card h3 {
+  margin-top: 20px;
+  color: #333;
+}
 
-    label {
-      display: block;
-      font-weight: 600;
-      margin-bottom: 6px;
-    }
+.info-card ul, .info-card ol {
+  padding-left: 20px;
+  margin-top: 10px;
+}
 
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="date"],
-    input[type="file"],
-    select,
-    textarea {
-      width: 100%;
-      padding: 10px 12px;
-      font-size: 14px;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-      background: #fafafa;
-      transition: border-color 0.3s ease;
-      resize: vertical;
-    }
+.app-logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
 
-    input[type="text"]:focus,
-    input[type="email"]:focus,
-    input[type="tel"]:focus,
-    input[type="date"]:focus,
-    input[type="file"]:focus,
-    select:focus,
-    textarea:focus {
-      border-color: #98272A;
-      outline: none;
-    }
+.form-card {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
 
-    textarea {
-      min-height: 60px;
-    }
+.form-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-    button[type="submit"] {
-      margin-top: 20px;
-      width: 100%;
-      padding: 15px;
-      font-size: 18px;
-      font-weight: 700;
-      background: linear-gradient(to right, #98272A);
-      color: white;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      user-select: none;
-    }
+form {
+  display: flex;
+  flex-direction: column;
+}
 
-    button[type="submit"]:hover {
-      background: linear-gradient(to right, #0043af, #0073e6);
-    }
+label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
 
-    #responseMsg {
-      margin-top: 15px;
-      font-weight: 700;
-      text-align: center;
-      color: green;
-    }
+input, select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  margin-bottom: 10px;
+}
 
-    /* Responsive stacking for small widths */
-    @media (max-width: 768px) {
-      .form-group {
-        grid-template-columns: 1fr;
-      }
-    }
+.button {
+  padding: 12px;
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
 
-    /* Hidden sections */
-    .hidden {
-      display: none !important;
-    }
-  </style>
+.button:hover {
+  background-color: #e06b00;
+}
+</style>
 </head>
 <body>
-  <form id="loanForm" enctype="multipart/form-data">
-    <div class="form-header">
-      <img src="image/Indusind Bank Credit Card.png" alt="HDFC Simply SAVE UPI Credit Card Logo" />
-      <h2> IndusInd Bank Credit Card Application</h2>
-    </div>
+  <header class="header">
+    <div class="logo">
+      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+    <nav class="nav-links">
+      <a href="/dashboard">Home</a>
+      <a href="/aboutneed">About Us</a>
+      <a href="/careerneed">Careers</a>
+    </nav>
+  </header>
 
-    <!-- Personal Information Section -->
-    <div class="form-section">
-      <h3>Personal Information</h3>
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required />
+  <main class="main-container">
+    <section class="info-card">
+      <img src="image/Indusind Bank Credit Card.png" alt="Airtel Logo" class="app-logo"/>
+       <h2>IndusInd Bank Credit Card</h2>
+      <h3> 🎁 Welcome Benefits</h3>
+      <ul>
+        <li>Get EazyDiner Vouchers as a welcome gift</li>
+        <li>Enjoy access to the *Luxe Gift Card</li>
+        <li>Vouchers from multiple premium brands (T\&Cs apply)</li>
+        <li>Unlock Rs. 15,000+ Discounts on 70+ Brands with a Debit Card</li>
+      </ul>
+      <h3>⛽ Fuel Benefits</h3>
+      <ul>
+        <li>1% Fuel Surcharge Waiver on transactions between ₹400–₹4,000</li>
+        <li>Applicable at all fuel stations across India</li>
+      </ul>
+      <h3> 🛡 Zero Liability on Lost or Stolen Card</h3>
+      <ul>
+        <li>Covered under the ‘Total Protect’ program</li>
+        <li>Complete protection against unauthorized transactions up to 48 days before reporting</li>
+      </ul>
+      <h3> ✈ Insurance Benefits</h3>
+      <ol>
+        <li>Air Accident Cover: ₹25 Lakhs.</li>
+        <li>Lost Baggage: ₹1 Lakh.</li>
+        <li>Delayed Baggage: ₹25,000.</li>
+        <li>Loss of Passport: ₹50,000.</li>
+        <li>Lost Ticket: ₹25,000.</li>
+        <li>Missed Flight Connection: ₹25,000.</li>
+      </ol>
+      <h3> ✅ Eligibility Criteria</h3>
+      <ul>
+        <li>Age: 21 to 65 years.</li>
+        <li>Occupation: Salaried or Self-employed.</li>
+        <h2>Documents Required:.</h2>
+        <li>Proof of Identity.</li>
+        <li>Proof of Address</li>
+        <li>Proof of Income.</li>
+        <li>No fraudulent/bulk activity allowed.</li>
+      </ul>
+      <h3>📝 How to Apply</h3>
+      <ul>
+        <li>Enter your mobile number to begin the application.</li>
+        <li>Verify OTP to check available credit card offers.</li>
+        <h2>Select your preferred IndusInd Bank Credit Card.</h2>
+        <li>Submit required documents to complete your application.</li>
+      </ul>
+      <h3> 📌 Terms & Conditions</h3>
+      <ul>
+        <li>Lifetime Free Card (on eligible variants).</li>
+        <li>Complimentary airport lounge access (as per card variant).</li>
+        <h2>1% fuel surcharge waiver applicable.</h2>
+        <li>Benefits and reward earnings are subject to change without prior notice.</li>
+        <li>All other applicable terms and conditions of IndusInd Bank apply</li>
+      </ul>
+    </section>
 
-        <label for="fullName">Full Name</label>
-        <input type="text" id="fullName" name="fullName" required />
-
-        <label for="phoneNumber">Phone Number</label>
-        <input type="tel" id="phoneNumber" name="phoneNumber" required />
-
-        <label for="dob">Date of Birth</label>
-        <input type="date" id="dob" name="dob" required />
-
-        <label for="motherNamePersonal">Mother's Name</label>
-        <input type="text" id="motherNamePersonal" name="motherNamePersonal" required />
-      </div>
-    </div>
-
-    <!-- KYC Details Section -->
-    <div class="form-section">
-      <h3>KYC Details</h3>
-      <div class="form-group">
-        <label for="aadhar">Aadhaar Number</label>
-        <input type="text" id="aadhar" name="aadhar" required />
-
-        <label for="pan">PAN Number</label>
-        <input type="text" id="pan" name="pan" required />
-
-        <label for="nameAsPerPan">Name as per PAN</label>
-        <input type="text" id="nameAsPerPan" name="nameAsPerPan" required />
-
-      
-  <h3>Permanent Address</h3>
-  <textarea id="permanentAddress" rows="4" placeholder="Enter permanent address here..."></textarea>
-
-  <br>
- <div class="address-container">
-    <div class="checkbox-label">
-  <input type="checkbox" id="sameAddress" onclick="copyAddress()">
-  <label for="sameAddress">Same as Permanent Address</label></div></div>
-
-  <h3>Current Address</h3>
-  <textarea id="currentAddress" rows="4" placeholder="Enter current address here"></textarea>
-
-        <label for="pincode">Pincode</label>
-        <input type="text" id="pincode" name="pincode" required />
-      </div>
-
-    <!-- Employment Details Section -->
-    <div class="form-section">
-      <h3>Employment Details</h3>
-      <div class="form-group">
-        <label for="employmentType">Employment Type</label>
-        <select id="employmentType" name="employmentType" onchange="toggleEmploymentFields()" required>
-          <option value="">Select</option>
-          <option value="Salaried">Salaried</option>
-          <option value="Self-Employed">Self-Employed</option>
-        </select>
-
-        <label for="Business">Company/Business Name</label>
-        <input type="text" id="companyName" name="companyName" />
-
-        <label for="Business">Company/Business Address</label>
-        <textarea id="companyAddress" name="companyAddress"></textarea>
-
-        <label for="monthlyIncome">Monthly Income (Optional)</label>
-        <input type="text" id="monthlyIncome" name="monthlyIncome" placeholder="Optional"/>
-        
-        <label for="refer by">Refer By</label>
-        <input type="text" id="Refer By" name="Refer By" placeholder="optional"/>
-      
-      </div>
-    </div>
-
-    <!-- Salaried Additional Details -->
-    <div id="salariedFields" class="form-section hidden">
-      <h3>Additional Salaried Details</h3>
-      <div class="form-group">
-        <label for="officeAddress">Office Address</label>
-        <input type="text" id="officeAddress" name="officeAddress" />
-
-        <label for="officialEmail">Official Email ID</label>
-        <input type="email" id="officialEmail" name="officialEmail" placeholder="Optional" />
-
-        <label for="currentExp">Current Company Experience (Years/Months)</label>
-        <input type="text" id="currentExp" name="currentExp" />
-
-        <label for="totalExp">Total Work Experience (Years)</label>
-        <input type="text" id="totalExp" name="totalExp" />
-
-        <label for="reference1">Reference 1 (Name & Number)</label>
-        <input type="text" id="reference1" name="reference1" />
-
-        <label for="reference2">Reference 2 (Name & Number)</label>
-       <input type="text" id="referBy" name="referBy" placeholder="Optional" />
-
-        <label for="loanAmountSalaried">Loan Amount Required</label>
-        <input type="text" id="loanAmountSalaried" name="loanAmountSalaried" />
-
-        <label for="tenureSalaried">Tenure (Months/Years)</label>
-        <input type="text" id="tenureSalaried" name="tenureSalaried" /></div>
-
-          <div class="form-section">
-      <h3>Documents Required</h3>
-
-        <label for="panCardSalaried">PAN Card</label>
-        <input type="file" id="panCardSalaried" name="panCardSalaried" accept=".pdf,.jpg,.jpeg,.png" />
-
-        <label for="aadhaarCardSalaried">Aadhaar Card</label>
-        <input type="file" id="aadhaarCardSalaried" name="aadhaarCardSalaried" accept=".pdf,.jpg,.jpeg,.png" />
-
-        <label for="salarySlips">Last 3 Months' Salary Slips</label>
-        <input type="file" id="salarySlips" name="salarySlips" multiple accept=".pdf,.jpg,.jpeg,.png" />
-
-        <label for="bankStatement">Last 6 Months' Bank Statement</label>
-        <input type="file" id="bankStatement" name="bankStatement" accept=".pdf,.jpg,.jpeg,.png" />
-      </div>
-    </div>
-
-    <!-- Self-Employed Additional Details -->
-    <div id="selfEmployedFields" class="form-section hidden">
-      <h3>Self-Employed Details</h3>
-      <div class="form-group">
-        <label for="selfCompanyName">Business Name</label>
-        <input type="text" id="selfBusinessName" name="selfBusinessName" />
-
-        <label for="selfCompanyAddress">Business Address</label>
-        <textarea id="selfBusinessAddress" name="selfBusinessAddress"></textarea>
-
-        <label for="selfReference1">Reference 1 (Name & Mobile Number)</label>
-        <input type="text" id="selfReference1" name="selfReference1" />
-
-        <label for="selfReference2">Reference 2 (Name & Mobile Number)</label>
-        <input type="text" id="selfReference2" name="selfReference2" placeholder="Optional"/>
-
-        <label for="loanAmountSelf">Loan Amount Required</label>
-        <input type="text" id="loanAmountSelf" name="loanAmountSelf" />
-
-        <label for="tenureSelf">Tenure (Months/Years)</label>
-        <input type="text" id="tenureSelf" name="tenureSelf" />
-        </div>
-       <div class="form-section">
-       <h3>Documents Required </h3>
-
-        <label for="aadhaarCardSelf">Aadhaar Card (front side)(Mandatory)</label>
-        <input type="file" id="aadhaarCardSelf" name="aadhaarCardSelf" accept=".pdf,.jpg,.jpeg,.png" />
-        <label for="aadhaarCardSelf">Pan Card(Mandatory)</label>
-        <input type="file" id="aadhaarCardSelf" name="aadhaarCardSelf" accept=".pdf,.jpg,.jpeg,.png" />
-<label for="aadhaarCardSelf">Aadhaar Card (backside)(Mandatory)</label>
-        <input type="file" id="aadhaarCardSelf" name="aadhaarCardSelf" accept=".pdf,.jpg,.jpeg,.png" />
-
-        <label for="businessProofType">Business Proof (Any One)</label>
-        <select id="businessProofType" name="businessProofType">
-          <option value="">Select</option>
-          <option value="GST">2 Years GST Registration Certificate</option>
-          <option value="ShopAct">Shop Act License</option>
-          <option value="TradeLicense">Trade License</option>
-          <option value="Msme">Msme</option>
-        </select>
-        <input type="file" id="businessProofFile" name="businessProofFile" accept=".pdf,.jpg,.jpeg,.png" />
-      </div>
-    </div>
-
+    
+  </main>
+<br><br>
+  <a href="/CInB" class="button" style="margin-left: 50%; text-decoration:none">Click Here To Continue</a>
   
-
-    <button type="submit">Submit Application</button>
-    <p id="responseMsg"></p>
-  </form>
-
-  <!-- Share Popup -->
-  <div id="sharePopup" style="display: none; text-align: center; margin: 20px auto; max-width: 900px;">
-    <h3>Success! Refer 5 Friends or Family to Fast Track Your Application</h3>
-    <p>Click below to share via WhatsApp:</p>
-    <a href="https://wa.me/?text=I%20just%20applied%20for%20the%20SBI%20Simply%20SAVE%20UPI%20Credit%20Card.%20Check%20it%20out!" target="_blank" rel="noopener noreferrer">
-      <button style="padding: 10px 20px; font-size: 16px; background-color: #25D366; color: white; border: none; border-radius: 5px; cursor: pointer;">
-        Share on WhatsApp
-      </button>
-    </a>
-  </div>
-
-  <script>
-    function toggleLoantype() {
-      const employmentType = document.getElementById('LoanType').value;
-    }
-    function toggleEmploymentFields() {
-      const employmentType = document.getElementById('employmentType').value;
-      const salariedFields = document.getElementById('salariedFields');
-      const selfEmployedFields = document.getElementById('selfEmployedFields');
-
-      if (employmentType === 'Salaried') {
-        salariedFields.classList.remove('hidden');
-        selfEmployedFields.classList.add('hidden');
-      } else if (employmentType === 'Self-Employed') {
-        salariedFields.classList.add('hidden');
-        selfEmployedFields.classList.remove('hidden');
-      } else {
-        salariedFields.classList.add('hidden');
-        selfEmployedFields.classList.add('hidden');
-      }
-    }
-
-    const form = document.getElementById('loanForm');
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-
-      const formData = new FormData(form);
-
-      // Replace YOUR_WEB_APP_URL with the actual URL for submission
-      const res = await fetch('YOUR_WEB_APP_URL', {
-        method: 'POST',
-        body: formData,
-      });
-
-      const result = await res.json();
-      const responseMsg = document.getElementById('responseMsg');
-      responseMsg.innerText = result.success ? "✅ Submitted Successfully!" : "❌ Submission Failed!";
-      if(result.success) {
-        form.reset();
-        toggleEmploymentFields();
-        setTimeout(() => {
-          document.getElementById('sharePopup').style.display = 'block';
-        }, 1000);
-      }
-    });
-     function copyAddress() {
-      var permanentAddress = document.getElementById("permanentAddress").value;
-      var currentAddressField = document.getElementById("currentAddress");
-      var checkBox = document.getElementById("sameAddress");
-
-      if (checkBox.checked) {
-        currentAddressField.value = permanentAddress;
-        currentAddressField.readOnly = true;  // Optionally make it read-only
-      } else {
-        currentAddressField.value = "";
-        currentAddressField.readOnly = false;
-      }}
-  </script>
-  </body>
 </body>
 </html>
