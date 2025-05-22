@@ -499,12 +499,17 @@ app.get("/openLBAT",(req,res)=>{
 app.get("/openWLBAT",(req,res)=>{
     res.render('openWLBAT');
 });
+
+
 //credit cards
 app.get("/openLCS",(req,res)=>{//SBI
     res.render('openLCS');
 });
 app.get("/openWLCS",(req,res)=>{
     res.render('openWLCS');
+});
+app.get("/CSB",(req,res)=>{
+    res.render('CSB');
 });
 app.get("/openLCH",(req,res)=>{//HBFC
     res.render('openLCH');
@@ -521,11 +526,17 @@ app.get("/openLCP",(req,res)=>{//pop
 app.get("/openWLCP",(req,res)=>{
     res.render('openWLCP');
 });
+app.get("/CPB",(req,res)=>{
+    res.render('CPB');
+});
 app.get("/openLCA",(req,res)=>{//AU
     res.render('openLCA');
 });
 app.get("/openWLCA",(req,res)=>{
     res.render('openWLCA');
+});
+app.get("/CAB",(req,res)=>{
+    res.render('CAB');
 });
 app.get("/openLCI",(req,res)=>{//IDFC
     res.render('openLCI');
@@ -533,11 +544,17 @@ app.get("/openLCI",(req,res)=>{//IDFC
 app.get("/openWLCI",(req,res)=>{
     res.render('openWLCI');
 });
+app.get("/CIB",(req,res)=>{
+    res.render('CIB');
+});
 app.get("/openLCSI",(req,res)=>{//sbi irtc
     res.render('openLCSI');
 });
 app.get("/openWLCSI",(req,res)=>{
     res.render('openWLCSI');
+});
+app.get("/CSIB",(req,res)=>{
+    res.render('CSIB');
 });
 app.get("/openLCSS",(req,res)=>{//sbi simply
     res.render('openLCSS');
@@ -545,11 +562,17 @@ app.get("/openLCSS",(req,res)=>{//sbi simply
 app.get("/openWLCSS",(req,res)=>{
     res.render('openWLCSS');
 });
+app.get("/CSSB",(req,res)=>{
+    res.render('CSSB');
+});
 app.get("/openLCIF",(req,res)=>{//idfc first
     res.render('openLCIF');
 });
 app.get("/openWLCIF",(req,res)=>{
     res.render('openWLCIF');
+});
+app.get("/CIFB",(req,res)=>{
+    res.render('CIFB');
 });
 app.get("/openLCIC",(req,res)=>{//icic
     res.render('openLCIC');
@@ -557,11 +580,17 @@ app.get("/openLCIC",(req,res)=>{//icic
 app.get("/openWLCIC",(req,res)=>{
     res.render('openWLCIC');
 });
+app.get("/CICB",(req,res)=>{
+    res.render('CICB');
+});
 app.get("/openLCIn",(req,res)=>{//indused bank
     res.render('openLCIn');
 });
 app.get("/openWLCIn",(req,res)=>{
     res.render('openWLCIn');
+});
+app.get("/CInB",(req,res)=>{
+    res.render('CInB');
 });
 app.get("/openLCR",(req,res)=>{//rbl credit card
     res.render('openLCR');
@@ -569,11 +598,17 @@ app.get("/openLCR",(req,res)=>{//rbl credit card
 app.get("/openWLCR",(req,res)=>{
     res.render('openWLCR');
 });
+app.get("/CRB",(req,res)=>{
+    res.render('CRB');
+});
 app.get("/openLChSbc",(req,res)=>{//hsbc
     res.render('openLChSbc');
 });
 app.get("/openWLChSbc",(req,res)=>{
     res.render('openWLChSbc');
+});
+app.get("/ChSbcB",(req,res)=>{
+    res.render('ChSbcB');
 });
 app.get("/openLCSC",(req,res)=>{//standard charted
     res.render('openLCSC');
@@ -581,11 +616,17 @@ app.get("/openLCSC",(req,res)=>{//standard charted
 app.get("/openWLCSC",(req,res)=>{
     res.render('openWLCSC');
 });
+app.get("/CSCB",(req,res)=>{
+    res.render('CSCB');
+});
 app.get("/openLChT",(req,res)=>{//HDFC TATA
     res.render('openLhT');
 });
 app.get("/openWLChT",(req,res)=>{
     res.render('openWLChT');
+});
+app.get("/ChTB",(req,res)=>{
+    res.render('ChTB');
 });
 app.get("/openLChR",(req,res)=>{//HDFC rupay
     res.render('openLChR');
@@ -593,11 +634,17 @@ app.get("/openLChR",(req,res)=>{//HDFC rupay
 app.get("/openWLChR",(req,res)=>{
     res.render('openWLChR');
 });
+app.get("/ChRB",(req,res)=>{
+    res.render('ChRB');
+});
 app.get("/openLChI",(req,res)=>{//HDFC IRCTC
     res.render('openLChI');
 });
 app.get("/openWLChI",(req,res)=>{
     res.render('openWLChI');
+});
+app.get("/ChIB",(req,res)=>{
+    res.render('ChIB');
 });
 app.get("/openLChS",(req,res)=>{//HDFC Swigy
     res.render('openLChS');
@@ -605,11 +652,17 @@ app.get("/openLChS",(req,res)=>{//HDFC Swigy
 app.get("/openWLChS",(req,res)=>{
     res.render('openWLChS');
 });
+app.get("/ChSB",(req,res)=>{
+    res.render('ChSB');
+});
 app.get("/openLCaM",(req,res)=>{//axis myzone
     res.render('openLCaM');
 });
 app.get("/openWLCaM",(req,res)=>{
     res.render('openWLCaM');
+});
+app.get("/CaMB",(req,res)=>{
+    res.render('CaMB');
 });
 app.get("/openLCtnf",(req,res)=>{//tata neu FD
     res.render('openLCtnf');
@@ -617,11 +670,17 @@ app.get("/openLCtnf",(req,res)=>{//tata neu FD
 app.get("/openWLCtnf",(req,res)=>{
     res.render('openWLCtnf');
 });
+app.get("/CthfB",(req,res)=>{
+    res.render('CtnfB');
+});
 app.get("/openLCaF",(req,res)=>{//axis flipkart
     res.render('openLCaF');
 });
 app.get("/openWLCaF",(req,res)=>{
     res.render('openWLCaF');
+});
+app.get("/CaFB",(req,res)=>{
+    res.render('CaFB');
 });
 app.get("/openLCaR",(req,res)=>{//axis reward 
     res.render('openLCaR');
@@ -629,11 +688,17 @@ app.get("/openLCaR",(req,res)=>{//axis reward
 app.get("/openWLCaR",(req,res)=>{
     res.render('openWLCaR');
 });
+app.get("/CaRB",(req,res)=>{
+    res.render('CaRB');
+});
 app.get("/openLCN",(req,res)=>{//naovio
     res.render('openLCN');
 });
 app.get("/openWLCN",(req,res)=>{
     res.render('openWLCN');
+});
+app.get("/CNB",(req,res)=>{
+    res.render('CNB');
 });
 app.get("/openLCAMR",(req,res)=>{//axis myzone Rupay
     res.render('openLCAMR');
@@ -641,11 +706,17 @@ app.get("/openLCAMR",(req,res)=>{//axis myzone Rupay
 app.get("/openWLCAMR",(req,res)=>{
     res.render('openWLCAMR');
 });
+app.get("/CAMRB",(req,res)=>{
+    res.render('CAMRB');
+});
 app.get("/openLCAIO",(req,res)=>{//axis indian oil
     res.render('openLCAIO');
 });
 app.get("/openWLCAIO",(req,res)=>{
     res.render('openWLCAIO');
+});
+app.get("/CAIOB",(req,res)=>{
+    res.render('CAIOB');
 });
 app.get("/openLChB",(req,res)=>{//HDFC bonvoy
     res.render('openLChB');
@@ -653,17 +724,26 @@ app.get("/openLChB",(req,res)=>{//HDFC bonvoy
 app.get("/openWLChB",(req,res)=>{
     res.render('openWLChB');
 });
+app.get("/ChBB",(req,res)=>{
+    res.render('ChBB');
+});
 app.get("/openLCT",(req,res)=>{//Tide
     res.render('openLCT');
 });
 app.get("/openWLCT",(req,res)=>{
     res.render('openWLCT');
 });
+app.get("/CTB",(req,res)=>{
+    res.render('CTB');
+});
 app.get("/openLCsss",(req,res)=>{//sbi simple safe
     res.render('openLCsss');
 });
 app.get("/openWLCsss",(req,res)=>{
     res.render('openWLCsss');
+});
+app.get("/CsssB",(req,res)=>{
+    res.render('CsssB');
 });
 
 //add here authentication routes
