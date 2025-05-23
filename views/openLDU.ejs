@@ -1,1 +1,228 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upstox - Quality Digital Services</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f2f4ff;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo .highlight {
+  color: #f57c00;
+}
+.logo img {
+  width: 300px;
+  height: 80px;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #f57c00;
+  font-weight: 500;
+}
+
+.main-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  flex: 2;
+  background-color: #e8f1ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.info-card h2 {
+  margin-bottom: 15px;
+  color: #c60000;
+}
+
+.info-card h3 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.info-card ul, .info-card ol {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.app-logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.form-card {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 12px;
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e06b00;
+}
+</style>
+</head>
+<body>
+   <header class="header">
+    <div class="logo">
+      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+    <nav class="nav-links">
+      <a href="/dashboard">Home</a>
+      <a href="/aboutneed">About Us</a>
+      <a href="/careerneed">Careers</a>
+      <a href="/logoutneed">Logout</a>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <section class="info-card">
+      <img src="image/Demat Accounts/upstocks.png" alt="Airtel Logo" class="app-logo"/>
+      <h2>Upstock</h2>
+      <h3>💎 Benefits</h3>
+      <ul>
+        <li>Commission-free direct mutual fund investments</li>
+        <li>Smart recommendations & SIP tracking</li>
+        <li>One app for all investment types</li>
+  
+      </ul>
+      <h3>👤 Who Can Apply?</h3>
+      <ul>
+        <li>Indian citizens with valid PAN & Aadhaar</li>
+        <li>18+ with bank account & mobile number</li>
+      </ul>
+      <h3>🛠 How It Works</h3>
+      <ul>
+        <li>Open Upstock Account</li>
+        <li>Complete KYC</li>
+        <li>Invest in direct mutual funds with no extra fees</li>
+      </ul>
+      <h3>📌 Terms & Conditions</h3>
+      <ol>
+        <li>Mutual fund NAV subject to market changes</li>
+        <li>Read scheme documents before investing</li>
+      </ol>
+    </section>
+
+    <section class="form-card">
+      <h2>Quality Digital Services</h2>
+      <form id="loanForm" method="post">
+        <label>Full Name:</label>
+        <input type="text" placeholder="Customer Full Name as Per Aadhaar Card" name="fullname"/>
+
+        <label>Mobile Number:</label>
+        <input type="text" placeholder="Customer Mobile Number" name="mobileNumber"/>
+
+        <label>Store</label><input value="ANGEL ONE" name="store" readonly>
+        
+
+        <label>Agent ID</label>
+        <input type="text" placeholder="Enter Your Agent ID" name="agentId"/>
+
+        <button type="submit">Continue Application</button>
+      </form>
+    </section>
+  </main>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("loanForm");
+    const responseMsg = document.getElementById("responseMsg");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // prevent default form submission
+
+      const formData = new FormData(form);
+      const data = new URLSearchParams();
+      for (const pair of formData.entries()) {
+        data.append(pair[0], pair[1]);
+      }
+
+      fetch("https://script.google.com/macros/s/AKfycbyC1hfW5Ohffb_d89M60SpIimetOCebgcFB07wYfLkmYnLGRIo8mxIySg2WvruF7Ntk6Q/exec", {
+        method: "POST",
+        body: data
+      })
+        .then((res) => res.text())
+        .then((text) => {
+          responseMsg.textContent = "Form submitted successfully!";
+          responseMsg.style.color = "green";
+          form.reset();
+        })
+        .catch((err) => {
+          console.error(err);
+          responseMsg.textContent = "Something went wrong!";
+          responseMsg.style.color = "red";
+        });
+    });
+  });
+</script>
+
+
+</body>
+</html>
