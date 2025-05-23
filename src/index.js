@@ -278,35 +278,35 @@ app.get("/openWithOutLoginneed", (req, res) => {
 });
 
 //Personal lones
-app.get("/openLoginLH",(req,res)=>{
-    res.render('openLoginLH');
+app.get("/openLLH",(req,res)=>{
+    res.render('openLLH');
 });
-app.get("/openwithLoginLH",(req,res)=>{
-    res.render('openWithOutLoginLH');
+app.get("/LHB",(req,res)=>{
+    res.render('LHB');
 });
-app.get("/openLoginLU",(req,res)=>{
-    res.render('openLoginLU');
+app.get("/openLLU",(req,res)=>{
+    res.render('openLLU');
 });
-app.get("/openwithLoginLU",(req,res)=>{
-    res.render('openWithOutLoginLU');
+app.get("/LUB",(req,res)=>{
+    res.render('LUB');
 });
-app.get("/openLoginLA",(req,res)=>{
-    res.render('openLoginLA');
+app.get("/openLLA",(req,res)=>{
+    res.render('openLLA');
 });
-app.get("/openWithLoginLA",(req,res)=>{
-    res.render('openWithLoginLA');
+app.get("/LAB",(req,res)=>{
+    res.render('LAB');
 });
-app.get("/openLoginLB",(req,res)=>{
-    res.render('openLoginLB');
+app.get("/openLLB",(req,res)=>{
+    res.render('openLLB');
 });
-app.get("/openWithOutLoginLB",(req,res)=>{
-    res.render('openWithOutLoginLB');
+app.get("/LBaB",(req,res)=>{
+    res.render('LBaB');
 });
-app.get("/openLoginLAX",(req,res)=>{
-    res.render('openLoginLAX');
+app.get("/openLLAX",(req,res)=>{
+    res.render('openLLAX');
 });
-app.get("/openwithLoginLAX",(req,res)=>{
-    res.render('openWithOutLoginLAX');
+app.get("/LAXB",(req,res)=>{
+    res.render('LAXB');
 });
 //Loans
 app.get("/LBB",(req,res)=>{
