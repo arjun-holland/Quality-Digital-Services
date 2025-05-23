@@ -130,14 +130,14 @@ button:hover {
 </style>
 </head>
 <body>
-  <header class="header">
+    <header class="header">
     <div class="logo">
       <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
     <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Careers</a>
-      <a href="#">Login</a>
+      <a href="/dashboard">Home</a>
+      <a href="/aboutneed">About Us</a>
+      <a href="/careerneed">Careers</a>
+      <a href="/logoutneed">Logout</a>
     </nav>
   </header>
 
@@ -234,18 +234,18 @@ button:hover {
         <input type="text" placeholder="Customer Full Name as Per Aadhaar Card" name="Customer Full Name as Per Aadhaar Card"/>
 
         <label>Mobile Number:</label>
-        <input type="text" placeholder="Customer Mobile Number" name="Customer Mobile Number"/>
+        <input type="text" placeholder="Customer Mobile Number" name="Customer Mobile Number" required/>
 
 
         <label>Store</label><input value="TIDE BANK" name="Store" readonly>
 
 
         <label> Name</label>
-        <input type="text" placeholder="Enter Your name" name="staffname"/>
+        <input type="text" placeholder="Enter Your name" name="staffname" required/>
         <label>Mobile Number</label>
-        <input type="text" placeholder="Enter Your Mobile Number" name="staffMobile">
+        <input type="text" placeholder="Enter Your Mobile Number" name="staffMobile" required/>
 
-        <button type="submit">Continue Application</button>
+        <button type="submit">Submit</button>
       </form>
     </section>
   </main>
