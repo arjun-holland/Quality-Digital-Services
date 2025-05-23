@@ -270,11 +270,17 @@ app.get('/signupneed', (req, res) => {
 
 
 //demat account
-app.get("/openWithLoginneed", (req, res) => {
-    res.render('openLogin');   // Redirect to login page (or homepage if you prefer)
+app.get("/openLDU", (req, res) => {
+    res.render('openLDU');   // Redirect to login page (or homepage if you prefer)
 });
-app.get("/openWithOutLoginneed", (req, res) => {
-    res.render('openWithOutLogin');   // Redirect to login page (or homepage if you prefer)
+app.get("/openWLDU", (req, res) => {
+    res.render('openWLDU');   // Redirect to login page (or homepage if you prefer)
+});
+app.get("/openLDV", (req, res) => {
+    res.render('openLDV');   // Redirect to login page (or homepage if you prefer)
+});
+app.get("/openWLDV", (req, res) => {
+    res.render('openWLDV');   // Redirect to login page (or homepage if you prefer)
 });
 
 //Personal lones
