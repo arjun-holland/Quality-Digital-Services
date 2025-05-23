@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aditya Birla Personal Loan</title>
-</head>
+<!DOCTYPE HTML>
+<html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
       margin: 0;
       padding-top: 0px;
@@ -46,31 +44,21 @@ body {
       font-weight: bold;
       font-size: 20px;
     }
+    .content-wrapper {
+  max-width: 100%;
+  margin: auto;
+  padding: 30px;
+  background-color: #f1f5ff;
+}
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      max-width:100%;
-      /* margin: 20px; */
-      background: linear-gradient(to right, #001f3f, #003366);
-      color: white;
-      padding: 17px 10px;
-    }
-    h2 {
-      text-align: center;
-      color: black;
-      font-size: 35px;
-      margin-left: 70px;
-    } 
-    /* Heading aligned to grid */
+/* Heading aligned to grid */
 .section-title {
-  padding-left: 27px;
   font-size: 37px;
   font-weight: 800;
   font-family: 'Segoe UI', sans-serif;
   color: #000;
   margin-bottom: 30px;
+    text-align: center;
 }
 
 .sub-text {
@@ -80,220 +68,609 @@ body {
   margin-left: 10px;
 }
 
-  .loan-card {
-    background-color: white;
-    border-radius: 15px;
-    padding: 24px;
-    width: 400px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  
-  .offer-banner {
-    background-color: #f7931e;
-    color: white;
-    font-weight: bold;
-    border-radius: 8px;
-    padding: 2px 5px;  /* Less vertical padding */
-    margin: 15px 0;
-    font-size: 16px;
-    text-align: center; /* Optional: center the text */
-  }
-  
-  
-  .features {
-    text-align: left;
-    list-style: none;
-    padding-left: 0;
-    margin: 15px 0;
-    line-height: 1.6;
-    font-size: 15px;
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-  }
-  
-  button {
-    flex: 1;
-    padding: 10px;
-    background-color: #f7931e;
-    color: white;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  button:hover {
-    background-color: #e67e00;
-  }
-  .card-container {
-    display: flex;
-    flex-wrap: wrap; /* allows wrapping to next line */
-    gap: 20px; /* spacing between cards */
-    justify-content: center; /* center-align cards */
-    padding: 20px;
-  }
-  
-  .loan-card {
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    width: 350px; /* fixed width for consistent card size */
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-  }
-  img{
-    height: 50px;
-    width: 50px;
-  }
-  .loan-card-clean {
-    display: flex;
-    align-items: center;
-    background: none; /* No background color */
-    box-shadow: none; /* No border or shadow */
-    padding: 10px 0;
-    margin: 0;
-  }
-  
-  .loan-card-clean img {
-    height: 50px;
-    width: auto;
-    margin-right: 2px; /* Space between logo and text */
-  }
-  
-  .loan-card-clean h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0;
-  }
-  
+
+/* Grid layout for cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #f1f5ff;
+}
+
+/* Individual loan/credit card */
+.loan-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  transition: transform 0.2s ease;
+}
+
+.loan-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header with logo and text */
+.loan-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.loan-card-header img {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+.loan-card-info h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.loan-card-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Offer banner */
+.offer-banner {
+  background-color: #ff8c1a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 15px 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Fees box */
+.fees-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bfeaff;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.fee-box {
+  text-align: center;
+  flex: 1;
+  font-weight: bold;
+  color: #222;
+}
+
+.fee-divider {
+  font-size: 20px;
+  color: #555;
+  margin: 0 8px;
+}
+
+/* Features */
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.features li {
+  margin-bottom: 5px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.buttons button {
+  background-color: #ff8c1a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  flex: 1;
+  font-size: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.buttons button:hover {
+  background-color: #e67300;
+}
 </style>
-<body>
-    <div>
-      <header>
-    <div class="navbar">
-      <div class="logo">
-        <img src="image/dashboard/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo">
-      </div>
-      <div class="nav-links">
-        <a href="/dashboard">Home</a>
-        <a href="/aboutneed">About Us</a>
-        <a href="/careerneed">Careers</a>
-        <a href="/logoutneed">Logout</a>
-      </div>
-    </div>
+<header class="header">
+    <div class="logo">
+      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+    <nav class="nav-links">
+      <a href="/dashboard">Home</a>
+      <a href="/aboutneed">About Us</a>
+      <a href="/careerneed">Careers</a>
+      <a href="/logoutneed">Logout</a>
+    </nav>
   </header>
-
-  <div class="content-wrapper">
+<div class="content-wrapper">
     <h1 class="section-title">
-     Apply Loans & Earn Flat 1%
-    <span class="sub-text">(On Successful Loan Disbural)</span>
+        Apply Loans & Earn Flat1%
+        <span class="sub-text">(On Successful Loan Disbursal)</span>
     </h1>
-        <div class="card-container">
-            <div class="loan-card">
-                <div class="loan-card-clean">
-                    <img src="image/HDFC Personal Loan.png" alt="HDFC Bank Logo">
-                    <h2>HDFC Personal Loan</h2>
-                </div>               
-            <div class="offer-banner">
-              <p>Earn Flat 1% on Successful Loan Disbursal</p>
-            </div>
-            <ul class="features">
-              <li>✅ Easy EMIs</li>
-              <li>✅ Loan without pledging any assets.</li>
-              <li>✅ Fast approval and disbursal process.</li>
-            </ul>
-            <div class="buttons">
-              <button><a href="openLoginLH" style="text-decoration: none; color: white;">Apply With Login</a></button>
-              <button><a href="openWithOutLoginLH" style="text-decoration: none; color: white;">Apply Without Login</a></button>
-            </div>
-            </div>
-            
-        <div class="loan-card">
-            <div class="loan-card-clean">
-                <img src="image/Axis Bank Personal Loan.png" alt="Aditya Birla Logo">
-                <h2>Aditya Birla Personal Loan</h2>
-            </div>     
-              <div class="offer-banner">
-                  <p>Earn Flat 1% on Successful Loan Disbursal</p>
-                </div>
-                <ul class="features">
-                    <li>✅ No collateral required – Minimal documentation</li>
-                    <li>✅ Quick disbursal – Fast approval and fund transfer</li>
-                    <li>✅ Flexible repayment – Tenure of up to 7 years</li>
-                </ul>
-                <div class="buttons">
-                    <button><a href="openLoginLA" style="text-decoration: none; color: white;">Apply With Login</a></button>
-                    <button><a href="openWithOutLoginLA" style="text-decoration: none; color: white;">Apply Without Login</a></button>
-                </div>
-        </div>        
-            
-            <div class="loan-card">
-                <div class="loan-card-clean">
-                    <img src="image/Bajaj Finserve Personal Loan.png" alt="Aditya Birla Logo">
-                    <h2>Axis Bank Personal Loan</h2>
-                </div>     
-              <div class="offer-banner">
-                  <p>Earn Flat 1% on Successful Loan Disbursal</p>
-                </div>
-                <ul class="features">
-                    <li>✅ Quick disbursal process, often within 24 to 48 hours</li>
-                    <li>✅ No collateral or guarantor required</li>
-                    <li>✅ Minimal paperwork with an easy online application</li>
-                </ul>
-                <div class="buttons">
-                    <button><a href="openLoginLAX" style="text-decoration: none; color: white;">Apply With Login</a></button>
-                    <button><a href="openWithOutLoginLAX" style="text-decoration: none; color: white;">Apply Without Login</a></button>
-                </div>
-            </div>   
-            
-            <div class="loan-card">
-                <div class="loan-card-clean">
-                    <img src="image/HDFC Personal Loan.png" alt="Aditya Birla Logo">
-                    <h2>Bajaj Finserve Personal Loan</h2>
-                </div>     
-              <div class="offer-banner">
-                  <p>Earn Flat 1% on Successful Loan Disbursal</p>
-                </div>
-                <ul class="features">
-                    <li>✅ Competitive rates.</li>
-                    <li>✅ Outstanding customer service</li>
-                    <li>✅ Wide loan options.</li>
-                </ul>
-                <div class="buttons">
-                    <button><a href="openLoginLB" style="text-decoration: none; color: white;">Apply With Login</a></button>
-                    <button><a href="openWithOutLoginLB" style="text-decoration: none; color: white;">Apply Without Login</a></button>
-                </div>
-            </div>   
-            
-            <div class="loan-card">
-                <div class="loan-card-clean">
-                    <img src="image/Unity Small Finance Bank.png" alt="Aditya Birla Logo">
-                    <h2>Unity Small Finance Bank</h2>
-                </div>     
-                    <div class="offer-banner">
-                        <p>Earn ₹600 on Successful Loan Disbursal</p>
-                    </div>
-                    <ul class="features">
-                        <li>✅ Loan Amount: Avail loans up to ₹5 lakhs, based on your credit score.</li>
-                        <li>✅ Interest Rates: Competitive interest rates ranging from 16% to 30%</li>
-                        <li>✅ APR, depending on eligibility.</li>
-                    </ul>
-                    <div class="buttons">
-                        <button><a href="openLoginLU" style="text-decoration: none; color: white;">Apply With Login</a></button>
-                        <button><a href="openWithLoginLU" style="text-decoration: none; color: white;">Apply Without Login</a></button>
-                    </div>
-                </div>  
-            </div>
-        </div>
 
+    <div class="cards-container">
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/loans/HDFC Personal Loan.png" alt="HDFC logo">
+        <div class="loan-card-info">
+            <h3>HDFC Personal Loan</h3>
         </div>
-            
-            <script src="script.js"></script>
-        </body>
-        </html>
-        
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbursal</p>
+    </div>
+    <ul class="features">
+        <li>✅ Easy EMIs</li>
+        <li>✅ Loan without pledging any assets.</li>
+        <li>✅ Fast approval and disbursal process.</li>
+    </ul>
+    <div class="buttons">
+        <button ><a href="/openLoginLH" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button ><a href="/openLoginLH" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Aditya Birla Personal Loan.png" alt="aditya Birla logo">
+        <div class="loan-card-info">
+            <h3>Aditya Birla Personal Loan</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbursal</p>
+    </div>
+    <ul class="features">
+        <li>✅ No collateral required - Minimal documentation</li>
+        <li>✅ Quick disbursal - Fast approval and fund transfer</li>
+        <li>✅ Flexible repayment - Tenure of upto 7 years</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLoginLA" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button><a href="/openLoginLA" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/loans/Axis Bank Personal Loan.png" alt="Axis logo">
+        <div class="loan-card-info">
+            <h3>Axis Bank Personal Loan</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbursal</p>
+    </div>
+    <ul class="features">
+        <li>✅ Quick disbursal process, often within 24 to 48 hours</li>
+        <li>✅ No collateral or guarantor required</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLoginLAx" style="text-decoration: none;color: white;">Apply With Login</a>
+</button>
+        <button><a href="/openLoginLAx" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Bajaj Finserve Personal Loan.png" alt="Bajaj Logo">
+        <div class="loan-card-info">
+            <h3>Bajaj Finserve Personal Loan</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbural</p>
+    </div>
+    <ul class="features">
+        <li>✅ Competitive rates</li>
+        <li>✅ Outstanding customer service</li>
+       <li>✅ Wide loan options.</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLoginLB" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button><a href="/openLoginLB" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Unity Small Finance Bank.png" alt="Unity Logo">
+        <div class="loan-card-info">
+            <h3>Unity Small Finance Bank</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn ₹600 on Successful Loan Disbural</p>
+    </div>
+     <ul class="features">
+        <li>✅ Loan Amount: Avail loans up to ₹5 lakhs, basec on your credit score.</li>
+        <li>✅ Interest Rates: Competitive interest rates, ranging from 16% to 30% APR, depanding on eligiblity</li>
+
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLoginLU" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button><a href="/openLoginLU" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Credit Cards/IDFC First Bank Free Credit Card.png" alt="IDFC Card Logo">
+        <div class="loan-card-info">
+            <h3>BANDHAN BANK</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbural</p>
+    </div>
+    <ul class="features">
+        <li>✅ Quick disbural process, often within 24 to 48 hours</li>
+        <li>✅ No collteral or guarantor required</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLLB" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button><a href="/openLLB" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Credit Cards/SBI Simply Click Credit Card.png" alt="SBI Card Logo">
+        <div class="loan-card-info">
+            <h3>CREDIT SAISON</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbursal.</p>
+    </div>
+    <ul class="features">
+        <li>✅ Quick approval for salaried individuals. </li>
+        <li>✅ No collateral or guarantor required</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLLC" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button><a href="/openLLC" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Credit Cards/IDFC First Bank Rupay Card.png" alt="IDFC Card Logo">
+        <div class="loan-card-info">
+            <h3>Finnable</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbursal.</p>
+    </div>
+    <ul class="features">
+        <li>✅ Quick disbursal process, often within 24 to 48 hours</li>
+        <li>✅ No collateral or guarantor required</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLLF" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button><a href="/openLLF" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Credit Cards/ICICI Bank Credit Card.png" alt="ICICI Card Logo">
+        <div class="loan-card-info">
+            <h3>IDFC First Bank</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbursal.</p>
+    </div>
+    <ul class="features">
+        <li>✅ Quick disbursal process, often within 24 to 48 hours</li>
+        <li>✅ No collateral or guarantor required</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLLI" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button><a href="/openLLI" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+<!-- work updation started form here -->
+
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Credit Cards/Indusind Bank Credit Card.png" alt="Indusind Card Logo">
+        <div class="loan-card-info">
+            <h3>InCred</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbursal.</p>
+    </div>
+    <ul class="features">
+        <li>✅ Quick disbursal process, often within 24 to 48 hours</li>
+        <li>✅ No collateral or guarantor required.</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLLIn" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button><a href="/openLLIn" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Credit Cards/RBL Credit Card.png" alt="RBL Card Logo">
+        <div class="loan-card-info">
+            <h3>ICICI Bank</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbursal.</p>
+    </div>
+    <ul class="features">
+        <li>✅  Quick disbursal process, often within 24 to 48 hours</li>
+        <li>✅ No collateral or guarantor required.</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLLIc" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button><a href="/openLLIc" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Credit Cards/HSBC Platinum free Credit card.png" alt="HSBC Card Logo">
+        <div class="loan-card-info">
+            <h3>INDUSIND Bank</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbursal.</p>
+    </div>
+    <ul class="features">
+        <li>✅ Quick disbursal process, often within 24 to 48 hours</li>
+        <li>✅ No collateral or guarantor required.</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLLId" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button><a href="/openLLId" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Credit Cards/Standard Chartered Bank CC.png" alt="Standard Card Logo">
+        <div class="loan-card-info">
+            <h3>KOTAK MAHINDRA BANK</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbursal</p>
+    </div>
+    <ul class="features">
+        <li>✅  Quick disbursal process, often within 24 to 48 hours</li>
+        <li>✅ No collateral or guarantor required.</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLLK" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button><a href="/openLLK" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Credit Cards/HDFC TATA Neu Credit Card.png" alt="HDFC Card Logo">
+        <div class="loan-card-info">
+            <h3>PAYSENSE</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbursal.</p>
+    </div>
+    <ul class="features">
+        <li>✅ Quick disbursal process, often within 24 to 48 hours</li>
+        <li>✅ No collateral or guarantor required.</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLLP" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button><a href="/openLLP" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Credit Cards/HDFC Rupay Credit Card.png" alt="HDFC Card Logo">
+        <div class="loan-card-info">
+            <h3>Poonawalla Fincorp</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbursal.</p>
+    </div>
+    <ul class="features">
+        <li>✅ Quick disbursal process, often within 24 to 48 hours</li>
+        <li>✅ No collateral or guarantor required.</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLLPO" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button><a href="/openLLPO" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Credit Cards/HDFC IRCTC Credit Card.png" alt="HSFC Card Logo">
+        <div class="loan-card-info">
+            <h3>Pirmal Capital</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbursal.</p>
+    </div>
+    <ul class="features">
+        <li>✅ Quick disbursal process, often within 24 to 48 hours</li>
+        <li>✅ No collateral or guarantor required.</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLLPi" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button><a href="/openLLPi" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Credit Cards/HDFC Swiggy Credit Card.png" alt="HSFC Card Logo">
+        <div class="loan-card-info">
+            <h3>YES BANK</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbursal.</p>
+    </div>
+    <ul class="features">
+        <li>✅ Quick disbursal process, often within 24 to 48 hours</li>
+        <li>✅ No collateral or guarantor required.</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLLY" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button><a href="/openLLY" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Credit Cards/Axis Myzone Credit Card.png" alt="Axis Card Logo">
+        <div class="loan-card-info">
+            <h3>Fullerton</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Successful Loan Disbursal</p>
+    </div>
+    <ul class="features">
+        <li>✅ Quick disbursal process, often within 24 to 48 hours</li>
+        <li>✅ No collateral or guarantor required.</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLLFu" style="text-decoration: none;color: white;">Apply With Login</a></button>
+        <button><a href="/openLLFu" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Credit Cards/Tata Neu FD Card.png" alt="TATA Card Logo">
+        <div class="loan-card-info">
+            <h3>CHOLAMANDALAM</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Loan Approved.</p>
+    </div>
+    <ul class="features">
+        <li>✅ Quick disbursal process, often within 24 to 48 hours</li>
+        <li>✅ No collateral or guarantor required.</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLLCh" style="text-decoration: none;color: white;">Apply With Login</a>
+</button>
+        <button><a href="/openLLCh" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Credit Cards/Tata Neu FD Card.png" alt="TATA Card Logo">
+        <div class="loan-card-info">
+            <h3>Tata capital</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Loan Approved.</p>
+    </div>
+    <ul class="features">
+        <li>✅ Quick disbursal process, often within 24 to 48 hours</li>
+        <li>✅ No collateral or guarantor required.</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLLT" style="text-decoration: none;color: white;">Apply With Login</a>
+</button>
+        <button><a href="/openLLT" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+<div class="loan-card">
+    <div class="loan-card-header">
+        <img src="image/Credit Cards/Tata Neu FD Card.png" alt="TATA Card Logo">
+        <div class="loan-card-info">
+            <h3>Navi Personal Loan</h3>
+        </div>
+    </div>
+    <div class="offer-banner">
+        <p>Earn Flat 1% on Loan Approved.</p>
+    </div>
+    <ul class="features">
+        <li>✅ Quick disbursal process, often within 24 to 48 hours</li>
+        <li>✅ No collateral or guarantor required.</li>
+        <li>✅ Minimal paperwork with an easy online application</li>
+    </ul>
+    <div class="buttons">
+        <button><a href="/openLLN" style="text-decoration: none;color: white;">Apply With Login</a>
+</button>
+        <button><a href="/openLLN" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+    </div>
+</div>
+
+</div>
+
+</div>
+    </div>            
+        <script src="script.js"></script>
+    </body>
+</html>
