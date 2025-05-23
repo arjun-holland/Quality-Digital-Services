@@ -134,10 +134,10 @@ button:hover {
     <div class="logo">
       <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
     <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Careers</a>
-      <a href="#">Login</a>
+      <a href="/dashboard">Home</a>
+      <a href="/aboutneed">About Us</a>
+      <a href="/careerneed">Careers</a>
+      <a href="/logoutneed">Logout</a>
     </nav>
   </header>
 
@@ -174,18 +174,18 @@ button:hover {
       <form id="loanForm" method="post">
         <p id="responseMsg"></p>
         <label>Full Name:</label>
-        <input type="text" placeholder="Customer Full Name as Per Aadhaar Card" name="fullname" />
+        <input type="text" placeholder="Customer Full Name as Per Aadhaar Card" name="fullname" required />
 
         <label>Mobile Number:</label>
-        <input type="text" placeholder="Customer Mobile Number" name="mobileNumber" />
+        <input type="text" placeholder="Customer Mobile Number" name="mobileNumber" required />
 
         <label>Store</label><input value="TRIP" name="store" readonly>
         
 
         <label>Agent ID</label>
-        <input type="text" placeholder="Enter Your Agent ID" name="agentId" />
+        <input type="text" placeholder="Enter Your Agent ID" name="agentId" required />
 
-        <button type="submit">Continue Application</button>
+        <button type="submit">Submit</button>
       </form>
     </section>
   </main>
