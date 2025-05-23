@@ -9,7 +9,244 @@
   * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quality Digital Services</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+}
+
+/* Header */
+header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 20px;
+    }
+
+    .logo span b {
+      color: #f90;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
+/* Services Section */
+.services {
+  background: linear-gradient(to bottom, #e6f3ff, #ffffff);
+  padding: 50px 40px;
+}
+
+.services-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.right img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+
+.services h2 {
+  color: #f7941e;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.services h3 {
+  color: #f7941e;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.services p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.service-icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  gap: 20px;
+}
+
+.icon {
+  width: 100px;
+  text-align: center;
+}
+
+.icon img {
+  width: 60px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.icon p {
+  font-weight: bold;
+  font-size: 13px;
+  color: #ff6600;
+}
+
+.explore {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #0056d2;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right {
+    margin-top: 30px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+</style>
+</head>
+<body>
+
+   <header class="header">
+    <div class="logo">
+      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+    <nav class="nav-links">
+      <a href="/dashboard">Home</a>
+      <a href="/aboutneeds">About Us</a>
+      <a href="/careerneeds">Careers</a>
+      <a href="/login">Login</a>
+    </nav>
+  </header>
+
+  <section class="services">
+    <div class="services-inner">
+      <div class="left">
+        <h2>OUR SERVICES</h2>
+      
+        <p>At Quality Digital Services (QDS), we are committed to simplifying financial access for everyone.</p>
+        <p>We provide all types of loans and credit cards in partnership with top banks across India, with zero charges for approvals or applications.</p>
+           <div class="service-icons">
+          <div class="icon">
+            <img src="image/images/Credit Cards Icon.png" alt="Credit Cards">
+            <p>CREDIT CARDS</p>
+          </div>
+          <div class="icon">
+            <img src="https://img.icons8.com/ios/100/bank.png" alt="Bank Accounts">
+            <p>BANK ACCOUNTS</p>
+          </div>
+          <div class="icon">
+            <img src="https://img.icons8.com/ios/100/money-transfer.png" alt="Personal Loans">
+            <p>PERSONAL LOANS</p>
+          </div>
+          <div class="icon">
+            <img src="https://img.icons8.com/ios/100/ticket.png" alt="Bookings">
+            <p>BOOKINGS</p>
+          </div>
+          <div class="icon">
+            <img src="https://img.icons8.com/ios/100/get-cash.png" alt="Earn with Us">
+            <p>EARN WITH US</p>
+          </div>
+        </div>
+        
+        <a href="#" class="explore">EXPLORE &nbsp; MORE &gt;&gt;</a>
+      </div>
+      <div class="right">
+        <img src="https://img.freepik.com/free-photo/smiling-woman-pointing-side_23-2148310434.jpg" alt="Woman">
+      </div>
+    </div>
+    <body style="background-color: #fff;">
+  </section>
+ <section class="services">
+    <div class="services-inner">
+      <div class="left">
+        <h2>WHAT WE DO?</h2>
+        <h3>Our Services are designed To Help Both</h3>
+     <ul>
+        <li><strong>Customers</strong> – Get fast, direct access to loans and credit cards from trusted banks.</li>
+        <li>• without any hidden fees.</li>
+        <li><strong>Agents</strong> – Earn up to ₹1 Lakh/month by offering these financial products through our platform, with weekly payouts and full support.</li>
+      </ul>
+      <p style="color: #f7941e;"><h3>With QDS, you get:</h3></p>
+      <ul>
+        <li>• Direct tie-ups with leading banks</li>
+        <li>• 100% free services for customers</li>
+        <li>• Premium agent program to earn more</li>
+        <li>• 24/7 support and fast processing</li>
+      </ul>
+      <p style="color: #f7941e; font-size: 20px;"><h3>We’re not just a platform—we’re your trusted partner in financial success.</h3></p>
+      </div>
+      <div class="right">
+        <img src="https://img.freepik.com/free-photo/smiling-woman-pointing-side_23-2148310434.jpg" alt="Woman">
+      </div>
+    </div>
+  </section>
+</body>
+</body>
+</html>
+
   font-family: 'Segoe UI', sans-serif;
 }
 
