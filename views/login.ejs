@@ -5,35 +5,161 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Quality Digital Services</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f7f9ff, #e9e8fc);
+      color: #333;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 60px;
+      width: 250px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      margin-left: 30px;
+      color: orange;
+      font-weight: 800;
+      font-size: 20px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
     .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px;
-  gap: 30px;
-  flex-wrap: wrap;
-}
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 60px;
+      position: relative;
+    }
 
-.left-section,
-.middle-image,
-.right-section {
-  flex: 1;
-  max-width: 33%;
-  min-width: 280px;
-}
+    .left-section {
+      width: 55%;
+    }
 
-.middle-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    .left-section h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
 
-.middle-image img {
-  max-height: 400px;
-  width: auto;
-  border-radius: 10px;
-}
+    .left-section h1 span {
+      color: #f58020;
+    }
 
+    .left-section p {
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    .left-section p span {
+      color: #f58020;
+      font-weight: bold;
+    }
+
+    .middle-image {
+      position: absolute;
+      left: 52%;
+      top: 161px;
+      padding-left: 100px;
+      transform: translateX(-50%);
+      max-height: 500px;
+    }
+
+    .right-section {
+      background: #fff;
+      width: 350px;
+      padding: 30px 25px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      text-align: center;
+      z-index: 2;
+    }
+
+    .right-section h3 {
+      color: #f58020;
+      margin-bottom: 20px;
+      font-size: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    .right-section button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 2px solid #f58020;
+      background-color: #fff;
+      color: #f58020;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .right-section button:hover {
+      background-color: #f58020;
+      color: #fff;
+    }
+
+    .right-section p {
+      margin-top: 15px;
+      font-size: 13px;
+    }
+
+    .right-section a {
+      text-decoration: none;
+      color: #4285f4;
+      font-weight: 500;
+    }
+
+    .login-illustration {
+      width: 100%;
+      margin-top: 25px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .left-section, .right-section {
+        width: 100%;
+        text-align: center;
+      }
+
+      .middle-image {
+        position: static;
+        transform: none;
+        margin: 20px 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -51,29 +177,26 @@
     </div>
   </div>
 
- <div class="container">
-  <!-- Left Text Section -->
-  <div class="left-section">
-    <h1>Welcome to <span>Quality Digital Services</span></h1>
-    <h2 style="margin-bottom: 20px;">Choose Your Login Option To Get Started</h2>
-    <p><span>USER LOGIN :</span><br>USE ALL OUR SERVICES FOR FREE</p>
-    <p><span>AGENTS LOGIN:</span><br>EARN MONEY WITH USING OUR SERVICES</p>
-  </div>
+  <div class="container">
+    <div class="left-section">
+      <h1>Welcome to <span>Quality Digital Services</span></h1>
+      <h2 style="margin-bottom: 20px;">Choose Your Login Option To Get Started</h2>
+      <p><span>USER LOGIN :</span><br>USE ALL OUR SERVICES FOR FREE</p>
+      <p><span>AGENTS LOGIN:</span><br>EARN MONEY WITH USING OUR SERVICES</p>
+    </div>
 
-  <!-- Middle Image Section -->
-  <div class="middle-image">
-    <img src="image/kj.png" alt="Woman" />
+    <img src="image/kj.png" alt="Woman" class="middle-image"  />
+    
+    <div style="padding-right: 150px;">
+      <div class="right-section">
+        <h3>CHOOSE YOUR LOGIN BELOW</h3>
+        <a href="/user-login"><button id="user_login">USER LOGIN</button></a>
+        <a href="/agents-login"><button>AGENTS LOGIN</button></a>
+        <p>DON'T HAVE AN ACCOUNT ? <a href="/signup">CREATE ACCOUNT</a></p>
+        <img src="image/loading.png" alt="Illustration" class="login-illustration" />
+      </div>
+    </div>
   </div>
-
-  <!-- Right Login Form Section -->
-  <div class="right-section">
-    <h3>CHOOSE YOUR LOGIN BELOW</h3>
-    <a href="/user-login"><button id="user_login">USER LOGIN</button></a>
-    <a href="/agents-login"><button>AGENTS LOGIN</button></a>
-    <p>DON'T HAVE AN ACCOUNT ? <a href="/signup">CREATE ACCOUNT</a></p>
-    <img src="image/loading.png" alt="Illustration" class="login-illustration" />
-  </div>
-</div>
 
 </body>
 </html>
