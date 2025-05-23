@@ -296,8 +296,8 @@ app.get("/openLLA",(req,res)=>{
 app.get("/LAB",(req,res)=>{
     res.render('LAB');
 });
-app.get("/openLLB",(req,res)=>{
-    res.render('openLLB');
+app.get("/openLLBa",(req,res)=>{
+    res.render('openLLBa');
 });
 app.get("/LBaB",(req,res)=>{
     res.render('LBaB');
