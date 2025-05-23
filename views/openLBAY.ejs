@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kotak 811 - Quality Digital Services</title>
+  <title>Quality Digital Services</title>
   <link rel="stylesheet" href="style.css"/>
   <style>
   * {
@@ -134,12 +134,12 @@ button:hover {
     <div class="logo">
       <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
     <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Careers</a>
-      <a href="#">Login</a>
+      <a href="/dashboard">Home</a>
+      <a href="/aboutneed">About Us</a>
+      <a href="/careerneed">Careers</a>
+      <a href="/logoutneed">Logout</a>
     </nav>
-  </header>
+  </header>
 
   <main class="main-container">
     <section class="info-card">
@@ -185,18 +185,18 @@ button:hover {
       <h2>Quality Digital Services</h2>
       <form id="loanForm" method="post">
         <label>Full Name:</label>
-        <input type="text" placeholder="Customer Full Name as Per Aadhaar Card"/>
+        <input type="text" placeholder="Customer Full Name as Per Aadhaar Card" required/>
 
         <label>Mobile Number:</label>
-        <input type="text" placeholder="Customer Mobile Number"/>
+        <input type="text" placeholder="Customer Mobile Number" required/>
 
         <label>Store</label><input value="KOTAK 811" name="store" readonly>
         
 
         <label>Agent ID</label>
-        <input type="text" placeholder="Enter Your Agent ID"/>
+        <input type="text" placeholder="Enter Your Agent ID" required />
 
-        <button type="submit">Continue Application</button>
+        <button type="submit">Submit</button>
       </form>
     </section>
   </main>
