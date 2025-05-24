@@ -1,156 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quality Digital Services</title>
-  <link rel="stylesheet" href="style.css"/>
-  <style>
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Digital Services Internships</title>
+    <style>
+   body {
+      margin: 0;
+      padding-top: 0px;
+      font-family: "Poppins", sans-serif;
+/*      font-weight: bold;*/
+    }
+     header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-body {
-  background-color: #fff;
-  color: #222;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-}
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
 
-.logo {
-  display: flex;
-  align-items: center;
-  font-size: 22px;
-  font-weight: bold;
-  color: #333;
-}
+    .logo span {
+      font-size: 20px;
+    }
 
-.logo img {
-  width: 300px;
-  margin-right: 80px;
-}
+    .logo span b {
+      color: #f90;
+    }
 
-nav a {
-  margin-left: 25px;
-  text-decoration: none;
-  color: #f7941e;
-  font-weight: 600;
-  font-size: 16px;
-}
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
+        .hero {
+            text-align: center;
+            padding: 30px;
+        }
 
-/* Services Section */
-.services {
-  background: linear-gradient(to bottom, #e6f3ff, #ffffff);
-  padding: 50px 40px;
-}
+        .hero h1 {
+            font-size: 32px;
+        }
 
-.services-inner {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+        .hero h1 span {
+            color: #ff9800;
+        }
 
-.left {
-  flex: 1;
-  min-width: 300px;
-}
+        .categories {
+            text-align: center;
+            margin: 20px;
+        }
 
-.right img {
-  max-width: 350px;
-  width: 100%;
-  height: auto;
-}
+        .categories button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            background: #fff;
+            color: #001c35;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        
+        .categories button:hover {
+         background: #0c3054;
+        color: #fff;
+      }
 
-.services h2 {
-  color: #f7941e;
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-.services h3 {
-  color: #f7941e;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
 
+        .card {
+            background: #e6e6fa;
+            color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            position: relative;
+            border-width: 40px;
+            border-color: white;
+        }
+        .card color {
+            background-color: pink;
+        }
 
-.services p {
-  margin: 10px 0;
-  font-size: 16px;
-  line-height: 1.6;
-}
+        .card .date {
+            font-size: 12px;
+            background: #fff;
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+        }
+         .bookmark {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #fff;
+            border-radius: 50%;
+            padding: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
 
-.service-icons {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 30px 0;
-  gap: 20px;
-}
+        .card h2 {
+            margin: 10px 0 5px;
+        }
+        
 
-.icon {
-  width: 100px;
-  text-align: center;
-}
+        .card .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 10px 0;
+        }
 
-.icon img {
-  width: 60px;
-  height: 40px;
-  margin-bottom: 10px;
-}
+        .card .tags span {
+            background: #fff;
+            border-radius: 10px;
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+     .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+    }
+    .price {
+      font-weight: bold;
+    }
+    .apply-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 6px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+     .card img.logo {
+            height: 40px;
+            float: right;
+            margin-top: -20px;
+        }
 
-.icon p {
-  font-weight: bold;
-  font-size: 13px;
-  color: #ff6600;
-}
+        .card.custom-bg {
+            background: #fff;
+        }
 
-.explore {
-  display: inline-block;
-  margin-top: 20px;
-  font-weight: bold;
-  color: #0056d2;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .services-inner {
-    flex-direction: column;
-    align-items: center;
+        .card.green-bg {
+            background: #d6f5f2;
+        }
+        .custom-hr {
+        border: none;
+       height: 3px;
+       background-color: #867676;
   }
-
-  .right {
-    margin-top: 30px;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav {
-    margin-top: 10px;
-  }
-
-  nav a {
-    display: inline-block;
-    margin-right: 15px;
-  }
-}
-.footer {
+  .footerbelow {
       background-color: #06113C;
       color: #fff;
       padding: 40px 20px 20px;
@@ -243,85 +266,185 @@ nav a {
       font-size: 13px;
       color: #ccc;
     }
-</style>
+    </style>
 </head>
+
 <body>
 
- <header>
-    <div class="logo">
-      <img src="image/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo"/>
-    </div>
-    <nav>
-      <a href="/dashboard">Home</a>
-      <a href="/aboutneed">About Us</a>
-      <a href="/careerneed">Careers</a>
-      <a href="/logoutneed">Logout</a>
-    </nav>
-  </header>
-
-  <section class="services">
-    <div class="services-inner">
-      <div class="left">
-        <h2>OUR SERVICES</h2>
+    <header>
       
-        <p>At Quality Digital Services (QDS), we are committed to simplifying financial access for everyone.</p>
-        <p>We provide all types of loans and credit cards in partnership with top banks across India, with zero charges for approvals or applications.</p>
-           <div class="service-icons">
-          <div class="icon">
-            <img src="image/images/Credit Cards Icon.png" alt="Credit Cards">
-            <p>CREDIT CARDS</p>
-          </div>
-          <div class="icon">
-            <img src="https://img.icons8.com/ios/100/bank.png" alt="Bank Accounts">
-            <p>BANK ACCOUNTS</p>
-          </div>
-          <div class="icon">
-            <img src="https://img.icons8.com/ios/100/money-transfer.png" alt="Personal Loans">
-            <p>PERSONAL LOANS</p>
-          </div>
-          <div class="icon">
-            <img src="https://img.icons8.com/ios/100/ticket.png" alt="Bookings">
-            <p>BOOKINGS</p>
-          </div>
-          <div class="icon">
-            <img src="https://img.icons8.com/ios/100/get-cash.png" alt="Earn with Us">
-            <p>EARN WITH US</p>
-          </div>
+      <div class="logo">
+        <img src="image\Hiring_Poster1Artboard_8@4x[1](1).png" alt="Logo" />
+      </div>
+      <nav>
+        <a href="/dashboard">Home</a>
+        <a href="/aboutneed">About Us</a>
+        <a href="/careerneed">Careers</a>
+        <a href="/logoutneed">Logout</a>
+      </nav>
+    
+    </header>
+
+    <div class="hero">
+        <h1>Latest Internships on <span>QUALITY DIGITAL SERVICES</span></h1>
+    </div>
+
+    <div class="categories">
+        TRENDING CATEGORIES :-
+       <a href="" ><button>WORK FROM HOME</button></a>
+        <button>PART TIME</button>
+        <button>FULL TIME</button>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <div class="color">
+            <span class="date">16 MAY 2025</span>
+            <div class="bookmark">🔖</div>
+            <h2>HDFC</h2>
+            <h3>Business Development</h3>
+             <img src="image/careers/HDFC Bonvoy Marriott Card.png" alt="HDFC" class="logo">
+            <div class="tags">
+                <span>Internship</span>
+                <span>Full Time</span>
+                <span>Project Work</span>
+                <span>3 months Duration</span></div>
+            </div>
+            <div class="footer">
+            <div class="price">₹ 4,000/month<br><small>AP & Telangana</small></div>
+            <button class="apply-btn">Apply</button></div>
         </div>
-        
-        <a href="#" class="explore">EXPLORE &nbsp; MORE &gt;&gt;</a>
-      </div>
-      <div class="right">
-        <img src="https://img.freepik.com/free-photo/smiling-woman-pointing-side_23-2148310434.jpg" alt="Woman">
-      </div>
+
+        <div class="card">
+            <span class="date">16 MAY 2025</span>
+            <div class="bookmark">🔖</div>
+            <h2>SBI</h2>
+            <h3>Credit Card Telecaller</h3>
+            <img src="image/careers/SBI Simply SAVE UPI Credit Card.png" alt="SBI" class="logo">
+            <div class="tags">
+                <span>Internship</span>
+                <span>Remote</span>
+                <span>Project Work</span>
+                <span>3 months Duration</span>
+            </div>
+            <div class="footer">
+            <div class="price">₹ 4,000/month<br><small>AP & Telangana</small></div>
+            <button class="apply-btn">APPLY</button></div>
+        </div>
+
+        <div class="card custom-bg">
+            <span class="date">16 MAY 2025</span>
+            <div class="bookmark">🔖</div>
+            <h2>HDFC</h2>
+            <h3>Field Agents</h3>
+            <img src="image/careers/HDFC Bonvoy Marriott Card.png" alt="HDFC" class="logo">
+            <div class="tags">
+                <span>Internship</span>
+                <span>Part Time</span>
+                <span>Project Work</span>
+                <span>3 months Duration</span>
+            </div>
+            <div class="footer">
+            <div class="price">₹ 8,000/month<br><small>AP & Telangana</small></div>
+            <button class="apply-btn">Apply</button></div>
+        </div>
+
+        <div class="card green-bg">
+            <span class="date">16 MAY 2025</span>
+            <div class="bookmark">🔖</div>
+            <h2>AXIS</h2>
+            <h3>Credit Card Telecaller</h3>
+            <img src="image/careers/Axis Reward Credit Card.png" alt="Axis" class="logo">
+            <div class="tags">
+                <span>Internship</span>
+                <span>On-site</span>
+                <span>Project Work</span>
+                <span>3 months Duration</span>
+            </div>
+            <div class="footer">
+            <div class="price">₹ 4,000/month<br><small>AP & Telangana</small></div>
+            <button class="apply-btn">Apply</button></div>
+        </div>
     </div>
-    <body style="background-color: #fff;">
-  </section>
- <section class="services">
-    <div class="services-inner">
-      <div class="left">
-        <h2>WHAT WE DO?</h2>
-        <h3>Our Services are designed To Help Both</h3>
-     <ul>
-        <li><strong>Customers</strong> – Get fast, direct access to loans and credit cards from trusted banks.</li>
-        <li>• without any hidden fees.</li>
-        <li><strong>Agents</strong> – Earn up to ₹1 Lakh/month by offering these financial products through our platform, with weekly payouts and full support.</li>
-      </ul>
-      <p style="color: #f7941e;"><h3>With QDS, you get:</h3></p>
-      <ul>
-        <li>• Direct tie-ups with leading banks</li>
-        <li>• 100% free services for customers</li>
-        <li>• Premium agent program to earn more</li>
-        <li>• 24/7 support and fast processing</li>
-      </ul>
-      <p style="color: #f7941e; font-size: 20px;"><h3>We’re not just a platform—we’re your trusted partner in financial success.</h3></p>
-      </div>
-      <div class="right">
-        <img src="https://img.freepik.com/free-photo/smiling-woman-pointing-side_23-2148310434.jpg" alt="Woman">
-      </div>
+    <hr class="custom-hr">
+
+      <div class="categories">
+        TRENDING CATEGORIES :-
+       <a href="" ><button>WORK FROM HOME</button></a>
+        <button>PART TIME</button>
+        <button>FULL TIME</button>
     </div>
-  </section><br><br>
-  <footer class="footer">
+
+    <div class="cards">
+        <div class="card">
+            <span class="date">16 MAY 2025</span>
+            <div class="bookmark">🔖</div>
+            <h2>AXIS</h2>
+            <h3>CREDIT CARD TELECALLER</h3>
+            <img src="image/careers/Axis Myzone Credit Card.png" alt="AXIS" class="logo">
+            <div class="tags">
+                <span>Senior Level</span>
+                <span>Full Time</span>
+                <span>Remote </span>
+                <span>For Freshers</span>
+            </div>
+            <div class="footer">
+            <div class="price">₹ 10,000/month<br><small>AP & Telangana</small></div>
+            <button class="apply-btn">Apply</button></div>
+        </div>
+
+        <div class="card">
+            <span class="date">16 MAY 2025</span>
+            <div class="bookmark">🔖</div>
+            <h2>HDFC</h2>
+            <h3>Credit Card Telecaller</h3>
+             <img src="image/careers/HDFC Bonvoy Marriott Card.png" alt="HDFC" class="logo">
+            <div class="tags">
+                <span>fuu time</span>
+                <span>Remote</span>
+                <span>Senior Level</span>
+                <span>For Freshers</span>
+            </div>
+            <div class="footer">
+            <div class="price">₹ 10,000/month<br><small>AP & Telangana</small></div>
+            <button class="apply-btn">Apply</button></div>
+        </div>
+
+        <div class="card custom-bg">
+            <span class="date">16 MAY 2025</span>
+            <div class="bookmark">🔖</div>
+            <h2>SBI</h2>
+            <h3>Credit Card Telecaller</h3>
+             <img src="image/careers/SBI Simply SAVE UPI Credit Card.png" alt="SBI" class="logo">
+            <div class="tags">
+                <span>Full Time</span>
+                <span>Senior Level</span>
+                <span>Remote</span>
+                <span>For Freshers</span>
+            </div>
+            <div class="footer">
+            <div class="price">₹ 10,000/month<br><small>AP & Telangana</small></div>
+                <a href=""><button class="apply-btn">Apply</button></a></div>
+        </div>
+
+        <div class="card green-bg">
+            <span class="date">16 MAY 2025</span>
+            <div class="bookmark">🔖</div>
+            <h2>HDFC</h2>
+            <h3>Loan Agent</h3>
+              <img src="image/careers/HDFC Bonvoy Marriott Card.png" alt="HDFC" class="logo">
+            <div class="tags">
+                <span>Full Time</span>
+                <span>Senior Level</span>
+                <span>Work From Office</span>
+            </div>
+            <div class="footer">
+            <div class="price">₹ 15,000/month<br><small>AP & Telangana</small></div>
+            <a href="#" ><button class="apply-btn">Apply</button></a></div>
+        </div>
+    </div>
+
+    <footer class="footerbelow">
     <div class="footer-container">
 
      
@@ -374,6 +497,5 @@ nav a {
     </div>
 
   </footer>
-</body>
 </body>
 </html>
