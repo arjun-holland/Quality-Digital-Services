@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quality Digital Services</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-body {
-      margin: 0;
-      padding-top: 0px;
-      font-family: "Poppins", sans-serif;
-/*      font-weight: bold;*/
+    body {
+      background: linear-gradient(to bottom, #e0f7fa, white);
+      font-family: 'Segoe UI', sans-serif;
     }
-     header {
+    header {
       background-color: #fff;
       padding: 10px 40px;
       display: flex;
@@ -54,107 +45,65 @@ body {
       font-weight: bold;
       font-size: 20px;
     }
-/* Services Section */
-.services {
-  background: linear-gradient(to bottom, #e6f3ff, #ffffff);
-  padding: 50px 40px;
-}
-
-.services-inner {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.left {
-  flex: 1;
-  min-width: 300px;
-}
-
-.right img {
-  max-width: 350px;
-  width: 100%;
-  height: auto;
-}
-
-.services h2 {
-  color: #f7941e;
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-.services h3 {
-  color: #f7941e;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-
-.services p {
-  margin: 10px 0;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.service-icons {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 30px 0;
-  gap: 20px;
-}
-
-.icon {
-  width: 100px;
-  text-align: center;
-}
-
-.icon img {
-  width: 60px;
-  height: 40px;
-  margin-bottom: 10px;
-}
-
-.icon p {
-  font-weight: bold;
-  font-size: 13px;
-  color: #ff6600;
-}
-
-.explore {
-  display: inline-block;
-  margin-top: 20px;
-  font-weight: bold;
-  color: #0056d2;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .services-inner {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .right {
-    margin-top: 30px;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav {
-    margin-top: 10px;
-  }
-
-  nav a {
-    display: inline-block;
-    margin-right: 15px;
-  }
-}.footer {
+    .section-title {
+      color: #f57c00;
+      font-weight: 700;
+    }
+    .service-icon {
+      font-size: 48px;
+      color: #00bcd4;
+    }
+    .service-box {
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+    .service-box:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .service-label {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #f57c00;
+    }
+    .explore-link {
+      font-weight: bold;
+      color: #0056d2;
+      text-decoration: none;
+    }
+    .explore-link:hover {
+      text-decoration: underline;
+    }
+    .right-img-above {
+      max-height: 400px;
+      object-fit: contain;
+      margin-right:400px;
+    }
+    .service-box img{
+      width: 100px;
+      height: 80px;
+    }
+     .section-title {
+      color: #f57c00;
+      font-weight: 800;
+    }
+    .highlight-orange {
+      color: #f57c00;
+      font-weight: 700;
+    }
+    .right-image {
+      max-width: 100%;
+      height: auto;
+    }
+    ul.custom-list {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    .custom-list li {
+      margin-bottom: 8px;
+    }
+    .footer {
       background-color: #06113C;
       color: #fff;
       padding: 40px 20px 20px;
@@ -247,13 +196,16 @@ body {
       font-size: 13px;
       color: #ccc;
     }
-</style>
+    a{
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-
- <header>
+  <header>
+    
     <div class="logo">
-      <img src="image/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo"/>
+      <img src="image\Hiring_Poster1Artboard_8@4x[1](1).png" alt="Logo" />
     </div>
     <nav>
       <a href="/dashboard">Home</a>
@@ -261,71 +213,111 @@ body {
       <a href="/careerneed">Careers</a>
       <a href="/logoutneed">Logout</a>
     </nav>
+  
   </header>
 
-  <section class="services">
-    <div class="services-inner">
-      <div class="left">
-        <h2>OUR SERVICES</h2>
-      
-        <p>At Quality Digital Services (QDS), we are committed to simplifying financial access for everyone.</p>
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <h2 class="section-title">OUR SERVICES</h2>
+        <p class="mt-3">At Quality Digital Services (QDS), we are committed to simplifying financial access for everyone.</p>
         <p>We provide all types of loans and credit cards in partnership with top banks across India, with zero charges for approvals or applications.</p>
-           <div class="service-icons">
-          <div class="icon">
-            <img src="image/images/Credit Cards Icon.png" alt="Credit Cards">
-            <p>CREDIT CARDS</p>
-          </div>
-          <div class="icon">
-            <img src="https://img.icons8.com/ios/100/bank.png" alt="Bank Accounts">
-            <p>BANK ACCOUNTS</p>
-          </div>
-          <div class="icon">
-            <img src="https://img.icons8.com/ios/100/money-transfer.png" alt="Personal Loans">
-            <p>PERSONAL LOANS</p>
-          </div>
-          <div class="icon">
-            <img src="https://img.icons8.com/ios/100/ticket.png" alt="Bookings">
-            <p>BOOKINGS</p>
-          </div>
-          <div class="icon">
-            <img src="https://img.icons8.com/ios/100/get-cash.png" alt="Earn with Us">
-            <p>EARN WITH US</p>
-          </div>
-        </div>
+
         
-        <a href="#" class="explore">EXPLORE &nbsp; MORE &gt;&gt;</a>
+          <div class="row text-center mt-4 g-3">
+           
+              <div class="col-6 col-md-4 col-lg-2">
+                 <a href="/creditcards">
+                <div class="service-box">
+                  <img src="image/credit-card.gif" class="service-icon" />
+                  <div class="service-label">CREDIT CARDS</div>
+                </div>
+                </a>
+              </div>
+            
+
+          
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="/bankaccount">
+              <div class="service-box">
+                <img src="image/bank.gif" class="service-icon" />
+                <div class="service-label">BANK ACCOUNTS</div>
+              </div>
+              </a>
+            </div>
+          
+          
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="/loan">
+              <div class="service-box">
+                <img src="image/loan.gif" class="service-icon" />
+                <div class="service-label">PERSONAL LOANS</div>
+              </div>
+            </a>
+            </div>
+         
+          
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="/booking">
+              <div class="service-box">
+                <img src="image/ticket.gif" class="service-icon" />
+                <div class="service-label">BOOKINGS</div>
+              </div>
+            </a>
+            </div>
+          
+          
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="service-box">
+                <img src="image/earn-money.gif" class="service-icon" />
+                <div class="service-label">EARN WITH US</div>
+              </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+          <a href="/main" class="explore-link fs-5">EXPLORE MORE &gt;&gt;</a>
+        </div>
       </div>
-      <div class="right">
-        <img src="https://img.freepik.com/free-photo/smiling-woman-pointing-side_23-2148310434.jpg" alt="Woman">
+      <div class="col-lg-4 text-center mt-4 mt-lg-0">
+        <img src="image/aboveimage.png" alt="Right Side Illustration" class="right-img-above">
       </div>
     </div>
-    <body style="background-color: #fff;">
-  </section>
- <section class="services">
-    <div class="services-inner">
-      <div class="left">
-        <h2>WHAT WE DO?</h2>
-        <h3>Our Services are designed To Help Both</h3>
-     <ul>
-        <li><strong>Customers</strong> – Get fast, direct access to loans and credit cards from trusted banks.</li>
-        <li>• without any hidden fees.</li>
-        <li><strong>Agents</strong> – Earn up to ₹1 Lakh/month by offering these financial products through our platform, with weekly payouts and full support.</li>
-      </ul>
-      <p style="color: #f7941e;"><h3>With QDS, you get:</h3></p>
-      <ul>
-        <li>• Direct tie-ups with leading banks</li>
-        <li>• 100% free services for customers</li>
-        <li>• Premium agent program to earn more</li>
-        <li>• 24/7 support and fast processing</li>
-      </ul>
-      <p style="color: #f7941e; font-size: 20px;"><h3>We’re not just a platform—we’re your trusted partner in financial success.</h3></p>
+<br><br><hr>
+
+
+    <div class="container py-5">
+    <div class="row align-items-center">
+      <!-- Left Content -->
+      <div class="col-lg-6">
+        <h2 class="section-title">WHAT WE DO ?</h2>
+        <p class="highlight-orange mt-4">Our services are designed to help both:</p>
+        <ul class="custom-list">
+          <li><strong>Customers</strong> – Get fast, direct access to loans and credit cards from trusted banks</li>
+          <li>without any hidden fees.</li>
+          <li><strong>Agents</strong> – Earn up to ₹1 Lakh/month by offering these financial products</li>
+        </ul>
+        <p>through our platform, with weekly payouts and full support.</p>
+
+        <p class="highlight-orange mt-4">With QDS, you get:</p>
+        <ul class="custom-list">
+          <li>Direct tie-ups with leading banks</li>
+          <li>100% free services for customers</li>
+          <li>Premium agent program to earn more</li>
+          <li>24/7 support and fast processing</li>
+        </ul>
+
+        <p class="highlight-orange mt-4">We’re not just a platform—we’re your trusted partner in financial success.</p>
       </div>
-      <div class="right">
-        <img src="https://img.freepik.com/free-photo/smiling-woman-pointing-side_23-2148310434.jpg" alt="Woman">
+
+      <!-- Right Image -->
+      <div class="col-lg-6 text-center mt-4 mt-lg-0">
+        <img src="image/belowimage.png" alt="Financial Services Illustration" class="right-image">
       </div>
     </div>
-  </section><br><br>
-   <footer class="footer">
+  </div>
+  </div>
+<footer class="footer">
     <div class="footer-container">
 
      
@@ -344,8 +336,8 @@ body {
 
       <div class="footer-column">
         <h3>Contact</h3>
-        <a href="/dashboard">Home</a>
-        <a href="/aboutneed">About</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
         <a href="#">Contact</a>
       </div>
 
@@ -368,16 +360,8 @@ body {
 
     </div>
 
-    <div class="footer-bottom">
-      <div class="footer-logo">
-
-<img src="image/logo.png" alt="Company Logo">
-      </div>
-      <div class="footer-copy">
-      </div>
-    </div>
 
   </footer>
 </body>
-</body>
+
 </html>
