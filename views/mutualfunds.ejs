@@ -238,7 +238,7 @@ body {
     </ul>
     <div class="buttons">
 <button onclick="location.href='/openLMC'">Apply With Login</button>
-<button onclick="location.href='/openWLMC'">Apply Without Login</button>
+ <button class="apply-without-login" data-card="C">Apply Without Login</button>
     </div>
 </div>
 
@@ -260,6 +260,58 @@ body {
     </ul>
     <div class="buttons">
 <button onclick="location.href='/openLMS'">Apply With Login</button>
-<button onclick="location.href='/openWLMS'">Apply Without Login</button>
+ <button class="apply-without-login" data-card="S">Apply Without Login</button>
     </div>
 </div>
+
+
+<div class="modal-overlay" style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 1000;">
+  <div class="modal-box" style="background: white; padding: 0; margin: 100px auto; width: 600px; border-radius: 10px; overflow: hidden; font-family: sans-serif; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+    <div class="modal-header" style="background: #f4a261; color: #000; padding: 15px 20px; font-size: 18px; font-weight: bold; position: relative;">
+      Are you sure you want to proceed without earning?
+      <span onclick="hideModal()" style="position: absolute; right: 15px; top: 15px; cursor: pointer; font-weight: bold; color: red; font-size: 20px;">✖</span>
+    </div>
+    <div class="modal-body" style="padding: 20px; font-size: 15px; color: #333;">
+      <p><strong>To earn commissions, you must log in before completing the application.</strong></p>
+      <ul style="margin: 10px 0 20px 20px;">
+        <li><strong>Login & Earn</strong> – Log in and complete the application to receive commissions.</li>
+        <li><strong>Proceed Without Earning</strong> – Continue without logging in, but you will not be eligible for any earnings.</li>
+      </ul>
+      <p>Please choose an option to proceed.</p>
+    </div>
+    <div class="modal-footer" style="padding: 20px; display: flex; justify-content: space-between;">
+      <button onclick="location.href='/agents-login'" style="padding: 10px 20px; background: #a8dadc; border: 2px solid #0077b6; border-radius: 8px; cursor: pointer; font-weight: bold;">Login & Earn</button>
+      <button id="proceedWithoutLogin" style="padding: 10px 20px; background: #a8dadc; border: 2px solid #0077b6; border-radius: 8px; cursor: pointer; font-weight: bold;">Proceed Without Earning</button>
+    </div>
+
+  </div>
+</div>
+
+    <script>
+  const cardRoutes = {
+    "C": "/openWLMC",
+    "S": "/openWLMS"
+  };
+
+  let selectedRoute = "#";
+
+  document.querySelectorAll('.apply-without-login').forEach(button => {
+    button.addEventListener('click', () => {
+      const cardName = button.getAttribute('data-card');
+      selectedRoute = cardRoutes[cardName] || "#";
+      document.querySelector('.modal-overlay').style.display = 'block';
+    });
+  });
+
+  function hideModal() {
+    document.querySelector('.modal-overlay').style.display = 'none';
+    selectedRoute = "#";
+  }
+
+  document.getElementById('proceedWithoutLogin').addEventListener('click', () => {
+    location.href = selectedRoute;
+  });
+</script>
+
+</html>
+        
