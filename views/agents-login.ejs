@@ -11,12 +11,40 @@
       background: linear-gradient(to bottom, #f9f9f9, #d7eaff);
     }
 
-    header {
+   header {
+      background-color: #fff;
+      padding: 10px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 40px;
-      border-bottom: 2px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 20px;
+    }
+
+    .logo span b {
+      color: #f90;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
     }
 
     /* Toast Notification CSS */
@@ -41,25 +69,6 @@
     .toast.visible {
       opacity: 1;
       transform: translateY(0);
-    }
-    .logo {
-      font-size: 1.5em;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-    }
-
-    .logo img {
-      height: 60px;
-      width: 250px;
-      margin-right: 10px;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: orange;
-      font-weight: bold;
     }
 
     .container {
