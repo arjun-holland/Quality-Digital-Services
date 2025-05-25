@@ -11,39 +11,37 @@
       background: linear-gradient(to bottom, #f9f9f9, #d7eaff);
     }
 
-  .navbar {
-      display: flex;
-      align-items: center;
-      background-color: white;
-      /* background-color: #fff; */
-      padding: 10px 20px;
-      /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      margin-right: auto;
-    }
-    .logo img {
-      height: 100px;
-      margin-right: 10px;
-      width: 500px;
-    }
-    .logo span {
-      font-size: 18px;
-      font-weight: bold;
-      color: #333;
-    }
-    .nav-links a {
-      text-decoration: none;
-      margin-left: 40px;
-      color: orange;
-      font-weight: 800;
-      font-size: 20px;
-    }
-    .nav-links a:hover {
-      text-decoration: underline;
-    }
+ 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white; /* Optional */
+  border-bottom: 2px solid #ccc;
+}
+
+.logo img {
+  height: 80px; /* Or adjust as needed */
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin-left: 40px;
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
     /* Toast Notification CSS */
     .toast {
       position: fixed;
@@ -161,19 +159,15 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="navbar">
-      <a href="/main"><div class="logo">
+   <header class="navbar">
+  <div class="logo">
     <img src="image/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo">
-  </div></a>
-      <div class="nav-links">
-        <a href="/main">Home</a>
-        <a href="/careerneeds">Careers</a>
-       
-    
-      </div>
-    </div>
-  </header>
+  </div>
+  <nav class="nav-links">
+    <a href="/main">Home</a>
+    <a href="/careerneeds">Careers</a>
+  </nav>
+</header>
 
   <div class="container">
     <div class="left-content">
