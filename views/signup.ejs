@@ -6,22 +6,7 @@
   <title>Quality Digital Services - Signup</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-   <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quality Digital Services - Signup</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Agent Login - Quality Digital Services</title>
-  <style>
-   body {
+    body {
   margin: 0;
   padding-top: 0px;
   font-family: "Poppins", sans-serif;
@@ -37,6 +22,7 @@ header {
 }
 
 .logo {
+  padding-left: 40px;
   display: flex;
   align-items: center;
 }
@@ -66,199 +52,6 @@ nav a.active {
   color: #cc5200; /* Darker orange on hover or when active */
 }
 
-    /* Toast Notification CSS */
-    .toast {
-      position: fixed;
-      top: 30px;
-      right: 40vw;
-      background-color: #f44336;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      opacity: 0;
-      transform: translateY(-20px);
-      transition: opacity 0.3s, transform 0.3s;
-      z-index: 1000;
-    }
-
-    .toast.success {
-      background-color: #4caf50;
-    }
-
-    .toast.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 40px 20px;
-      flex-wrap: wrap;
-    }
-
-    .left-content {
-      max-width: 450px;
-    }
-
-    .left-content h1 {
-      font-size: 26px;
-      color: #000;
-    }
-
-    .left-content span {
-      color: orange;
-      font-weight: bold;
-    }
-
-    .left-content p {
-      font-size: 14px;
-      color: #555;
-    }
-
-    .left-content img {
-      width: 100%;
-      max-width: 400px;
-      margin-top: 20px;
-    }
-
-    .login-box {
-      background: #e6f3fa;
-      padding: 30px 25px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      width: 300px;
-      text-align: center;
-    }
-
-    .login-box h2 {
-      margin-bottom: 20px;
-      color: #003366;
-    }
-
-    .login-box button {
-      background: white;
-      border: 1px solid #ccc;
-      padding: 10px;
-      width: 100%;
-      margin-bottom: 15px;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: bold;
-    }
-
-    .login-box button img {
-      width: 20px;
-      margin-right: 10px;
-    }
-
-    .login-box input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    .login-box a {
-      font-size: 12px;
-      text-decoration: none;
-      color: #007bff;
-    }
-
-    .login-box .login-btn {
-      background-color: #fff;
-      border: 2px solid #333;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    .login-box p {
-      font-size: 12px;
-      margin-top: 15px;
-    }
-  </style>
-</head>
-<body>
-   <header class="navbar">
-  <div class="logo">
-    <img src="image/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo">
-  </div>
-  <nav class="nav-links">
-    <a href="/main">Home</a>
-    <a href="/careerneeds">Careers</a>
-  </nav>
-</header>
-
-  <div class="container">
-    <div class="left-content">
-      <h1><span>Log in</span> to Earn Unlimited Earnings</h1>
-      <p>Use our Services and Get Commissions on Every Service</p>
-      <img src="image/analysis.png" alt="Agent Earnings Illustration" />
-    </div>
-
-    <div class="login-box">
-      <h2>LOGIN</h2>
-      <form id="loginForm" action="/loginAgent" method="POST">
-        <input type="text" pattern="[A-Za-z0-9]+" name="agentId" placeholder="Enter Your Agent ID" />
-        <input type="password" name="password" placeholder="Enter Your Password" />
-        <p>ALREADY HAVE AN ACCOUNT? <a href="/changepasswordneed">Change Password</a></p>
-        <button type="submit" class="login-btn">LOGIN</button>
-      </form>
-      <p>DON'T HAVE AN ACCOUNT? <a href="/agents-signup">CREATE ACCOUNT</a></p>
-    </div>
-  </div>
-  
-  <script>
-  function showToast(message, type = "error") {
-    const toast = document.createElement("div");
-    toast.className = `toast ${type}`;
-    toast.textContent = message;
-    document.body.appendChild(toast);
-
-    setTimeout(() => {
-      toast.classList.add("visible");
-    }, 100);
-
-    setTimeout(() => {
-      toast.classList.remove("visible");
-      setTimeout(() => toast.remove(), 300);
-    }, 3000);
-  }
-
-  document.getElementById('loginForm').addEventListener('submit', async function (e) {
-    e.preventDefault();
-    const form = e.target;
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
-
-    try {
-      const response = await fetch('/loginAgent', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-        credentials: 'include'
-      });
-
-      const result = await response.json();
-
-      if (response.ok) {
-        showToast(result.message, 'success');
-        setTimeout(() => window.location.href = '/dashboard', 1000); // Redirect to dashboard
-      } else {
-        showToast(result.message);
-      }
-    } catch (err) {
-      showToast('Login failed. Please try again.');
-    }
-  });
-</script>
-</body>
-</html>
-
 .ct{
   padding-top: 50px;
 }
@@ -306,13 +99,12 @@ nav a.active {
       text-decoration: underline;
     }
     .pointer-img {
-        width: 100%;
-        max-width: 500px;      /* Adjust based on layout */
-        height: auto;
+        width: 934px;      /* Adjust based on layout */
+        height: 357px;
         display: block;
         margin-top: 0px;
         margin-left: 380px;
-        object-fit: contain;   /* Preserves image aspect */
+        /* object-fit: contain;   Preserves image aspect */
     }
     .signup-illustration {
         max-width: 300px; /* increase this from 200px */
@@ -325,120 +117,6 @@ nav a.active {
   <div class="logo">
     <img src="image/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo">
   </div>
-  <nav class="nav-links">
-    <a href="/main">Home</a>
-    <a href="/aboutneeds">About Us</a>
-    <a href="/careerneeds">Careers</a>
-  </nav>
-</header>
-  <div class="container-fluid py-5" id = "ct">
-    <div class="row align-items-center">
-
-      <!-- Left Section -->
-      <div class="col-lg-6 text-center text-lg-start info-section">
-        <h1>Welcome to <span class="highlight">Quality Digital Services</span></h1>
-        <p class="mt-3 fs-5">Choose your Signup option to get started</p>
-        <div class="mt-4 text-start px-3">
-          <h6 class="highlight">USER REGISTRATION :</h6>
-          <p class="mb-4">NO REGISTRATION FEE</p>
-          <h6 class="highlight">AGENTS REGISTRATION :</h6>
-          <p>₹499 / LIFE TIME FREE ACCESS &amp; EARN UPTO 50K PER MONTH TO USE OUR SERVICES</p>
-        </div>
-        <div class="mt-4 text-center d-none d-lg-block">
-          <img src="image/image 80.png" alt="Pointing Woman" class="pointer-img" style="max-width: 300px;"/>
-        </div>
-      </div>
-
-      <!-- Right Section -->
-      <div class="col-lg-5 offset-lg-1">
-        <div class="signup-box text-center">
-          <h3 class="mb-4">CHOOSE YOUR SIGNUP BELOW</h3>
-          <div class="d-grid gap-3 mb-4">
-            <a href="/user-signup" class="btn signup-btn">USER SIGNUP</a>
-            <a href="/agents-signup" class="btn signup-btn">AGENT SIGNUP</a>
-          </div>
-          <div class="login-link">
-            DONT HAVE AN ACCOUNT ? <a href="/login">LOGIN ACCOUNT</a>
-          </div>
-          <div class="signup-illustration mt-4">
-            <img src="image/20602851_6333211 1.png" alt="Sign Up Illustration" class="img-fluid">
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-
-.ct{
-  padding-top: 50px;
-}
-    .highlight {
-      color: #ff6600;
-      font-weight: bold;
-    }
-    .info-section {
-      padding-bottom: 50px;
-    }
-    .info-section h1 {
-      font-size: 2.5rem;
-    }
-    .signup-box {
-      background-color: #f8f0ff;
-      border-radius: 20px;
-      padding: 2rem;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    }
-    .signup-box h3 {
-      font-weight: bold;
-      color: #ff6600;
-    }
-    .signup-btn {
-      border-radius: 10px;
-      font-weight: 600;
-      color: #0d3c61;
-      border: 2px solid #0d3c61;
-      background-color: white;
-    }
-    .signup-btn:hover {
-      background-color: #0d3c61;
-      color: white;
-    }
-    .login-link {
-      font-weight: 500;
-      color: #000;
-      margin-top: 1.2rem;
-    }
-    .login-link a {
-      color: #0047ab;
-      text-decoration: none;
-    }
-    .login-link a:hover {
-      text-decoration: underline;
-    }
-    .pointer-img {
-        width: 100%;
-        max-width: 500px;      /* Adjust based on layout */
-        height: auto;
-        display: block;
-        margin-top: 0px;
-        margin-left: 380px;
-        object-fit: contain;   /* Preserves image aspect */
-    }
-    .signup-illustration {
-        max-width: 300px; /* increase this from 200px */
-        margin: 1.5rem auto 0;
-    }
-  </style>
-</head>
-<body>
-<header class="navbar">
-  <a href="/main"><div class="logo">
-    <img src="image/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo">
-  </div></a>
   <nav class="nav-links">
     <a href="/main">Home</a>
     <a href="/careerneeds">Careers</a>
