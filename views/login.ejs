@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,53 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Quality Digital Services</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+body {
+  margin: 0;
+  padding-top: 0px;
+  font-family: "Poppins", sans-serif;
+}
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #f7f9ff, #e9e8fc);
-      color: #333;
-    }
+header {
+  background-color: #fff;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-    .navbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: white;
-      padding: 10px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      border-bottom: 1px solid #ccc;
-    }
+.logo {
+  display: flex;
+  align-items: center;
+}
 
-    .logo {
-      display: flex;
-      align-items: center;
-    }
+.logo img {
+  width: 400px;
+  height: 100px;
+  margin-right: 10px;
+}
 
-    .logo img {
-      height: 60px;
-      width: 250px;
-    }
+nav {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Adds clean spacing between links */
+}
 
-    .nav-links a {
-      text-decoration: none;
-      margin-left: 30px;
-      color: orange;
-      font-weight: 800;
-      font-size: 20px;
-    }
+nav a {
+  text-decoration: none;
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
 
-    .nav-links a:hover {
-      text-decoration: underline;
-    }
+nav a:hover,
+nav a.active {
+  color: #cc5200; /* Darker orange on hover or when active */
+}
 
-    .container {
+  .container {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
@@ -89,7 +89,7 @@
       padding-left: 100px;
       padding-right: 200px;
       transform: translateX(-50%);
-      max-height: 500px;
+      max-height: 570px;
     }
 
     .right-section {
@@ -162,23 +162,26 @@
         margin: 20px 0;
       }
     }
+
   </style>
 </head>
 <body>
 
   <!-- ✅ Fixed navbar at the top -->
-  <div class="navbar">
-    <a href="/main"><div class="logo">
+  <header>
+  <div class="logo">
+   <a href="/main"><div class="logo">
     <img src="image/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo">
   </div></a>
-    <div class="nav-links">
-      <a href="/main">Home</a>
-      <a href="/careerneeds">Careers</a>
-      <a href="/login">Login</a>
-    </div>
   </div>
+  <nav>
+    <a href="/main" class="active">Home</a>
+    <a href="/careerneeds">Careers</a>
+  </nav>
+</header>
 
-  <div class="container">
+
+ <div class="container">
     <div class="left-section">
       <h1>Welcome to <span>Quality Digital Services</span></h1>
       <h2 style="margin-bottom: 20px;">Choose Your Login Option To Get Started</h2>
@@ -188,7 +191,7 @@
 
     <img src="image/kj.png" alt="Woman" class="middle-image"  />
     
-    <div style="padding-right: 150px;">
+    <div style="padding-right: 90px;">
       <div class="right-section">
         <h3>CHOOSE YOUR LOGIN BELOW</h3>
         <a href="/user-login"><button id="user_login">USER LOGIN</button></a>
@@ -198,6 +201,7 @@
       </div>
     </div>
   </div>
+
 
 </body>
 </html>
