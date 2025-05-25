@@ -130,21 +130,33 @@
           <form action="/signup" method="POST">
             <div class="mb-3">
               <label for="email" class="form-label">EMAIL</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="arjun@example.com" required/>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email" required/>
+            </div>
+
+            <div class="mb-3">
+              <div class="col">
+                <label for="first-name" class="form-label">NAME</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name" required/>
+              </div>
             </div>
             <div class="mb-3">
               <label for="password" class="form-label">PASSWORD</label>
               <input type="password" class="form-control" id="password" name="password" placeholder="Must be 6 atleast charaters" required/>
             </div>
+            
             <div class="mb-3">
-              <div class="col">
-                <label for="first-name" class="form-label">NAME</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Arjun" required/>
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="mobile" class="form-label">MOBILE NUMBER</label>
-              <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="+91 9876543210" required/>
+        <label for="mobile" class="form-label">MOBILE NUMBER</label>
+<input
+  type="tel"
+  class="form-control"
+  id="mobile"
+  name="mobile"
+  placeholder="Enter Your Mobile Number"
+  pattern="^\d{10}$"
+  title="Please enter exactly 10 digits"
+  required
+/>
+
             </div>
             <button type="submit" class="btn btn-primary w-100 submit-btn">SIGN UP</button>
 
