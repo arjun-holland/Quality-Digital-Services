@@ -63,6 +63,8 @@ body {
       color: white;
       padding: 17px 10px;
     }
+
+      
     h2 {
       padding-top: 40px;
       text-align: center;
@@ -249,8 +251,7 @@ a {
 
 <body>
   <header>
-    
-      <a href="/dashboard">
+    <a href="/dashboard">
     <div class="logo">
       <img src="image/dashboard/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo" />
     </div>
@@ -715,9 +716,35 @@ a {
       </div>
 
       <div class="footer-column newsletter">
-        <h3>Newsletter</h3>
-        <input type="email" placeholder="Email Address">
-        <button>Subscribe</button>
+                 <h3 style="font-family: Arial;">Get A Call-Back From Our Team</h3>
+  <form action="YOUR_GOOGLE_FORM_URL" method="POST" target="hidden_iframe" onsubmit="return validate()" novalidate>
+  <input type="tel" name="entry.X" required pattern="\d{10}" maxlength="10" placeholder="Enter 10-digit number" 
+         style="padding:5px;border:1px solid #ccc;border-radius:4px;" id="phone">
+  <button type="submit" style="background:none;border:none;cursor:pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="green" viewBox="0 0 24 24">
+      <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1v3.61a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1h3.6a1 1 0 011 1c0 1.25.2 2.48.57 3.58a1 1 0 01-.25 1.01l-2.3 2.2z"/>
+    </svg>
+  </button>
+</form>
+<div id="msg" style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
+background:#000;color:#fff;padding:10px 15px;border-radius:5px;z-index:999;">
+  We will contact you soon!
+</div>
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+<script>
+  function validate() {
+    const phone = document.getElementById('phone');
+    if (!/^\d{10}$/.test(phone.value)) {
+      phone.setCustomValidity("Enter exactly 10 digits");
+      phone.reportValidity();
+      return false;
+    }
+    phone.setCustomValidity(""); // Clear error
+    document.getElementById('msg').style.display = 'block';
+    return true;
+  }
+</script>
 
         <div class="social-icons">
           <a href="Instagram"><img src="image/insta.jpeg" alt="Instagram">Instagram </a>
