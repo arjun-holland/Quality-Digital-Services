@@ -59,7 +59,6 @@ body {
     }
     h2 {
       text-align: center;
- padding-top: 40px;
       color: black;
       font-size: 35px;
       margin-left: 70px;
@@ -218,9 +217,9 @@ body {
   </style>
     <header>
       
-     <a href="/main"><div class="logo">
-    <img src="image/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo">
-  </div></a>
+      <div class="logo">
+        <img src="image/main/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo" />
+      </div>
       <nav>
         <a href="/main">Home</a>
         <!--<a href="/aboutneeds">About Us</a>-->
@@ -673,7 +672,7 @@ background:#000;color:#fff;padding:10px 15px;border-radius:5px;z-index:999;">
 
     document.body.addEventListener('click', function (e) {
       if (!navbar.contains(e.target) && !footer.contains(e.target)) {
-        alert('Clicked outside navbar and footer!');
+        alert('Login First, To Use The Services!');
       }
     });
   });
