@@ -156,6 +156,44 @@
       vertical-align: middle;
       border-radius: 4px;
     }
+    .footers {
+      background-color: #06113C;
+      color: #fff;
+      padding: 40px 20px 20px;
+    }
+
+    .footers-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footers-column {
+      flex: 1;
+      min-width: 180px;
+      margin: 10px;
+    }
+
+    .footers-column h3 {
+      margin-bottom: 15px;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .footers-column a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      margin: 8px 0;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    .footers-column a:hover {
+      color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -414,16 +452,16 @@
     </div>
   </div>
 </div><br><hr>
-<footer class="footer">
-    <div class="footer-container">
+ <footer class="footers">
+    <div class="footers-container">
 
      
-      <div class="footer-column">
+      <div class="footers-column">
         <h3>Service</h3>
-        <a href="/bankaccount">Bank Loans</a>
+        <a href="/loan">Bank Loans</a>
         <a href="/loan">Personal Loans</a>
         <a href="/loan">Business Loans</a>
-        <a href="/goldloan">Gold Loans</a>
+        <a href="/loan">Gold Loans</a>
         <a href="/booking">Bookings</a>
         <a href="/creditcards">Credit cards</a>
         <a href="/demataccount">Demat Accounts</a>
@@ -431,19 +469,48 @@
 
       </div>
 
-      <div class="footer-column">
+      <div class="footers-column">
         <h3>Contact</h3>
         <a href="/dashboard">Home</a>
-        <a href="/aboutneed">About</a>
         <a href="#">Contact</a>
       </div>
 
-      <div class="footer-column newsletter">
-        <h3>Newsletter</h3>
-        <input type="email" placeholder="Email Address">
-        <button>Subscribe</button>
+      <div class="footers-column newsletter">
+                 <h3 style="font-family: Arial;">Get A Call-Back From Our Team</h3>
+  <form action="YOUR_GOOGLE_FORM_URL" method="POST" target="hidden_iframe" onsubmit="return validate()" novalidate>
+  <input type="tel" name="entry.X" required pattern="\d{10}" maxlength="10" placeholder="Enter 10-digit number" 
+         style="padding:5px;border:1px solid #ccc;border-radius:4px;" id="phone">
+  <button type="submit" style="background:none;border:none;cursor:pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="green" viewBox="0 0 24 24">
+      <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1v3.61a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1h3.6a1 1 0 011 1c0 1.25.2 2.48.57 3.58a1 1 0 01-.25 1.01l-2.3 2.2z"/>
+    </svg>
+  </button>
+</form>
+<div id="msg" style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
+background:#000;color:#fff;padding:10px 15px;border-radius:5px;z-index:999;">
+  We will contact you soon!
+</div>
 
-         <div class="social-icons">
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+<script>
+  function validate() {
+    const phone = document.getElementById('phone');
+    if (!/^\d{10}$/.test(phone.value)) {
+      phone.setCustomValidity("Enter exactly 10 digits");
+      phone.reportValidity();
+      return false;
+    }
+    phone.setCustomValidity(""); // Clear error
+    document.getElementById('msg').style.display = 'block';
+    setTimeout(() => {
+      msg.style.display = 'none';
+    }, 2000);
+    return true;
+  }
+</script>
+
+
+               <div class="social-icons">
           <a href="https://www.instagram.com/qualitydigitalservices?igsh=d3ptbXM1dmxtajJw" style="text-decoration:none;"><img src="image/instagram (1).png" alt="Instagram">Instagram </a>
           <a href="https://www.facebook.com/share/19YZLo1YXp/" style="text-decoration:none;"><img src="image/facebook.png" alt="Facebook">Facebook</a>
           <a href="https://wa.link/4wl9lj" style="text-decoration:none;"><img src="image/whatsapp.png" alt="Facebook">Whatsapp</a>
@@ -457,16 +524,7 @@
       </div>
 
     </div>
-
-    <div class="footer-bottom">
-      <div class="footer-logo">
-      </div>
-      <div class="footer-copy">
-      </div>
-    </div>
-
   </footer>
-
 
 
 </body>
