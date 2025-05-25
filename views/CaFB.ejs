@@ -371,7 +371,7 @@
   const uploadedLinks = {};
 
   for (const name of uploadFields) {
-    const fileInput = document.querySelector([name="${name}"]);
+ const fileInput = document.querySelector(`[name="${name}"]`);
     if (!fileInput || !fileInput.files.length) continue;
 
     const urls = [];
