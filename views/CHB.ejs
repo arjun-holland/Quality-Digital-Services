@@ -377,7 +377,7 @@
     const urls = [];
     for (const file of fileInput.files) {
       const base64 = await toBase64(file);
-      const response = await fetch("https://script.google.com/macros/s/AKfycbwqcXfWeGs5ztv3nLfm512PAuUUR-4kTE6mIDaJ4g-9Izr7h5i9wkWnQBVM6Emf7E8MMg/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbygKu0MujmsSZuyyjY4QdkDYj3LW3rHVCsxD9fU47r3KaxAIGd0j2DF0fPGv5mjkc7LiA/exec", {
         method: "POST",
         body: new URLSearchParams({
           media: base64,
@@ -399,7 +399,7 @@
 
   const payload = new URLSearchParams([...formData.entries()]);
 
-  fetch("https://script.google.com/macros/s/AKfycbwqcXfWeGs5ztv3nLfm512PAuUUR-4kTE6mIDaJ4g-9Izr7h5i9wkWnQBVM6Emf7E8MMg/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbygKu0MujmsSZuyyjY4QdkDYj3LW3rHVCsxD9fU47r3KaxAIGd0j2DF0fPGv5mjkc7LiA/exec", {
     method: "POST",
     body: payload
   })
