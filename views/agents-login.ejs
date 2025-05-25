@@ -5,43 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Agent Login - Quality Digital Services</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #f9f9f9, #d7eaff);
-    }
+   body {
+  margin: 0;
+  padding-top: 0px;
+  font-family: "Poppins", sans-serif;
+}
 
- 
-.navbar {
+header {
+  background-color: #fff;
+  padding: 10px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background-color: white; /* Optional */
-  border-bottom: 2px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.logo img {
-  height: 80px; /* Or adjust as needed */
-  width: auto;
-}
-
-.nav-links {
+.logo {
   display: flex;
   align-items: center;
 }
 
-.nav-links a {
-  text-decoration: none;
-  margin-left: 40px;
-  color: orange;
-  font-weight: bold;
-  font-size: 20px;
+.logo img {
+  width: 400px;
+  height: 100px;
+  margin-right: 10px;
 }
 
-.nav-links a:hover {
-  text-decoration: underline;
+nav {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Adds clean spacing between links */
 }
+
+nav a {
+  text-decoration: none;
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #cc5200; /* Darker orange on hover or when active */
+}
+
     /* Toast Notification CSS */
     .toast {
       position: fixed;
