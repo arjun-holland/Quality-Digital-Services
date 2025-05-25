@@ -57,12 +57,14 @@ body {
       flex-wrap: wrap;
       justify-content: center;
       max-width:100%;
+      height: 698px; /* increase as needed */
       /* margin: 20px; */
       background: linear-gradient(to right, #001f3f, #003366);
       color: white;
       padding: 17px 10px;
     }
     h2 {
+      padding-top: 40px;
       text-align: center;
       color: black;
       font-size: 35px;
@@ -221,24 +223,30 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
+
+
 .grid-item {
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.7s cubic-bezier(0.50, 1, 0.5, 1);
 }
 
 .grid-item:hover {
-  transform: scale(1.02);
+  transform: scale(1.15);
 }
+
+
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
-
   </style>
+
+
+
 <body>
   <header>
     
