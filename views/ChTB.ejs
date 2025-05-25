@@ -131,11 +131,13 @@ button:hover {
 </head>
 <body>
   <header class="header">
+    <a href="/dashboard">
     <div class="logo">
-      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+      <img src="image/dashboard/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo" />
+    </div>
+  </a>
     <nav class="nav-links">
       <a href="/dashboard">Home</a>
-      <a href="/aboutneed">About Us</a>
       <a href="/careerneed">Careers</a>
     </nav>
   </header>
@@ -263,7 +265,7 @@ Terms & Conditions:
         data.append(pair[0], pair[1]);
       }
 
-      fetch(" https://script.google.com/macros/s/AKfycbyRW6YHxxLB2QkLi06X0ysirstHil9EzP3LEZs0bk3XYLihsSaZVkgmEe8hDvY31dXWCg/exec ", {
+      fetch("https://script.google.com/macros/s/AKfycbxgs_N0FHnKUXHbf8__S-JBjQVvvAK6CtK3EF-b-OScezB3wusevRHeidQOf3xfpNgXvw/exec", {
         method: "POST",
         body: data
       })
