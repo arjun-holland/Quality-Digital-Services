@@ -3,189 +3,184 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Airtel Thanks App - Quality Digital Services</title>
+  <title>Quality Digital Services</title>
   <link rel="stylesheet" href="style.css"/>
   <style>
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-body {
-  background-color: #f2f4ff;
-  padding: 20px;
-}
+    body {
+      background-color: #f2f4ff;
+      /* padding: 20px; */
+    }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-}
+    
+header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-.logo img {
-  width: 300px;
-  height: 80px;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
-.logo .highlight {
-  color: #f57c00;
-}
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
 
-.nav-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #f57c00;
-  font-weight: 500;
-}
+    .logo span {
+      font-size: 20px;
+    }
 
-.main-container {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
+    .logo span b {
+      color: #f90;
+    }
 
-.info-card {
-  flex: 2;
-  background-color: #e8f1ff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-.info-card h2 {
-  margin-bottom: 15px;
-  color: #c60000;
-}
+    .main-container {
+      display: flex;
+      gap: 20px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      width: 100%;
+    }
 
-.info-card h3 {
-  margin-top: 20px;
-  color: #333;
-}
+    .info-card {
+      flex: 2;
+      background-color: #e8f1ff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
 
-.info-card ul, .info-card ol {
-  padding-left: 20px;
-  margin-top: 10px;
-}
+    .info-card h2 {
+      margin-bottom: 15px;
+      color: #c60000;
+    }
 
-.app-logo {
-  width: 60px;
-  margin-bottom: 10px;
-}
+    .info-card h3 {
+      margin-top: 20px;
+      color: #333;
+    }
 
-.form-card {
-  flex: 1;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
+    .info-card ul, .info-card ol {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
 
-.form-card h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
+    .app-logo {
+      width: 60px;
+      margin-bottom: 10px;
+    }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+    button {
+      padding: 12px 24px;
+      background-color: #f57c00;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 30px;
+    }
 
-label {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
-
-input, select {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  margin-bottom: 10px;
-}
-
-.button {
-  padding: 12px;
-  background-color: #f57c00;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.button:hover {
-  background-color: #e06b00;
-}
-</style>
+    button:hover {
+      background-color: #e06b00;
+    }
+  .continue-btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+    }
+  </style>
 </head>
 <body>
- <header class="header">
-    <div class="logo">
-      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+   <header class="header">
+    <a href="/dashboard"><div class="logo">
+      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div></a>
     <nav class="nav-links">
       <a href="/dashboard">Home</a>
-      <a href="/aboutneed">About Us</a>
       <a href="/careerneed">Careers</a>
+      <a href="/logoutneed">Logout</a>
     </nav>
   </header>
-  <main class="main-container">
-    <section class="info-card">
-      <img src="image/POP Club Credit Card By Yes Bank.png" alt="Airtel Logo" class="app-logo"/>
-      <h2>pop club Credit Card Bank by Yes Bank</h2>
-      <h3> 🎁 Benefits</h3>
-      <ul>
-        <li>💸 No joining fee</li>
-        <li>📢 ₹5,000 worth joining benefits</li>
-        <li>🎉 10% POPcoins* on all online payments using the POPclub RuPay Credit Card</li>
-        <li>🔗 Extra 5% POPcoins* when linked with POP UPI</li>
-        <h2>✨ Redeem POPcoins for top vouchers from:</h2>
-        <li>Zomato 🍲</li>
-        <li>Blinkit 🛍</li>
-        <li>Cleartrip ✈</li>
-        <li>Rapido 🛵</li>
-        <li> PharmEasy 💊</li>
-        <li>Cult 💪</li>
-        <li>+500 new-age brands</li>
-      </ul>
-      <h3> ✅ Eligibility Criteria</h3>
-      <ul>
-        <li>Age: 21–60 years</li>
-        <li>Profession: Salaried or self-employed</li>
-        <h2>Income:</h2>
-        <li>Minimum monthly salary: ₹25,000, or</li>
-        <li>Income Tax Return: ₹5 Lakhs annually</li>
-      </ul>
-      <h3>📝 How to Apply</h3>
-      <ul>
-        <li>Enter your name, DOB, and mobile number</li>
-        <li>Click on “Apply Now”</li>
-        <li>Follow on-screen instructions</li>
-        <li>Receive *confirmation message* upon completion</li>
-      </ul>
-      <h3> 📌 Terms & Conditions</h3>
-      <ol>
-        <li>Get extra 5% POPcoins when linked to POP UPI.</li>
-        <li>POPcoins* can be redeemed for gift vouchers across 500+ brands.</li>
-        <li>Reward structures and redemption values may change anytime.</li>
-        <li>All standard cardholder terms and conditions apply.</li>
-      </ol>
-    </section>
 
-   
-  </main>
-<br><br>
-    <a href="/CPB" class="button" style="margin-left: 50%; text-decoration:none">Click Here To Continue</a>
-  
+
+  <div class="content-wrapper">
+    <main class="main-container">
+      <section class="info-card">
+        <img src="image/POP Club Credit Card By Yes Bank.png" alt="Airtel Logo" class="app-logo"/>
+        <h2>POP Club Credit Card by Yes Bank</h2>
+        <h3>🎁 Benefits</h3>
+        <ul>
+          <li>💸 No joining fee</li>
+          <li>📢 ₹5,000 worth joining benefits</li>
+          <li>🎉 10% POPcoins* on all online payments using the POPclub RuPay Credit Card</li>
+          <li>🔗 Extra 5% POPcoins* when linked with POP UPI</li>
+        </ul>
+        <h2>✨ Redeem POPcoins for top vouchers from:</h2>
+        <ul>
+          <li>Zomato 🍲</li>
+          <li>Blinkit 🛍</li>
+          <li>Cleartrip ✈</li>
+          <li>Rapido 🛵</li>
+          <li>PharmEasy 💊</li>
+          <li>Cult 💪</li>
+          <li>+500 new-age brands</li>
+        </ul>
+        <h3>✅ Eligibility Criteria</h3>
+        <ul>
+          <li>Age: 21–60 years</li>
+          <li>Profession: Salaried or self-employed</li>
+        </ul>
+        <h2>Income:</h2>
+        <ul>
+          <li>Minimum monthly salary: ₹25,000, or</li>
+          <li>Income Tax Return: ₹5 Lakhs annually</li>
+        </ul>
+        <h3>📝 How to Apply</h3>
+        <ul>
+          <li>Enter your name, DOB, and mobile number</li>
+          <li>Click on “Apply Now”</li>
+          <li>Follow on-screen instructions</li>
+          <li>Receive *confirmation message* upon completion</li>
+        </ul>
+        <h3>📌 Terms & Conditions</h3>
+        <ol>
+          <li>Get extra 5% POPcoins when linked to POP UPI.</li>
+          <li>POPcoins* can be redeemed for gift vouchers across 500+ brands.</li>
+          <li>Reward structures and redemption values may change anytime.</li>
+          <li>All standard cardholder terms and conditions apply.</li>
+        </ol>
+      </section>
+    </main>
+
+    <button class="continue-btn" onclick="location.href='/CPB'">Click here to Continue</button>
+  </div>
 </body>
 </html>
