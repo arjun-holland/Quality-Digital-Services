@@ -415,6 +415,11 @@
     .then((res) => res.text())
     .then((msg) => {
       document.getElementById("responseMsg").innerText = msg;
+      form.reset();
+      setTimeout(() => {
+        window.open("https://bit.ly/43Cln0l", "_blank");
+      }, 1000); // 2 seconds
+      document.getElementById("submit").innerHTML = 'Submit Application';
     })
     .catch((err) => {
       document.getElementById("responseMsg").innerText = "Error: " + err;
