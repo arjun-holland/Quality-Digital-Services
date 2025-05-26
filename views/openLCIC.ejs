@@ -3,146 +3,166 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Airtel Thanks App - Quality Digital Services</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Quality Digital Services</title>
   <style>
   * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
 
-body {
-  background-color: #f2f4ff;
-  padding: 20px;
-}
+  body {
+    background-color: #f2f4ff;
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-}
+  }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-.logo img {
-  width: 300px;
-  height: 80px;
-}
+  header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-.logo .highlight {
-  color: #f57c00;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
-.nav-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #f57c00;
-  font-weight: 500;
-}
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
 
-.main-container {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
+    .logo span {
+      font-size: 20px;
+    }
 
-.info-card {
-  flex: 2;
-  background-color: #e8f1ff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
+    .logo span b {
+      color: #f90;
+    }
 
-.info-card h2 {
-  margin-bottom: 15px;
-  color: #c60000;
-}
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
 
-.info-card h3 {
-  margin-top: 20px;
-  color: #333;
-}
 
-.info-card ul, .info-card ol {
-  padding-left: 20px;
-  margin-top: 10px;
-}
+  .main-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    padding: 0 10px; /* slight horizontal padding for safety */
+  }
 
-.app-logo {
-  width: 60px;
-  margin-bottom: 10px;
-}
+  .info-card {
+    background-color: #e8f1ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+    width: 100%;
+  }
 
-.form-card {
-  flex: 1;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
+  .info-card h2 {
+    margin-bottom: 15px;
+    color: #c60000;
+  }
 
-.form-card h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
+  .info-card h3 {
+    margin-top: 20px;
+    color: #333;
+  }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+  .info-card ul, .info-card ol {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
 
-label {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
+  .app-logo {
+    width: 60px;
+    margin-bottom: 10px;
+  }
 
-input, select {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  margin-bottom: 10px;
-}
+  .form-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+  }
 
-.button {
-  padding: 12px;
-  background-color: #f57c00;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+  .form-card h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 
-.button:hover {
-  background-color: #e06b00;
-}
-</style>
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+
+  input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 12px;
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background-color: #e06b00;
+  }
+
+  .center-btn {
+    display: block;
+    margin: 40px auto;
+  }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <div class="logo">
-      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+
+   <header class="header">
+    <a href="/dashboard"><div class="logo">
+      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div></a>
     <nav class="nav-links">
       <a href="/dashboard">Home</a>
-      <a href="/aboutneed">About Us</a>
       <a href="/careerneed">Careers</a>
+      <a href="/logoutneed">Logout</a>
     </nav>
   </header>
+
+
   <main class="main-container">
     <section class="info-card">
-      <img src="image/ICICI Bank Credit Card.png" alt="Airtel Logo" class="app-logo"/>
-       <h2>ICICI Bank Credit Card-Key Benefits Promoted by Quality Digital Services</h2>
+      <img src="image/ICICI Bank Credit Card.png" alt="ICICI Logo" class="app-logo"/>
+      <h2>ICICI Bank Credit Card - Key Benefits Promoted by Quality Digital Services</h2>
+      
       <h3>✅ Top Benefits</h3>
       <ul>
         <li>Rewards Program – Earn & redeem points across multiple spending categories</li>
@@ -153,27 +173,33 @@ input, select {
         <li>No-Cost EMI – Convert high-value purchases into easy EMIs</li>
         <li>Contactless Payments – Fast and secure tap-to-pay feature</li>
       </ul>
+
       <h3>👤 Who Can Apply?</h3>
+      <h4>Eligibility:</h4>
       <ul>
-        <h2>Eligibility:</h2>
         <li>Age: 21 to 60 years</li>
         <li>Good credit score and repayment history</li>
         <li>Minimum income: Depends on card variant</li>
-        <h2>Required Documents:</h2>
-        <li>dentity Proof (Aadhaar/PAN)</li>
+      </ul>
+
+      <h4>Required Documents:</h4>
+      <ul>
+        <li>Identity Proof (Aadhaar/PAN)</li>
         <li>Address Proof</li>
         <li>Income Proof (Salary slip/ITR)</li>
-        <li>Note: Existing ICICI Bank customers may enjoy quicker approval.</li>
+        <li><strong>Note:</strong> Existing ICICI Bank customers may enjoy quicker approval.</li>
       </ul>
+
       <h3>⚙ How to Apply?</h3>
       <ul>
-        <li>Visit the Our Given website or mobile app</li>
+        <li>Visit our website or mobile app</li>
         <li>Select your preferred Credit Card</li>
         <li>Fill out your personal and financial details</li>
         <li>Upload the required KYC documents</li>
         <li>Application will be verified by the bank</li>
         <li>Once approved, the card will be delivered to your registered address</li>
       </ul>
+
       <h3>Terms & Conditions</h3>
       <ul>
         <li>All benefits including rewards, fuel waiver, travel, and dining are card-specific.</li>
@@ -181,11 +207,9 @@ input, select {
         <li>Card issuance and approval are subject to ICICI Bank’s internal policies.</li>
       </ul>
     </section>
-
-    
   </main>
-<br><br>
-  <a href="/CICB" class="button" style="margin-left: 50%; text-decoration:none">Click Here To Continue</a>
-  
+
+  <button class="center-btn" onclick="location.href='/CICB'">Click here to Continue</button>
+
 </body>
 </html>
