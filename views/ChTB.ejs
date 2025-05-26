@@ -264,6 +264,7 @@ Terms & Conditions:
       for (const pair of formData.entries()) {
         data.append(pair[0], pair[1]);
       }
+  document.getElementById("submit").innerHTML = '<span class="spinner">🔄</span> Submitting...';
 
       fetch("https://script.google.com/macros/s/AKfycbxgs_N0FHnKUXHbf8__S-JBjQVvvAK6CtK3EF-b-OScezB3wusevRHeidQOf3xfpNgXvw/exec", {
         method: "POST",
