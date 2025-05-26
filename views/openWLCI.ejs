@@ -3,186 +3,179 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Airtel Thanks App - Quality Digital Services</title>
+  <title>Quality Digital Services</title>
   <link rel="stylesheet" href="style.css"/>
   <style>
   * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
 
-body {
-  background-color: #f2f4ff;
-  padding: 20px;
-}
+  body {
+    background-color: #f2f4ff;
+    /* padding: 20px; */
+  }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-}
+  header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-.logo img {
-  width: 300px;
-  height: 80px;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
-.logo .highlight {
-  color: #f57c00;
-}
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
 
-.nav-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #f57c00;
-  font-weight: 500;
-}
+    .logo span {
+      font-size: 20px;
+    }
 
-.main-container {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
+    .logo span b {
+      color: #f90;
+    }
 
-.info-card {
-  flex: 2;
-  background-color: #e8f1ff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
 
-.info-card h2 {
-  margin-bottom: 15px;
-  color: #c60000;
-}
 
-.info-card h3 {
-  margin-top: 20px;
-  color: #333;
-}
+  .main-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
 
-.info-card ul, .info-card ol {
-  padding-left: 20px;
-  margin-top: 10px;
-}
+  .main-container {
+    width: 100%;
+    max-width: 900px;
+  }
 
-.app-logo {
-  width: 60px;
-  margin-bottom: 10px;
-}
+  .info-card {
+    background-color: #e8f1ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
 
-.form-card {
-  flex: 1;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
+  .info-card h2 {
+    margin-bottom: 15px;
+    color: #c60000;
+    text-align: center;
+  }
 
-.form-card h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
+  .info-card h3 {
+    margin-top: 20px;
+    color: #333;
+  }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+  .info-card ul, .info-card ol {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
 
-label {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
+  .app-logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100px;
+  }
 
-input, select {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  margin-bottom: 10px;
-}
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+  }
 
-.button {
-  padding: 12px;
-  background-color: #f57c00;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+  button {
+    padding: 12px 24px;
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
 
-.button:hover {
-  background-color: #e06b00;
-}
-</style>
+  button:hover {
+    background-color: #e06b00;
+  }
+  </style>
 </head>
 <body>
   <header class="header">
-    <div class="logo">
-      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+    <a href="/dashboard"><div class="logo">
+      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div></a>
     <nav class="nav-links">
       <a href="/dashboard">Home</a>
-      <a href="/aboutneed">About Us</a>
       <a href="/careerneed">Careers</a>
+      <a href="/logoutneed">Logout</a>
     </nav>
   </header>
 
-  <main class="main-container">
-    <section class="info-card">
-      <img src="image/IDFC First Bank Free Credit Card.png" alt="Airtel Logo" class="app-logo"/>
-       <h2>IDFC FIRST Credit Card</h2>
-      <h3>Top Benefits</h3>
-      <ul>
-        <li>Welcome Benefits Worth Up to ₹1,500</li>
-        <li>Up to 10X Reward Points* (never expire, redeemable anywhere online)</li>
-        <li>25%–75% Off on Movie Tickets* every month (select variants)</li>
-        <li>16 Complimentary Railway Lounge Visits per year</li>
-        <li>Trip Cancellation Cover up to ₹10,000 on hotels & flights (2 claims/year)<li>
-        <li>10% Instant Discount on Flipkart* transactions<li>
-        <li>Up to 50% OFF on EazyDiner<li>
-      </ul>
-      <h3>Eligibility Criteria</h3>
-      <ul>
-        <li>Must be an Indian Citizen</li>
-        <li>Age: 18 years or older</li>
-        <li>Monthly Income: ₹25,000 or more</li>
-        <li>Should have a good credit score</li>
-        <li>Must meet all internal policy checks by IDFC FIRST Bank</li>
-        <li>🔔 Benefits may vary depending on the card variant issued</li>
-      </ul>
-      <h3>How to Apply</h3>
-      <ul>
-        <li>Click the Apply Now button below</li>
-        <li>Instantly check your eligibility</li>
-3.      <li>Fill out the online application form with your details</li>
-4.      <li>Submit and get a quick decision<li>
-5.      <li>Upon approval, the card will be delivered to your address</li>
-      </ul>
-      <h3>Terms & Conditions</h3>
-      <ul>
-        <li> Reward points and discounts are subject to change without notice</li>
-        <li> Always review your benefits on the final card issued</li>
-        <li>Standard terms and conditions of the bank apply</li>
-      </ul>
-    </section>
+  <div class="main-wrapper">
+    <main class="main-container">
+      <section class="info-card">
+        <img src="image/IDFC First Bank Free Credit Card.png" alt="IDFC Logo" class="app-logo"/>
 
-    
-  </main>
-<br><br>
-    <a href="/CIB" class="button" style="margin-left: 50%; text-decoration:none">Click Here To Continue</a>
- 
+        <h2>IDFC FIRST Credit Card</h2>
+        <h3>Top Benefits</h3>
+        <ul>
+          <li>Welcome Benefits Worth Up to ₹1,500</li>
+          <li>Up to 10X Reward Points (never expire, redeemable anywhere online)</li>
+          <li>25%–75% Off on Movie Tickets every month (select variants)</li>
+          <li>16 Complimentary Railway Lounge Visits per year</li>
+          <li>Trip Cancellation Cover up to ₹10,000 on hotels & flights (2 claims/year)</li>
+          <li>10% Instant Discount on Flipkart transactions</li>
+          <li>Up to 50% OFF on EazyDiner</li>
+        </ul>
+
+        <h3>Eligibility Criteria</h3>
+        <ul>
+          <li>Must be an Indian Citizen</li>
+          <li>Age: 18 years or older</li>
+          <li>Monthly Income: ₹25,000 or more</li>
+          <li>Should have a good credit score</li>
+          <li>Must meet all internal policy checks by IDFC FIRST Bank</li>
+          <li>🔔 Benefits may vary depending on the card variant issued</li>
+        </ul>
+
+        <h3>How to Apply</h3>
+        <ul>
+          <li>Click the Apply Now button below</li>
+          <li>Instantly check your eligibility</li>
+          <li>Fill out the online application form with your details</li>
+          <li>Submit and get a quick decision</li>
+          <li>Upon approval, the card will be delivered to your address</li>
+        </ul>
+
+        <h3>Terms & Conditions</h3>
+        <ul>
+          <li>Reward points and discounts are subject to change without notice</li>
+          <li>Always review your benefits on the final card issued</li>
+          <li>Standard terms and conditions of the bank apply</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <div class="button-wrapper">
+     <button  onclick="location.href='/CIB'" >Click here to Continue</button>
+  </div>
 </body>
 </html>
