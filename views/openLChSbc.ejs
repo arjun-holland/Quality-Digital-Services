@@ -3,191 +3,216 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Airtel Thanks App - Quality Digital Services</title>
+  <title>Quality Digital Services</title>
   <link rel="stylesheet" href="style.css"/>
   <style>
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-body {
-  background-color: #f2f4ff;
-  padding: 20px;
-}
+    body {
+      background-color: #f2f4ff;
+      /* padding: 20px; */
+    }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-}
+   header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-.logo img {
-  width: 300px;
-  height: 80px;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
-.logo .highlight {
-  color: #f57c00;
-}
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
 
-.nav-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #f57c00;
-  font-weight: 500;
-}
+    .logo span {
+      font-size: 20px;
+    }
 
-.main-container {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
+    .logo span b {
+      color: #f90;
+    }
 
-.info-card {
-  flex: 2;
-  background-color: #e8f1ff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
 
-.info-card h2 {
-  margin-bottom: 15px;
-  color: #c60000;
-}
 
-.info-card h3 {
-  margin-top: 20px;
-  color: #333;
-}
+    .center-wrapper {
+      max-width: 960px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
 
-.info-card ul, .info-card ol {
-  padding-left: 20px;
-  margin-top: 10px;
-}
+    .main-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-.app-logo {
-  width: 60px;
-  margin-bottom: 10px;
-}
+    .info-card {
+      flex: 2;
+      background-color: #e8f1ff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
 
-.form-card {
-  flex: 1;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
+    .info-card h2 {
+      margin-bottom: 15px;
+      color: #c60000;
+    }
 
-.form-card h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
+    .info-card h3 {
+      margin-top: 20px;
+      color: #333;
+    }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+    .info-card ul,
+    .info-card ol {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
 
-label {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
+    .app-logo {
+      width: 60px;
+      margin-bottom: 10px;
+    }
 
-input, select {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  margin-bottom: 10px;
-}
+    .form-card {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
 
-.button {
-  padding: 12px;
-  background-color: #f57c00;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+    .form-card h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
-.button:hover {
-  background-color: #e06b00;
-}
-</style>
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input,
+    select {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #f57c00;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+      display: block;
+      margin: 40px auto 0 auto;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #e06b00;
+    }
+  </style>
 </head>
 <body>
- <header class="header">
-    <div class="logo">
-      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+   <header class="header">
+    <a href="/dashboard"><div class="logo">
+      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div></a>
     <nav class="nav-links">
       <a href="/dashboard">Home</a>
-      <a href="/aboutneed">About Us</a>
       <a href="/careerneed">Careers</a>
+      <a href="/logoutneed">Logout</a>
     </nav>
   </header>
 
-  <main class="main-container">
-    <section class="info-card">
-      <img src="image/HSBC Platinum free Credit card.png" alt="Airtel Logo" class="app-logo"/>
-      <h2>HSBC Platinum Credit Card- Exclusive BenefitsPromoted by Quality Digital Services</h2>
-      <h3>✅ Key Benefits</h3>
-      <ul>
-        <li>Lifetime FREE Credit Card – No Joining or Annual Fees</li>
-        <li>Earn 2 Reward Points for every ₹150 spent</li>
-        <li>Up to 35% off on domestic & international travel via MakeMyTrip</li>
-        <li>Flat 7.5% off (up to ₹5,000) at Vijay Sales (in-store & online)</li>
-        <li>Save ₹5,000/month at Croma on weekends (Saturday & Sunday)</li>
-        <li>10% Instant Discount on Amazon for mobiles, appliances & electronics</li>
-        <li>10% Off (up to ₹1,250) on Myntra every Tuesday</li>
-        <li>10% Discount on Flipkart – Appliances, Electronics, Furniture & more</li>
-        <li>Buy-One-Get-One-Free on BookMyShow (Saturday bookings only)</li>
-        <li>15% Off on Swiggy Food Delivery + Up to ₹200 off on Instamart</li>
-      </ul>
-      <h3>👤 Who Can Apply?</h3>
-      <ul>
+  <div class="center-wrapper">
+    <main class="main-container">
+      <section class="info-card">
+        <img src="image/HSBC Platinum free Credit card.png" alt="HSBC Credit Card" class="app-logo"/>
+        <h2>HSBC Platinum Credit Card – Exclusive Benefits Promoted by Quality Digital Services</h2>
+
+        <h3>✅ Key Benefits</h3>
+        <ul>
+          <li>Lifetime FREE Credit Card – No Joining or Annual Fees</li>
+          <li>Earn 2 Reward Points for every ₹150 spent</li>
+          <li>Up to 35% off on domestic & international travel via MakeMyTrip</li>
+          <li>Flat 7.5% off (up to ₹5,000) at Vijay Sales (in-store & online)</li>
+          <li>Save ₹5,000/month at Croma on weekends (Saturday & Sunday)</li>
+          <li>10% Instant Discount on Amazon for mobiles, appliances & electronics</li>
+          <li>10% Off (up to ₹1,250) on Myntra every Tuesday</li>
+          <li>10% Discount on Flipkart – Appliances, Electronics, Furniture & more</li>
+          <li>Buy-One-Get-One-Free on BookMyShow (Saturday bookings only)</li>
+          <li>15% Off on Swiggy Food Delivery + Up to ₹200 off on Instamart</li>
+        </ul>
+
+        <h3>👤 Who Can Apply?</h3>
         <h2>Eligibility Criteria:</h2>
-        <li>Age: 18 to 65 years</li>
-        <li>Income: Minimum ₹4,00,000 per annum (Salaried)</li>
-        <li>Cities: Must reside in Bangalore, Chennai, Gurgaon, Hyderabad, Mumbai, New Delhi, Noida, or Pune</li>
+        <ul>
+          <li>Age: 18 to 65 years</li>
+          <li>Income: Minimum ₹4,00,000 per annum (Salaried)</li>
+          <li>Cities: Must reside in Bangalore, Chennai, Gurgaon, Hyderabad, Mumbai, New Delhi, Noida, or Pune</li>
+        </ul>
+
         <h2>Required Documents:</h2>
-        <li>Latest salary slip (especially if MNC employee)</li>
-        <li>PAN card/Form 60, ID proof, and Address proof</li>
-      </ul>
-      <h3>⚙ How It Works</h3>
-      <ul>
-        <li>Choose the HSBC Credit Card and click on Apply Now</li>
-        <li>Fill in basic details (name, mobile number, email) and confirm salaried status</li>
-        <li>Enter personal information</li>
-        <li>Enter and verify employment details</li>
-        <li>Review, confirm, and submit the application</li>
-      </ul>
-      <h3>📌 Terms & Conditions</h3>
-      <ol>
-        <li>Get ₹500 cashback on ₹10,000 spend in the first 30 days</li>
-        <li>Enjoy 3 complimentary lounge access (domestic/international) or 3 meal vouchers.</li>
-        <li>Cashback and reward structures are subject to periodic changes.</li>
-        <li>Card approval is subject to HSBC Bank’s policy and verification.</li>
-      </ol>
-    </section>
+        <ul>
+          <li>Latest salary slip (especially if MNC employee)</li>
+          <li>PAN card/Form 60, ID proof, and Address proof</li>
+        </ul>
 
-    
-  </main>
-<br><br>
-   <a href="/ChSbcB" class="button" style="margin-left: 50%; text-decoration:none">Click Here To Continue</a>
+        <h3>⚙ How It Works</h3>
+        <ul>
+          <li>Choose the HSBC Credit Card and click on Apply Now</li>
+          <li>Fill in basic details (name, mobile number, email) and confirm salaried status</li>
+          <li>Enter personal information</li>
+          <li>Enter and verify employment details</li>
+          <li>Review, confirm, and submit the application</li>
+        </ul>
 
+        <h3>📌 Terms & Conditions</h3>
+        <ol>
+          <li>Get ₹500 cashback on ₹10,000 spend in the first 30 days</li>
+          <li>Enjoy 3 complimentary lounge access (domestic/international) or 3 meal vouchers</li>
+          <li>Cashback and reward structures are subject to periodic changes</li>
+          <li>Card approval is subject to HSBC Bank’s policy and verification</li>
+        </ol>
+      </section>
+    </main>
+
+    <button  onclick="location.href='/ChSbcB'" >Click here to Continue</button>
+  </div>
 </body>
 </html>
