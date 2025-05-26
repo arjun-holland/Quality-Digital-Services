@@ -15,7 +15,6 @@
 
 body {
   background-color: #f2f4ff;
-  padding: 20px;
 }
 
 .header {
@@ -46,6 +45,7 @@ body {
   color: #f57c00;
   font-weight: 500;
 }
+
 
 .main-container {
   display: flex;
@@ -88,6 +88,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #ccc;
+  height: fit-content;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
@@ -130,12 +131,12 @@ button:hover {
 </style>
 </head>
 <body>
+
+
   <header class="header">
     <a href="/dashboard">
     <div class="logo">
-      <img src="image/dashboard/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo" />
-    </div>
-  </a>
+      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div></a>
     <nav class="nav-links">
       <a href="/dashboard">Home</a>
       <a href="/careerneed">Careers</a>
@@ -145,50 +146,8 @@ button:hover {
   <main class="main-container">
     <section class="info-card">
       <img src="image/Credit Cards/HDFC TATA Neu Credit Card.png" alt="Airtel Logo" class="app-logo"/>
-      Tata Neu Infinity HDFC Bank Credit Card – Key Benefits*
-Promoted by Quality Digital Services
-
----
-
-Benefits:
-
-* 8 Complimentary Domestic + 4 Complimentary International Airport Lounge Access
-* Lifetime Free Credit Card – No Joining or Annual Fees
-* 5% back as NeuCoins on Tata Brand Group spends (BigBasket, Croma, TataCliq, AirAsia, etc.)
-* Additional 5% back as NeuCoins on Tata Neu App spends (after registering for NeuPass)
-* 1.5% back as NeuCoins on all other eligible spends
-* 1% Fuel Surcharge Waiver at all fuel stations across India
-* Note: 1 NeuCoin = ₹1. Redeemable on Tata Neu App
-
----
-
-Whom to Promote? (Eligibility):
-
-* Age: 21 to 60 years
-* Minimum Income: ₹1,00,000 per month (Salaried)
-* Minimum ITR: ₹12,00,000 per annum (Self-Employed)
-* Indian resident with a stable income and good credit profile
-
----
-
-How It Works:
-
-1. Visit the HDFC Bank Credit Card application page
-2. Select Tata Neu Infinity HDFC Bank Credit Card
-3. Click on Apply Now
-4. Fill in your personal, financial, and contact details
-5. Submit the form and complete OTP verification
-6. Upload documents and finish the application process
-
----
-
-Terms & Conditions:
-
-* Lounge access and NeuCoin benefits as per current offer structure
-* Earning rates are subject to change without prior notice – always stay updated
-* Card approval is subject to bank’s internal credit and verification policy
       <h2>Tata Neu Infinity HDFC Bank Credit Card </h2>
-      <h3>Benefits</h3>
+      <h3>Key Benefits</h3>
       <ul>
         <li>8 Complimentary Domestic + 4 Complimentary International Airport Lounge Access</li>
         <li>Lifetime Free Credit Card – No Joining or Annual Fees</li> 
@@ -212,9 +171,9 @@ Terms & Conditions:
       <h3>How It Works?</h3>
       <ol>
         <li>Visit the HDFC Bank Credit Card application page.</li>
-        <li>Select *Tata Neu Infinity HDFC Bank Credit Card</li>
+        <li>Select Tata Neu Infinity HDFC Bank Credit Card</li>
         <li>Complete PAN and Aadhaar verification.</li>
-        <li> Click on *Apply Now</li>
+        <li> Click on Apply Now</li>
         <li>Fill in your personal, financial, and contact details</li>
         <li>Submit the form and complete OTP verification</li>
         <li>Upload documents and finish the application process<li>
@@ -238,10 +197,7 @@ Terms & Conditions:
         <label>Mobile Number:</label>
         <input type="text" placeholder="Customer Mobile Number" name="mobileNumber" />
 
-        <label>Store</label>
-        <select name="store">
-          <option>HDFC TATA NEU CREDIT CARD</option>
-        </select>
+        <label>Store</label><input value="HDFC TATA NEW CREDIT CARD" name="Store" readonly>
 
         <label>Agent ID</label>
         <input type="text" placeholder="Enter Your Agent ID" name="agentId" />
