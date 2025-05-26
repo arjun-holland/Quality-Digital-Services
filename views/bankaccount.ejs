@@ -6,7 +6,45 @@
   <title>Quality Digital Services</title>
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
-    
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+     header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 20px;
+    }
+
+    .logo span b {
+      color: #f90;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
 .content-wrapper {
   max-width: 1200px;
   margin: auto;
@@ -141,7 +179,7 @@
   align-items: center;
   background-color: #bfeaff;
   border-radius: 6px;
-  padding: 10px;
+  padding: 5px;
   margin-bottom: 15px;
 }
 
@@ -198,7 +236,7 @@
     </style>
 </head>
 <body>
-    <header>
+    <!-- <header>
     <div class="navbar">
       <a href="/dashboard">
     <div class="logo">
@@ -211,6 +249,20 @@
         <a href="/logoutneed">Logout</a>
       </div>
     </div>
+  </header> -->
+
+
+  <header>
+    <a href="/dashboard">
+    <div class="logo">
+      <img src="image/dashboard/Hiring_Poster1Artboard_8@4x[1](1).png" alt="Logo" />
+    </div>
+    </a>
+    <nav>
+      <a href="/dashboard">Home</a>
+      <a href="/careerneed">Careers</a>
+      <a href="/logoutneed">Logout</a>
+    </nav>
   </header>
 <div class="content-wrapper">
     <h1 class="section-title">
@@ -224,7 +276,7 @@
         <img src="image/Airtel Thanks App.png" alt="Airtel Card Logo">
         <div class="loan-card-info">
             <h3>Airtel Thanks App</h3>
-            <p>Zero Balance Account | Cashless payments 24*7 payment services</p>
+            <p style="margin-top: 2px;">Zero Balance Account | Cashless payments 24*7 payment services</p>
         </div>
     </div>
     <div class="offer-banner">
@@ -257,7 +309,7 @@
         <img src="image/loans/kotak.jpg" alt="YES Bank Logo">
         <div class="loan-card-info">
             <h3>Kotak Digital Savings Account</h3>
-            <p>Free RTGS/NEFT payment facility | International Platinum Chip Cards are available</p>
+            <p style="margin-top: 2px;">Free RTGS/NEFT payment facility | International Platinum Chip Cards are available</p>
         </div>
     </div>
     <div class="offer-banner">
@@ -319,7 +371,7 @@
         <img src="image/Axis Easy Access SA.png" alt="Axis Card Logo">
         <div class="loan-card-info">
             <h3>Axis Easy Access SA</h3>
-            <p>Annual Benefits worth Rs. 15,000 | Flat 5% weekend cashback on Liberty Debit card</p>
+            <p style="margin-top: 2px;">Annual Benefits worth Rs. 15,000 | Flat 5% weekend cashback on Liberty Debit card</p>
         </div>
     </div>
     <div class="offer-banner">
@@ -350,7 +402,7 @@
         <img src="image/Tide.png" alt="Tide Card Logo">
         <div class="loan-card-info">
             <h3>Tide</h3>
-            <p>Easy expenses. Upload receipts | Send, pay and track invoices.</p>
+            <p style="margin-top: 2px;">Easy expenses. Upload receipts | Send, pay and track invoices.</p>
         </div>
     </div>
     <div class="offer-banner">
