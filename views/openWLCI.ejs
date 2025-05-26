@@ -3,22 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quality Digital Services</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>IDFC First Bank Rupay Card</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
   <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-  }
-
-  body {
-    background-color: #f2f4ff;
-    /* padding: 20px; */
-  }
-
-  header {
+    body {
+      background-color: #f2f4ff;
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
       background-color: #fff;
       padding: 10px 40px;
       display: flex;
@@ -55,70 +53,53 @@
     }
 
 
-  .main-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-  }
+    .content-wrapper {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 15px;
+    }
 
-  .main-container {
-    width: 100%;
-    max-width: 900px;
-  }
+    .info-card {
+      background-color: #e8f1ff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 900px;
+      width: 100%;
+    }
 
-  .info-card {
-    background-color: #e8f1ff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  }
+    .info-header img {
+      max-width: 80px;
+    }
 
-  .info-card h2 {
-    margin-bottom: 15px;
-    color: #c60000;
-    text-align: center;
-  }
+    h2 {
+      color: #c60000;
+    }
 
-  .info-card h3 {
-    margin-top: 20px;
-    color: #333;
-  }
+    ul {
+      padding-left: 20px;
+    }
 
-  .info-card ul, .info-card ol {
-    padding-left: 20px;
-    margin-top: 10px;
-  }
+    .btn-orange {
+      background-color: #f57c00;
+      color: white;
+    }
 
-  .app-logo {
-    display: block;
-    margin: 0 auto 20px;
-    width: 100px;
-  }
-
-  .button-wrapper {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
-  }
-
-  button {
-    padding: 12px 24px;
-    background-color: #f57c00;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-
-  button:hover {
-    background-color: #e06b00;
+    .btn-orange:hover {
+      background-color: #e06b00;
+    }
+    .app-logo {
+    width: 60px;
+    margin-bottom: 10px;
   }
   </style>
 </head>
 <body>
-  <header class="header">
+
+  <!-- Header -->
+     <header class="header">
     <a href="/dashboard"><div class="logo">
       <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div></a>
     <nav class="nav-links">
@@ -126,56 +107,65 @@
       <a href="/careerneed">Careers</a>
       <a href="/logoutneed">Logout</a>
     </nav>
-  </header>
+  </header><br><br>
 
-  <div class="main-wrapper">
-    <main class="main-container">
-      <section class="info-card">
-        <img src="image/IDFC First Bank Free Credit Card.png" alt="IDFC Logo" class="app-logo"/>
 
-        <h2>IDFC FIRST Credit Card</h2>
-        <h3>Top Benefits</h3>
-        <ul>
-          <li>Welcome Benefits Worth Up to ₹1,500</li>
-          <li>Up to 10X Reward Points (never expire, redeemable anywhere online)</li>
-          <li>25%–75% Off on Movie Tickets every month (select variants)</li>
-          <li>16 Complimentary Railway Lounge Visits per year</li>
-          <li>Trip Cancellation Cover up to ₹10,000 on hotels & flights (2 claims/year)</li>
-          <li>10% Instant Discount on Flipkart transactions</li>
-          <li>Up to 50% OFF on EazyDiner</li>
-        </ul>
+  <!-- Centered Content -->
+  <div class="content-wrapper">
+    <div class="info-card">
+      <div class="d-flex align-items-center gap-3 mb-4">
+        <img src="image/IDFC First Bank Rupay Card.png" alt="Card Image" class="app-logo">
+        <h2 class="mb-0">IDFC Bank Rupay Card</h2>
+      </div>
 
-        <h3>Eligibility Criteria</h3>
-        <ul>
-          <li>Must be an Indian Citizen</li>
-          <li>Age: 18 years or older</li>
-          <li>Monthly Income: ₹25,000 or more</li>
-          <li>Should have a good credit score</li>
-          <li>Must meet all internal policy checks by IDFC FIRST Bank</li>
-          <li>🔔 Benefits may vary depending on the card variant issued</li>
-        </ul>
+      <h4>✅ Top Benefits</h4>
+      <ul>
+        <li>🎁 Welcome Benefits Worth ₹71,500</li>
+        <li>💳 Earn up to 3X Reward Points on all online & offline spends</li>
+        <li>⛽ Get up to 175 Litres of Free Fuel annually at HPCL outlets</li>
+        <li>💰 Save up to 5% on FASTag recharges, utility & grocery spends</li>
+        <li>🛫 4 Complimentary Domestic Airport Lounge Visits per year</li>
+        <li>🎬 25% Off on Movie Tickets – up to ₹7,100 in savings per year</li>
+      </ul>
 
-        <h3>How to Apply</h3>
-        <ul>
-          <li>Click the Apply Now button below</li>
-          <li>Instantly check your eligibility</li>
-          <li>Fill out the online application form with your details</li>
-          <li>Submit and get a quick decision</li>
-          <li>Upon approval, the card will be delivered to your address</li>
-        </ul>
+      <h4>👤 Who Can Apply?</h4>
+      <ul>
+        <strong>Eligibility:</strong>
+        <li>Indian Citizen, Age 21+</li>
+        <li>Annual Income ₹3L+</li>
+        <li>No existing IDFC Credit Card</li>
+        <li>Good credit score</li>
+        <strong>Fees:</strong>
+        <li><b>FIRST Power:</b> ₹199/year</li>
+        <li><b>FIRST Power+:</b> ₹499/year</li>
+      </ul>
 
-        <h3>Terms & Conditions</h3>
-        <ul>
-          <li>Reward points and discounts are subject to change without notice</li>
-          <li>Always review your benefits on the final card issued</li>
-          <li>Standard terms and conditions of the bank apply</li>
-        </ul>
-      </section>
-    </main>
+      <h4>📝 How to Apply</h4>
+      <ol>
+        <li>Click on the link shared by our team</li>
+        <li>Check your eligibility</li>
+        <li>Fill the application form</li>
+        <li>Get an instant decision</li>
+        <li>Card delivered post verification</li>
+      </ol>
+
+      <h4>📌 Terms & Conditions</h4>
+      <ul>
+        <li>Benefits vary by usage and card type</li>
+        <li>Details subject to change without notice</li>
+        <li>Accurate KYC is required</li>
+        <li>Phone must be Aadhaar-linked</li>
+        <li>Debit Card fee: ₹299 + GST</li>
+        <li>No bulk/fraud applications allowed</li>
+      </ul>
+
+      <div class="text-center mt-4">
+        <a href="/CIB" class="btn btn-orange px-5">Click Here to Continue</a>
+      </div>
+    </div>
   </div>
 
-  <div class="button-wrapper">
-     <button  onclick="location.href='/CIB'" >Click here to Continue</button>
-  </div>
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
