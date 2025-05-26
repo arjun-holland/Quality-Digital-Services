@@ -3,140 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Airtel Thanks App - Quality Digital Services</title>
+  <title>Quality Digital Services</title>
   <link rel="stylesheet" href="style.css"/>
   <style>
   * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
 
-body {
-  background-color: #f2f4ff;
-  padding: 20px;
-}
+  body {
+    background-color: #f2f4ff;
+    /* padding: 20px; */
+  }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-}
+  header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-.logo img {
-  width: 300px;
-  height: 80px;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
-.logo .highlight {
-  color: #f57c00;
-}
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
 
-.nav-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #f57c00;
-  font-weight: 500;
-}
+    .logo span {
+      font-size: 20px;
+    }
 
-.main-container {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
+    .logo span b {
+      color: #f90;
+    }
 
-.info-card {
-  flex: 2;
-  background-color: #e8f1ff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
 
-.info-card h2 {
-  margin-bottom: 15px;
-  color: #c60000;
-}
 
-.info-card h3 {
-  margin-top: 20px;
-  color: #333;
-}
+  .main-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+  }
 
-.info-card ul, .info-card ol {
-  padding-left: 20px;
-  margin-top: 10px;
-}
+  .info-card {
+    flex: 2;
+    background-color: #e8f1ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    text-align: center; /* Center text inside */
+  }
 
-.app-logo {
-  width: 60px;
-  margin-bottom: 10px;
-}
+  .info-card h2 {
+    margin-bottom: 15px;
+    color: #c60000;
+  }
 
-.form-card {
-  flex: 1;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
+  .info-card h3 {
+    margin-top: 20px;
+    color: #333;
+  }
 
-.form-card h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
+  .info-card ul, .info-card ol {
+    padding-left: 20px;
+    margin-top: 10px;
+    text-align: left; /* Keep list items left aligned */
+    display: inline-block; /* Keep list width fitting content */
+  }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+  .app-logo {
+    width: 60px;
+    margin-bottom: 10px;
+  }
 
-label {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
+  .form-card {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    text-align: center; /* Center text inside form if present */
+  }
 
-input, select {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  margin-bottom: 10px;
-}
+  .form-card h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 
-.button {
-  padding: 12px;
-  background-color: #f57c00;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+  form {
+    display: flex;
+    flex-direction: column;
+  }
 
-.button:hover {
-  background-color: #e06b00;
-}
-</style>
+  label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+
+  input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    padding: 12px;
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .button:hover {
+    background-color: #e06b00;
+  }
+  </style>
 </head>
 <body>
   <header class="header">
     <div class="logo">
-      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+      <img src="image/Hiring_Poster1Artboard_8@4x .png" alt="Logo"/>
+    </div>
     <nav class="nav-links">
       <a href="/dashboard">Home</a>
-      <a href="/aboutneed">About Us</a>
       <a href="/careerneed">Careers</a>
+      <a href="/logoutneed">Logout</a>
     </nav>
   </header>
 
@@ -150,8 +164,8 @@ input, select {
         <li>Exclusive offers on Flipkart, Amazon, Goibibo, Cleartrip & Myntra.</li>
         <li>1% fuel surcharge waiver on eligible fuel spends.</li>
         <li>Free travel insurance & exciting travel benefits</li>
-        <li>Reward points on every purchase.<li>
-        <li>Attractive discounts on movie tickets & restaurants<li>
+        <li>Reward points on every purchase.</li>
+        <li>Attractive discounts on movie tickets & restaurants</li>
       </ul>
       <h3>Whom to Promote? (Eligibility Criteria)</h3>
       <ul>
@@ -164,23 +178,24 @@ input, select {
       <ul>
         <li>Click the Check Eligibility button on the application page</li>
         <li>If eligible, you will see the Apply Now option</li>
-        <li>Upload necessary documents and click ‘Submit’ to complete the process.<li>
-      <ul>
+        <li>Upload necessary documents and click ‘Submit’ to complete the process.</li>
+      </ul>
       <h3>Terms & Conditions</h3>
-       <ul>
+      <ul>
         <li>Complimentary lounge access (domestic & international).</li>
         <li>Special offers across major shopping & travel platforms</li>
         <li>Reward points applicable on all eligible spends.</li>
         <li>Earning rates subject to change without prior notice.</li>
         <li>Use only ExtraPe shared links & codes to earn.</li>
-        <li>Referral bonus: Flat 2% Earnings..</li>
+        <li>Referral bonus: Flat 2% Earnings.</li>
         <li>Bulk/commercial use not allowed – personal use only.</li>
       </ul>
     </section>
-
-    
   </main>
-<br><br>
-  <a href="/CHB" class="button" style="margin-left: 50%; text-decoration:none">Click Here To Continue</a>
+
+  <br><br>
+  <a href="/CHB" class="button" style="margin-left: 45%; text-decoration:none">Click Here To Continue</a>
+  
 </body>
-</html
+</body>
+</html>
