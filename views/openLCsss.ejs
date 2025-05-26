@@ -3,182 +3,200 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Airtel Thanks App - Quality Digital Services</title>
+  <title>Quality Digital Services</title>
   <link rel="stylesheet" href="style.css"/>
   <style>
- * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-body {
-  background-color: #f2f4ff;
-  padding: 20px;
-}
+    body {
+      background-color: #f2f4ff;
+      /* padding: 20px; */
+    }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-}
+    
+header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
-.logo .highlight {
-  color: #f57c00;
-}
-.logo img {
-  width: 300px;
-  height: 80px;
-}
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
 
-.nav-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #f57c00;
-  font-weight: 500;
-}
+    .logo span {
+      font-size: 20px;
+    }
 
-.main-container {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
+    .logo span b {
+      color: #f90;
+    }
 
-.info-card {
-  flex: 2;
-  background-color: #e8f1ff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
 
-.info-card h2 {
-  margin-bottom: 15px;
-  color: #c60000;
-}
+    .wrapper {
+      display: flex;
+      justify-content: center;
+    }
 
-.info-card h3 {
-  margin-top: 20px;
-  color: #333;
-}
+    .main-container {
+      display: flex;
+      gap: 20px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      max-width: 900px;
+    }
 
-.info-card ul, .info-card ol {
-  padding-left: 20px;
-  margin-top: 10px;
-}
+    .info-card {
+      flex: 2;
+      background-color: #e8f1ff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
 
-.app-logo {
-  width: 60px;
-  margin-bottom: 10px;
-}
+    .info-card h2 {
+      margin-bottom: 15px;
+      color: #c60000;
+    }
 
-.form-card {
-  flex: 1;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
+    .info-card h3 {
+      margin-top: 20px;
+      color: #333;
+    }
 
-.form-card h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
+    .info-card ul, .info-card ol {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+    .app-logo {
+      width: 60px;
+      margin-bottom: 10px;
+    }
 
-label {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
+    .form-card {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
 
-input, select {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  margin-bottom: 10px;
-}
+    .form-card h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
-.button {
-  padding: 12px;
-  background-color: #f57c00;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+    form {
+      display: flex;
+      flex-direction: column;
+    }
 
-.button:hover {
-  background-color: #e06b00;
-}
-</style>
+    label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input, select {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #f57c00;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+      display: block;
+      margin: 20px auto;
+    }
+
+    button:hover {
+      background-color: #e06b00;
+    }
+  </style>
 </head>
 <body>
-<header class="header">
-    <div class="logo">
-      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+  <header class="header">
+    <a href="/dashboard"><div class="logo">
+      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div></a>
     <nav class="nav-links">
       <a href="/dashboard">Home</a>
-      <a href="/aboutneed">About Us</a>
       <a href="/careerneed">Careers</a>
+      <a href="/logoutneed">Logout</a>
     </nav>
   </header>
 
-  <main class="main-container">
-    <section class="info-card">
-      <img src="image/Axis Indian Oil Credit Card.png" alt="Airtel Logo" class="app-logo"/>
-      <h2>SBI SImple save upi  Credit Bank</h2>
-      <h3>💳 Benefits of SBI Cashback Card</h3>
-      <ul>
-        <li>Earn 2,000 reward points on joining</li>
-        <li>Earn 10x reward points on every ₹100 spent</li>
-       <li>Easy UPI payments for convenience</li>
-        <li> Accepted globally at over 24 million outlets</li>
+  <!-- Wrapper added to center body content -->
+  <div class="wrapper">
+    <main class="main-container">
+      <section class="info-card">
+        <img src="image/Axis Indian Oil Credit Card.png" alt="Airtel Logo" class="app-logo"/>
+        <h2>SBI Simple Save UPI Credit Bank</h2>
 
-      </ul>
-      <h3>✅ Whom To Promote?</h3>
-      <ul>
-        <li>Age: Above 21 years</li>
-        <li>Both salaried and self-employed individuals eligible</li>
-        <li>Credit score: Above 700 recommended</li>
-      </ul>
-      <h3>📝 How It Works?</h3>
-      <ul>
-        <li>Visit the Credit Cards page on SBI website and select Cashback SBI Card</li>
-        <li>Click Apply Now and fill in the online application form</li>
-        <li>Submit the form</li>
-        <li>Upon approval, the SBI Card team will contact you for verification</li>
-        <li> Receive your Cashback SBI Card after successful verification</li>
+        <h3>💳 Benefits of SBI Cashback Card</h3>
+        <ul>
+          <li>Earn 2,000 reward points on joining</li>
+          <li>Earn 10x reward points on every ₹100 spent</li>
+          <li>Easy UPI payments for convenience</li>
+          <li>Accepted globally at over 24 million outlets</li>
+        </ul>
 
-      </ul>
-      <h3> 📌 Terms & Conditions</h3>
-      <ol>
-        <li>Reward points and cashback rates may change without prior notice</li>
-        <li> Standard SBI Card terms and conditions apply</li>
-        <li>All benefits subject to eligibility and verification</li>
-      </ol>
-    </section>
+        <h3>✅ Whom To Promote?</h3>
+        <ul>
+          <li>Age: Above 21 years</li>
+          <li>Both salaried and self-employed individuals eligible</li>
+          <li>Credit score: Above 700 recommended</li>
+        </ul>
 
-   
-  </main>
-<br><br>
- <a href="/CsssB" class="button" style="margin-left: 50%; text-decoration:none">Click Here To Continue</a>
- 
+        <h3>📝 How It Works?</h3>
+        <ul>
+          <li>Visit the Credit Cards page on SBI website and select Cashback SBI Card</li>
+          <li>Click Apply Now and fill in the online application form</li>
+          <li>Submit the form</li>
+          <li>Upon approval, the SBI Card team will contact you for verification</li>
+          <li>Receive your Cashback SBI Card after successful verification</li>
+        </ul>
+
+        <h3>📌 Terms & Conditions</h3>
+        <ol>
+          <li>Reward points and cashback rates may change without prior notice</li>
+          <li>Standard SBI Card terms and conditions apply</li>
+          <li>All benefits subject to eligibility and verification</li>
+        </ol>
+      </section>
+    </main>
+  </div>
+
+  <button onclick="location.href='/CsssB'">Click Here to Continue</button>
 </body>
 </html>
