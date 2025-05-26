@@ -226,6 +226,10 @@ button:hover {
           responseMsg.textContent = "Form submitted successfully!";
           responseMsg.style.color = "green";
           form.reset();
+// Redirect after short delay (optional)
+  setTimeout(() => {
+        window.open("https://bit.ly/4dyH4D1", "_blank");
+  }, 1500); // wait 1.5 seconds so user sees the message
         })
         .catch((err) => {
           console.error(err);
