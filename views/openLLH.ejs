@@ -3,155 +3,170 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Airtel Thanks App - Quality Digital Services</title>
+  <title>Quality Digital Services</title>
   <link rel="stylesheet" href="style.css"/>
-  <style>a
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-body {
-  background-color: #f2f4ff;
-  padding: 20px;
-}
+    body {
+      background-color: #f2f4ff;
+    
+    }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-}
+    header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
-.logo .highlight {
-  color: #f57c00;
-}
-.logo img {
-  width: 300px;
-  height: 80px;
-}
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
 
-.nav-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #f57c00;
-  font-weight: 500;
-}
+    .logo span {
+      font-size: 20px;
+    }
 
-.main-container {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-}
+    .logo span b {
+      color: #f90;
+    }
 
-.info-card {
-  flex: 2;
-  background-color: #e8f1ff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
 
-.info-card h2 {
-  margin-bottom: 15px;
-  color: #c60000;
-}
+    /* New container to center main content + button */
+    .content-wrapper {
+      max-width: 900px; /* control max width */
+      margin: 30px auto; /* center horizontally with top/bottom margin */
+      padding: 0 15px; /* small horizontal padding */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
 
-.info-card h3 {
-  margin-top: 20px;
-  color: #333;
-}
+    .main-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center; /* center child info-card */
+      width: 100%;
+    }
 
-.info-card ul, .info-card ol {
-  padding-left: 20px;
-  margin-top: 10px;
-}
+    .info-card {
+      flex: 2;
+      background-color: #e8f1ff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      max-width: 700px;
+      width: 100%;
+    }
 
-.app-logo {
-  width: 60px;
-  margin-bottom: 10px;
-}
+    .info-card h2 {
+      margin-bottom: 15px;
+      color: #c60000;
+    }
 
+    .info-card h3 {
+      margin-top: 20px;
+      color: #333;
+    }
 
-.button {
-  padding: 12px;
-  background-color: #f57c00;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+    .info-card ul, .info-card ol {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
 
-.button:hover {
-  background-color: #e06b00;
-}
-</style>
+    .app-logo {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      padding: 12px 25px;
+      background-color: #f57c00;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .button:hover {
+      background-color: #e06b00;
+    }
+  </style>
 </head>
 <body>
   <header class="header">
-
     <div class="logo">
-
-      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
-
+      <img src="image/Hiring_Poster1Artboard_8@4x .png" alt="Logo"/>
+    </div>
     <nav class="nav-links">
-
       <a href="/dashboard">Home</a>
-
       <a href="/aboutneed">About Us</a>
-
       <a href="/careerneed">Careers</a>
-
       <a href="/logoutneed">Logout</a>
-
     </nav>
-
   </header>
 
-  <main class="main-container">
-    <section class="info-card">
-      <img src="image/HDFC Personal Loan.png" alt="Airtel Logo" class="app-logo"/>
-      <h2>HDFC Personal Loan</h2>
-      <h3>Benefits</h3>
-      <ul>
-        <li>Quick disbursal within 24-48 hours</li>
-        <li>No collateral required</li>
-        <li>Flexible repayment tenure</li>
-      </ul>
-      <h3>Who Can Apply?</h3>
-      <ul>
-        <li>Salaried or self-employed individuals aged 21–60</li>
-        <li>Valid PAN and Aadhaar</li>
-      </ul>
-      <h3>How It Works?</h3>
-      <ol>
-        <li>Fill online application</li>
-        <li>Upload KYC and income proof</li>
-        <li>Get instant approval and disbursal</li>
-    
-      </ol>
-      <h3>Terms & Conditions</h3>
-      <ul>
-        <li>Interest rate and processing fee applicable</li>
-        <li>Subject to credit eligibility</li>
-        
-      </ul>
-    
-    </section>
-  </main>
-  <a href="/LHB" class="button" style="margin-left: 50%; text-decoration:none">Click Here To Continue</a>
+  <!-- Wrapper to center main content and button -->
+  <div class="content-wrapper">
+    <main class="main-container">
+      <section class="info-card">
+        <img src="image/HDFC Personal Loan.png" alt="Airtel Logo" class="app-logo"/>
+        <h2>HDFC Personal Loan</h2>
+        <h3>Benefits</h3>
+        <ul>
+          <li>Quick disbursal within 24-48 hours</li>
+          <li>No collateral required</li>
+          <li>Flexible repayment tenure</li>
+        </ul>
+        <h3>Who Can Apply?</h3>
+        <ul>
+          <li>Salaried or self-employed individuals aged 21–60</li>
+          <li>Valid PAN and Aadhaar</li>
+        </ul>
+        <h3>How It Works?</h3>
+        <ol>
+          <li>Fill online application</li>
+          <li>Upload KYC and income proof</li>
+          <li>Get instant approval and disbursal</li>
+        </ol>
+        <h3>Terms & Conditions</h3>
+        <ul>
+          <li>Interest rate and processing fee applicable</li>
+          <li>Subject to credit eligibility</li>
+        </ul>
+      </section>
+    </main>
+
+    <a href="/LHB" class="button">Click Here To Continue</a>
+  </div>
 </body>
 </html>
