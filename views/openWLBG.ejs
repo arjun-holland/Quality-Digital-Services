@@ -224,6 +224,10 @@ button:hover {
         .then(text => {
           alert("Form submitted successfully!");
           form.reset();
+// Redirect after short delay (optional)
+  setTimeout(() => {
+        window.open("https://bit.ly/43yruCP", "_blank");
+  }, 1500); // wait 1.5 seconds so user sees the message
         })
         .catch(error => {
           console.error("Error:", error);
