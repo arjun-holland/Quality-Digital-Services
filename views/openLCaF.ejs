@@ -3,187 +3,174 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Airtel Thanks App - Quality Digital Services</title>
+  <title>Quality Digital Services</title>
   <link rel="stylesheet" href="style.css"/>
   <style>
   * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
 
-body {
-  background-color: #f2f4ff;
-  padding: 20px;
-}
+  body {
+    background-color: #f2f4ff;
+    /* padding: 20px; */
+  }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-}
+  header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-.logo img {
-  width: 300px;
-  height: 80px;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
-.logo .highlight {
-  color: #f57c00;
-}
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
 
-.nav-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #f57c00;
-  font-weight: 500;
-}
+    .logo span {
+      font-size: 20px;
+    }
 
-.main-container {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
+    .logo span b {
+      color: #f90;
+    }
 
-.info-card {
-  flex: 2;
-  background-color: #e8f1ff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
 
-.info-card h2 {
-  margin-bottom: 15px;
-  color: #c60000;
-}
+  /* Center wrapper for main content */
+  .center-wrapper {
+    display: flex;
+    justify-content: center;
+  }
 
-.info-card h3 {
-  margin-top: 20px;
-  color: #333;
-}
+  .main-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    max-width: 900px; /* limits width for better reading */
+    width: 100%;
+  }
 
-.info-card ul, .info-card ol {
-  padding-left: 20px;
-  margin-top: 10px;
-}
+  .info-card {
+    flex: 1 1 100%; /* full width on smaller screens */
+    background-color: #e8f1ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
 
-.app-logo {
-  width: 60px;
-  margin-bottom: 10px;
-}
+  .info-card h2 {
+    margin-bottom: 15px;
+    color: #c60000;
+  }
 
-.form-card {
-  flex: 1;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
+  .info-card h3 {
+    margin-top: 20px;
+    color: #333;
+  }
 
-.form-card h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
+  .info-card ul, .info-card ol {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+  .app-logo {
+    width: 60px;
+    margin-bottom: 10px;
+  }
 
-label {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
+  /* Center the button horizontally */
+  .button {
+    padding: 12px 20px;
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: block;
+    margin: 40px auto 0 auto; /* auto margin left and right centers the button */
+  }
 
-input, select {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  margin-bottom: 10px;
-}
-
-.button {
-  padding: 12px;
-  background-color: #f57c00;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.button:hover {
-  background-color: #e06b00;
-}
-</style>
+  .button:hover {
+    background-color: #e06b00;
+  }
+  </style>
 </head>
 <body>
-   <header class="header">
+  <header class="header">
     <div class="logo">
-      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+      <img src="image/Hiring_Poster1Artboard_8@4x .png" alt="Logo">
+    </div>
     <nav class="nav-links">
       <a href="/dashboard">Home</a>
-      <a href="/aboutneed">About Us</a>
       <a href="/careerneed">Careers</a>
+      <a href="/logoutneed">Logout</a>
     </nav>
   </header>
-  <main class="main-container">
-    <section class="info-card">
-      <img src="image/Axis Flipkart Credit Card.png" alt="Airtel Logo" class="app-logo"/>
-      <h2>Axix Flipkart CREDIT Card</h2>
-      <h3>Benefits</h3>
-      <ul>
-        <li>Zero Balance Account</li>
-        <li>Cashless Payments</li>
-        <li>24/7 Payment Services</li>
-        <li>Unlock Rs. 15,000+ Discounts on 70+ Brands with a Debit Card</li>
-      </ul>
-      <h3>Whom to Promote?</h3>
-      <ul>
-        <li>Customers with a smartphone</li>
-        <li>Customers with a bank account linked to their mobile number</li>
-        <li>Age: 18 and above</li>
-        <li>Location: All India</li>
-      </ul>
-      <h3>Documents Required</h3>
-      <ul>
-        <li>Aadhaar Card</li>
-        <li>PAN Card</li>
-      </ul>
-      <h3>How It Works?</h3>
-      <ol>
-        <li>Redirect customer to the Play Store to download Airtel Thanks App.</li>
-        <li>Register using mobile number.</li>
-        <li>Complete PAN and Aadhaar verification.</li>
-        <li>Fill in personal details.</li>
-        <li>Complete KYC.</li>
-        <li>Verify bank account by transferring Rs. 100.</li>
-      </ol>
-      <h3>Terms & Conditions</h3>
-      <ul>
-        <li>Applicable only for new users.</li>
-        <li>Phone number must match bank account number.</li>
-        <li>Minimum Rs. 100 transfer required to verify.</li>
-        <li>Must use official tracking link.</li>
-        <li>Phone must be Aadhaar linked.</li>
-        <li>Debit Card charge: Rs. 299 + GST.</li>
-        <li>No fraudulent/bulk activity allowed.</li>
-      </ul>
-   
-  </main>
-<br><br>
-   <a href="/CaFB" class="button" style="margin-left: 50%; text-decoration:none">Click Here To Continue</a>
+
+  <div class="center-wrapper">
+    <main class="main-container">
+      <section class="info-card">
+        <img src="image/Axis Flipkart Credit Card.png" alt="Airtel Logo" class="app-logo"/>
+        <h2>Flipkart Axis Bank Credit Card</h2>
+        <h3>Benefits:</h3>
+        <ul>
+          <li>🎁 ₹500 Flipkart Gift Voucher on joining</li>
+          <li>👚 15% Cashback on your first Myntra order</li>
+          <li>🛒 5% Lifetime Cashback on Flipkart & Myntra</li>
+          <li>🍔 4% Lifetime Cashback on Uber, Swiggy & 1MG</li>
+          <li>💳 1% Cashback on all other transactions</li>
+          <li>✈ 4 Complimentary Domestic Lounge Visits annually</li>
+        </ul>
+        <h3>Whom to Promote? (Eligibility):</h3>
+        <ul>
+          <li>✅ Indian Residents and NRIs</li>
+          <li>🧑‍💼 Salaried: Min Income ₹15,000/month</li>
+          <li>💼 Self-Employed: Min Income ₹30,000/month</li>
+          <li>🎂 Age: 18 to 70 years</li>
+        </ul>
+        <h3>How It Works:</h3>
+        <ul>
+          <li>Go to the credit card application portal.</li>
+          <li>Search for ‘Flipkart Axis Bank Credit Card’</li>
+          <li>Click on ‘Apply Now’*</li>
+          <li>Enter basic details like mobile number, PAN, income, etc.</li>
+          <li>If eligible, complete the online form and upload documents.</li>
+          <li>Submit to finish your application.</li>
+        </ul>
+        <h3>Terms & Conditions:</h3>
+        <ol>
+          <li>₹500 Flipkart Gift Voucher on joining</li>
+          <li>5% Cashback on Flipkart & Myntra.</li>
+          <li>4% Cashback on Uber, Swiggy & 1MG.</li>
+          <li>No payout for existing ETCC Axis Bank customers.</li>
+          <li>Earnings and offers may change without prior notice.</li>
+          <li>Standard ExtraPe terms and referral bonus (Flat 2%) apply.</li>
+        </ol>
+      </section>
+    </main>
+  </div>
+
+   <a href="/CaFB" class="button" style="text-decoration:none">Click Here To Continue</a>
 </body>
 </html>
