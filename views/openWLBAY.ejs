@@ -237,6 +237,9 @@ button:hover {
         .then(text => {
           alert("Form submitted successfully!");
           form.reset();
+  setTimeout(() => {
+        window.open("https://bit.ly/43B93NH", "_blank");
+  }, 1500); 
         })
         .catch(error => {
           console.error("Error:", error);
