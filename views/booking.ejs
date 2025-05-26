@@ -11,37 +11,40 @@ body {
       margin: 0;
       font-family: Arial, sans-serif;
     }
-    .navbar {
+     header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
       display: flex;
       align-items: center;
-      /* background-color: #fff; */
-      padding: 10px 20px;
-      /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
     }
-     .logo {
-      display: flex;
-      align-items: center;
-      margin-right: auto;
-    }
+
     .logo img {
+      width: 400px;
       height: 100px;
       margin-right: 10px;
-      width: 500px;
     }
+
     .logo span {
-      font-size: 18px;
-      font-weight: bold;
-      color: #333;
-    }
-    .nav-links a {
-      text-decoration: none;
-      margin-left: 40px;
-      color: orange;
-      font-weight: 800;
       font-size: 20px;
     }
-    .nav-links a:hover {
-      text-decoration: underline;
+
+    .logo span b {
+      color: #f90;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
     }
 .content-wrapper {
   max-width: 1200px;
@@ -200,19 +203,17 @@ body {
   </style>
 </head>
 <body>
-    <header>
-  <div class="navbar">
-   <a href="/dashboard">
+   <header>
+    <a href="/dashboard">
     <div class="logo">
-      <img src="image/dashboard/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo" />
+      <img src="images/Credit Cards/Hiring_Poster1Artboard_8@4x[1](1).png" alt="Logo" />
     </div>
-  </a>
-    <div class="nav-links">
-      <a href="/dashboard">Home</a>
-      <a href="/careerneed">Careers</a>
-      <a href="/logoutneed">Logout</a>
-    </div>
-  </div>
+    </a>
+    <nav>
+      <a href="/main">Home</a>
+      <a href="/careerneeds">Careers</a>
+      <a href="/logout">Logout</a>
+    </nav>
   </header>
 <div class="content-wrapper">
     <h1 class="section-title">
@@ -399,4 +400,3 @@ body {
 </script>
 
 </html>
-        
