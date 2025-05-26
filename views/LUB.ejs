@@ -398,6 +398,7 @@ const folderMap = {
   }
 
   const payload = new URLSearchParams([...formData.entries()]);
+    document.getElementById("submit").innerHTML = '<span class="spinner">🔄</span> Submitting...';
 
   fetch("https://script.google.com/macros/s/AKfycbyEuC3AhK9mGtrifzuyuTe27KLCFf62HiMx16v1rPYoTBboJB_OZaqMTBk-IBpAYkpNRA/exec", {
     method: "POST",
