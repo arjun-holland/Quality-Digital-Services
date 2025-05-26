@@ -273,8 +273,12 @@ Terms & Conditions:
         .then((res) => res.text())
         .then((text) => {
           responseMsg.textContent = "Form submitted successfully!";
-          responseMsg.style.color = "green";
-          form.reset();
+          document.getElementById("responseMsg").innerText = msg;
+      form.reset();
+      setTimeout(() => {
+        window.open("https://bit.ly/3SXMhuk", "_blank");
+      }, 1000); // 2 seconds
+      document.getElementById("submit").innerHTML = 'Submit Application';
         })
         .catch((err) => {
           console.error(err);
