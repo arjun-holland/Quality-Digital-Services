@@ -617,7 +617,7 @@ body {
 
       <div class="footer-column newsletter">
          <h3 style="font-family: Arial;">Get A Call-Back From Our Team</h3>
-  <form action="YOUR_GOOGLE_FORM_URL" method="POST" target="hidden_iframe" onsubmit="return validate()" novalidate>
+  <form action="https://script.google.com/macros/s/AKfycbz6Wl3lGiNFVFuZykNlJiubovY1Vt6r4rsZ04GQrQ7eLdesaNUlRmkMUpye2rAtJ3FBOA/exec" method="POST" target="hidden_iframe" onsubmit="return validate()" novalidate>
   <input type="tel" name="entry.X" required pattern="\d{10}" maxlength="10" placeholder="Enter 10-digit number" 
          style="padding:5px;border:1px solid #ccc;border-radius:4px;" id="phone">
   <button type="submit" style="background:none;border:none;cursor:pointer">
@@ -644,7 +644,7 @@ background:#000;color:#fff;padding:10px 15px;border-radius:5px;z-index:999;">
     document.getElementById('msg').style.display = 'block';
     setTimeout(() => {
       msg.style.display = 'none';
-    }, 2000);
+    }, 1000);
     return true;
   }
 </script>
