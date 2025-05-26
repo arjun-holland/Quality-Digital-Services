@@ -3,190 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Airtel Thanks App - Quality Digital Services</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Quality Digital Services</title>
   <style>
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+     body {
+      background-color: #f2f4ff;
+      /* padding: 20px; */
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-body {
-  background-color: #f2f4ff;
-  padding: 20px;
-}
+    /* Header styles remain unchanged */
+    header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-.logo img {
-  width: 300px;
-  height: 80px;
-}
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
 
-.logo .highlight {
-  color: #f57c00;
-}
+    .logo span {
+      font-size: 20px;
+    }
 
-.nav-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #f57c00;
-  font-weight: 500;
-}
+    .logo span b {
+      color: #f90;
+    }
 
-.main-container {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
 
-.info-card {
-  flex: 2;
-  background-color: #e8f1ff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
+    /* New: Center all body content except header */
+    .main-wrapper {
+      max-width: 900px;
+      margin: 40px auto;  /* horizontal center + vertical margin */
+      padding: 0 20px;
+      text-align: center;
+    }
 
-.info-card h2 {
-  margin-bottom: 15px;
-  color: #c60000;
-}
+    /* Example styling for your main content */
+    main {
+      background-color: #e8f1ff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
 
-.info-card h3 {
-  margin-top: 20px;
-  color: #333;
-}
+    .app-logo {
+      width: 60px;
+      margin-bottom: 10px;
+    }
 
-.info-card ul, .info-card ol {
-  padding-left: 20px;
-  margin-top: 10px;
-}
+    h2 {
+      margin-bottom: 15px;
+      color: #c60000;
+    }
 
-.app-logo {
-  width: 60px;
-  margin-bottom: 10px;
-}
+    h3 {
+      margin-top: 20px;
+      color: #333;
+    }
 
-.form-card {
-  flex: 1;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
+    ul, ol {
+      padding-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      text-align: left; /* keep lists left aligned */
+      display: inline-block; /* keep lists from stretching full width */
+      max-width: 600px;
+    }
 
-.form-card h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
+    button {
+      display: inline-block;
+      margin: 30px auto 0 auto;
+      padding: 12px 30px;
+      background-color: #f57c00;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-size: 16px;
+    }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
-
-input, select {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  margin-bottom: 10px;
-}
-
-.button {
-  padding: 12px;
-  background-color: #f57c00;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.button:hover {
-  background-color: #e06b00;
-}
-</style>
+    button:hover {
+      background-color: #e06b00;
+    }
+  </style>
 </head>
 <body>
-<header class="header">
-    <div class="logo">
-      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+  <header class="header">
+    <a href="/dashboard"><div class="logo">
+      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div></a>
     <nav class="nav-links">
       <a href="/dashboard">Home</a>
-      <a href="/aboutneed">About Us</a>
       <a href="/careerneed">Careers</a>
+      <a href="/logoutneed">Logout</a>
     </nav>
   </header>
 
-  <main class="main-container">
-    <section class="info-card">
-      <img src="image/HDFC TATA Neu Credit Card.png" alt="Airtel Logo" class="app-logo"/>
-        <h2>Tata Neu Infinity HDFC Bank Credit Card </h2>
+  
+ <div class="main-wrapper">
+    <main>
+       <img src="image/HDFC TATA Neu Credit Card.png" alt="Airtel Logo" class="app-logo"/>
+      <h2>Tata Neu Infinity HDFC Bank Credit Card</h2>
       <h3>Benefits</h3>
       <ul>
-        <li>8 Complimentary Domestic + 4 Complimentary International Airport Lounge Access</li>
-        <li>Lifetime Free Credit Card – No Joining or Annual Fees</li> 
-        <li>5% back as NeuCoins  on Tata Brand Group spends (BigBasket, Croma, TataCliq, AirAsia, etc.)</li>
-        <li>Additional 5% back* as NeuCoins on Tata Neu App spends (after registering for NeuPass)</li>
-        <li>1.5% back as NeuCoins* on all other eligible spends<li>
-        <li>1% Fuel Surcharge Waiver* at all fuel stations across India<li>
+        <li>8 Complimentary Domestic + 4 Complimentary International Lounge Access</li>
+        <li>Lifetime Free Credit Card – No Joining or Annual Fees</li>
+        <li>5% back as NeuCoins on Tata Brand spends (BigBasket, Croma, etc.)</li>
+        <li>Additional 5% on Tata Neu App after NeuPass</li>
+        <li>1.5% back on other spends</li>
+        <li>1% Fuel Surcharge Waiver</li>
       </ul>
-      <h3>Whom to Promote? (Eligibility)</h3>
+      <h3>Eligibility</h3>
       <ul>
-        <li>Age: 21 to 60 years</li>
-        <li>Minimum Income: ₹1,00,000 per month (Salaried)</li>
-        <li>Minimum ITR: ₹12,00,000 per annum (Self-Employed)</li>
-        <li>Indian resident with a stable income and good credit profile</li>
+        <li>Age: 21–60 years</li>
+        <li>Income: ₹1L/month (Salaried), ₹12L/year ITR (Self-Employed)</li>
+        <li>Indian resident with good credit profile</li>
       </ul>
-      <h3>Documents Required</h3>
-      <ul>
-        <li>Aadhaar Card</li>
-        <li>PAN Card</li>
-      </ul>
-      <h3>How It Works?</h3>
-      <ol>
-        <li>Visit the HDFC Bank Credit Card application page.</li>
-        <li>Select Tata Neu Infinity HDFC Bank Credit Card</li>
-        <li>Complete PAN and Aadhaar verification.</li>
-        <li> Click on Apply Now</li>
-        <li>Fill in your personal, financial and contact details</li>
-        <li>Submit the form and complete OTP verification</li>
-        <li>Upload documents and finish the application process<li>
-      </ol>
-      <h3>Terms & Conditions</h3>
-      <ul>
-        <li>Lounge access and NeuCoin benefits as per current offer structure.</li>
-        <li>Earning rates are subject to change without prior notice – always stay updated</li>
-        <li>Card approval is subject to bank’s internal credit and verification policy</li>
-      </ul>
-    </section>
+    </main>
 
-   
-  </main>
-<br><br>
-   <a href="/ChTB" class="button" style="margin-left: 50%; text-decoration:none">Click Here To Continue</a>
- 
+    <button  onclick="location.href='/ChTB'">Click here to Continue</button>
+  </div>
+
 </body>
 </html>
