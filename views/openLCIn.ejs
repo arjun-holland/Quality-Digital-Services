@@ -3,204 +3,214 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Airtel Thanks App - Quality Digital Services</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>IndusInd Credit Card - Quality Digital Services</title>
   <style>
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-body {
-  background-color: #f2f4ff;
-  padding: 20px;
-}
+    body {
+      background-color: #f2f4ff;
+      /* padding: 20px;*/
+       /* display: flex; 
+      flex-direction: column;
+      align-items: center;  */
+    }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-}
+    
+header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-.logo img {
-  width: 300px;
-  height: 80px;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
-.logo .highlight {
-  color: #f57c00;
-}
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
 
-.nav-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #f57c00;
-  font-weight: 500;
-}
+    .logo span {
+      font-size: 20px;
+    }
 
-.main-container {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
+    .logo span b {
+      color: #f90;
+    }
 
-.info-card {
-  flex: 2;
-  background-color: #e8f1ff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
 
-.info-card h2 {
-  margin-bottom: 15px;
-  color: #c60000;
-}
+    .logo img {
+      width: 300px;
+      height: 80px;
+    }
 
-.info-card h3 {
-  margin-top: 20px;
-  color: #333;
-}
+    .nav-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #f57c00;
+      font-weight: 500;
+    }
 
-.info-card ul, .info-card ol {
-  padding-left: 20px;
-  margin-top: 10px;
-}
+    .main-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 15px;
+    }
 
-.app-logo {
-  width: 60px;
-  margin-bottom: 10px;
-}
+    .info-card {
+        background-color: #e8f1ff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 900px;
+      width: 100%;
+    }
 
-.form-card {
-  flex: 1;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
+    .info-card h2 {
+      margin-bottom: 15px;
+      color: #c60000;
+    }
 
-.form-card h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
+    .info-card h3 {
+      margin-top: 20px;
+      color: #333;
+    }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+    .info-card ul,
+    .info-card ol {
+      padding-left: 0;
+      margin-top: 10px;
+      list-style-position: inside;
+      text-align: left;
+    }
 
-label {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
+    .app-logo {
+      width: 60px;
+      margin-bottom: 10px;
+    }
 
-input, select {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  margin-bottom: 10px;
-}
+    button {
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #f57c00;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+      align-items: center;
+    }
 
-.button {
-  padding: 12px;
-  background-color: #f57c00;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.button:hover {
-  background-color: #e06b00;
-}
-</style>
+    button:hover {
+      background-color: #e06b00;
+    }
+  .center-btn {
+    display: block;
+    margin: 40px auto;
+  }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <div class="logo">
-      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+
+   <header class="header">
+    <a href="/dashboard"><div class="logo">
+      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div></a>
     <nav class="nav-links">
       <a href="/dashboard">Home</a>
-      <a href="/aboutneed">About Us</a>
       <a href="/careerneed">Careers</a>
+      <a href="/logoutneed">Logout</a>
     </nav>
   </header>
 
   <main class="main-container">
     <section class="info-card">
-      <img src="image/Indusind Bank Credit Card.png" alt="Airtel Logo" class="app-logo"/>
-       <h2>IndusInd Bank Credit Card</h2>
-      <h3> 🎁 Welcome Benefits</h3>
+      <img src="image/Indusind Bank Credit Card.png" alt="IndusInd Credit Card" class="app-logo"/>
+      <h2>IndusInd Bank Credit Card</h2>
+
+      <h3>🎁 Welcome Benefits</h3>
       <ul>
         <li>Get EazyDiner Vouchers as a welcome gift</li>
-        <li>Enjoy access to the *Luxe Gift Card</li>
-        <li>Vouchers from multiple premium brands (T\&Cs apply)</li>
-        <li>Unlock Rs. 15,000+ Discounts on 70+ Brands with a Debit Card</li>
+        <li>Enjoy access to the Luxe Gift Card</li>
+        <li>Vouchers from multiple premium brands (T&amp;Cs apply)</li>
+        <li>Unlock ₹15,000+ discounts on 70+ brands with a debit card</li>
       </ul>
+
       <h3>⛽ Fuel Benefits</h3>
       <ul>
-        <li>1% Fuel Surcharge Waiver on transactions between ₹400–₹4,000</li>
+        <li>1% fuel surcharge waiver on transactions between ₹400–₹4,000</li>
         <li>Applicable at all fuel stations across India</li>
       </ul>
-      <h3> 🛡 Zero Liability on Lost or Stolen Card</h3>
+
+      <h3>🛡 Zero Liability on Lost or Stolen Card</h3>
       <ul>
         <li>Covered under the ‘Total Protect’ program</li>
-        <li>Complete protection against unauthorized transactions up to 48 days before reporting</li>
+        <li>Protection against unauthorized transactions up to 48 days before reporting</li>
       </ul>
-      <h3> ✈ Insurance Benefits</h3>
+
+      <h3>✈ Insurance Benefits</h3>
       <ol>
-        <li>Air Accident Cover: ₹25 Lakhs.</li>
-        <li>Lost Baggage: ₹1 Lakh.</li>
-        <li>Delayed Baggage: ₹25,000.</li>
-        <li>Loss of Passport: ₹50,000.</li>
-        <li>Lost Ticket: ₹25,000.</li>
-        <li>Missed Flight Connection: ₹25,000.</li>
+        <li>Air Accident Cover: ₹25 Lakhs</li>
+        <li>Lost Baggage: ₹1 Lakh</li>
+        <li>Delayed Baggage: ₹25,000</li>
+        <li>Loss of Passport: ₹50,000</li>
+        <li>Lost Ticket: ₹25,000</li>
+        <li>Missed Flight Connection: ₹25,000</li>
       </ol>
-      <h3> ✅ Eligibility Criteria</h3>
+
+      <h3>✅ Eligibility Criteria</h3>
       <ul>
-        <li>Age: 21 to 65 years.</li>
-        <li>Occupation: Salaried or Self-employed.</li>
-        <h2>Documents Required:.</h2>
-        <li>Proof of Identity.</li>
-        <li>Proof of Address</li>
-        <li>Proof of Income.</li>
-        <li>No fraudulent/bulk activity allowed.</li>
+        <li>Age: 21 to 65 years</li>
+        <li>Occupation: Salaried or Self-employed</li>
       </ul>
+
+      <h3>📄 Documents Required</h3>
+      <ul>
+        <li>Proof of Identity</li>
+        <li>Proof of Address</li>
+        <li>Proof of Income</li>
+        <li>No fraudulent/bulk activity allowed</li>
+      </ul>
+
       <h3>📝 How to Apply</h3>
       <ul>
-        <li>Enter your mobile number to begin the application.</li>
-        <li>Verify OTP to check available credit card offers.</li>
-        <h2>Select your preferred IndusInd Bank Credit Card.</h2>
-        <li>Submit required documents to complete your application.</li>
+        <li>Enter your mobile number to begin the application</li>
+        <li>Verify OTP to check available credit card offers</li>
+        <li>Select your preferred IndusInd Bank Credit Card</li>
+        <li>Submit required documents to complete your application</li>
       </ul>
-      <h3> 📌 Terms & Conditions</h3>
-      <ul>
-        <li>Lifetime Free Card (on eligible variants).</li>
-        <li>Complimentary airport lounge access (as per card variant).</li>
-        <h2>1% fuel surcharge waiver applicable.</h2>
-        <li>Benefits and reward earnings are subject to change without prior notice.</li>
-        <li>All other applicable terms and conditions of IndusInd Bank apply</li>
-      </ul>
-    </section>
 
-    
+      <h3>📌 Terms & Conditions</h3>
+      <ul>
+        <li>Lifetime free card (on eligible variants)</li>
+        <li>Complimentary airport lounge access (as per card variant)</li>
+        <li>1% fuel surcharge waiver applicable</li>
+        <li>Benefits and rewards subject to change without prior notice</li>
+        <li>All standard IndusInd Bank terms and conditions apply</li>
+      </ul>
+
+      <button class="center-btn" onclick="location.href='/CInB'" >Click here to Continue</button>
+    </section>
   </main>
-<br><br>
-  <a href="/CInB" class="button" style="margin-left: 50%; text-decoration:none">Click Here To Continue</a>
-  
 </body>
 </html>
