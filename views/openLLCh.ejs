@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Airtel Thanks App - Quality Digital Services</title>
+  <title>Quality Digital Services</title>
   <link rel="stylesheet" href="style.css"/>
-  <style>a
-  * {
+  <style>
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,48 +15,64 @@
 
 body {
   background-color: #f2f4ff;
-  padding: 20px;
+  
 }
 
-.header {
+header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 20px;
+    }
+
+    .logo span b {
+      color: #f90;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+
+.center-wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-}
-
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.logo .highlight {
-  color: #f57c00;
-}
-.logo img {
-  width: 300px;
-  height: 80px;
-}
-
-.nav-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #f57c00;
-  font-weight: 500;
+  margin-top: 30px;
 }
 
 .main-container {
   display: flex;
+  flex-direction: column;
   gap: 20px;
-  margin-top: 30px;
   flex-wrap: wrap;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 800px;
 }
 
 .info-card {
-  flex: 2;
   background-color: #e8f1ff;
   padding: 20px;
   border-radius: 10px;
@@ -83,10 +99,8 @@ body {
   margin-bottom: 10px;
 }
 
-
-
 .button {
-  padding: 12px;
+  padding: 12px 24px;
   background-color: #f57c00;
   color: white;
   border: none;
@@ -94,17 +108,20 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
+  text-decoration: none;
+  text-align: center;
 }
 
 .button:hover {
   background-color: #e06b00;
 }
-</style>
+  </style>
 </head>
 <body>
   <header class="header">
     <div class="logo">
-      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+      <img src="image/Hiring_Poster1Artboard_8@4x .png" alt="Logo">
+    </div>
     <nav class="nav-links">
       <a href="/dashboard">Home</a>
       <a href="/aboutneed">About Us</a>
@@ -113,38 +130,37 @@ body {
     </nav>
   </header>
 
-  <main class="main-container">
-    <section class="info-card">
-      <img src="image/chola.jpg" alt="Airtel Logo" class="app-logo"/>
-      <h2>Cholamandalam Personal Loan</h2>
-      <h3>Benefits</h3>
-      <ul>
-        <li>Quick loans for all credit profiles</li>
-        <li> Affordable interest rates</li>
-        <li> No collateral needed</li>
-    
-      </ul>
-      <h3>Who Can Apply?</h3>
-      <ul>
-        <li>Salaried or business owners</li>
-        <li> PAN, Aadhaar, and income documents required</li>
-        
-      </ul>
-      <h3>How It Works?</h3>
-      <ol>
-        <li>Online or branch application</li>
-        <li>KYC and income check</li>
-        <li>Disbursal upon approval</li>
-      </ol>
-      <h3>Terms & Conditions</h3>
-      <ul>
-        <li>Interest based on applicant’s risk score</li>
-        <li>Processing fee applicable</li>
-      </ul>
-    </section>
+  <div class="center-wrapper">
+    <main class="main-container">
+      <section class="info-card">
+        <img src="image/chola.jpg" alt="Airtel Logo" class="app-logo"/>
+        <h2>Cholamandalam Personal Loan</h2>
+        <h3>Benefits</h3>
+        <ul>
+          <li>Quick loans for all credit profiles</li>
+          <li>Affordable interest rates</li>
+          <li>No collateral needed</li>
+        </ul>
+        <h3>Who Can Apply?</h3>
+        <ul>
+          <li>Salaried or business owners</li>
+          <li>PAN, Aadhaar, and income documents required</li>
+        </ul>
+        <h3>How It Works?</h3>
+        <ol>
+          <li>Online or branch application</li>
+          <li>KYC and income check</li>
+          <li>Disbursal upon approval</li>
+        </ol>
+        <h3>Terms & Conditions</h3>
+        <ul>
+          <li>Interest based on applicant’s risk score</li>
+          <li>Processing fee applicable</li>
+        </ul>
+      </section>
+    </main>
 
-  </main>
-    <a href="/CChB" class="button" style="margin-left: 50%; text-decoration:none">Click Here To Continue</a>
+    <a href="/CChB" class="button">Click Here To Continue</a>
+  </div>
 </body>
 </html>
-
