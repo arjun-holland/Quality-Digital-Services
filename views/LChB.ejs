@@ -152,6 +152,14 @@
     button[type="submit"]:hover {
       background: linear-gradient(to right, #0043af, #0073e6);
     }
+.spinner {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
     #responseMsg {
       margin-top: 15px;
