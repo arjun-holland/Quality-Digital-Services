@@ -626,7 +626,7 @@ app.get("/CSCB",(req,res)=>{
     res.render('CSCB');
 });
 app.get("/openLChT",(req,res)=>{//HDFC TATA
-    res.render('openLhT');
+    res.render('openLChT');
 });
 app.get("/openWLChT",(req,res)=>{
     res.render('openWLChT');
