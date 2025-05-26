@@ -1,133 +1,119 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BANDHAN Bank - Quality Digital Services</title>
-  <style>a
+  <style>
   * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
 
-body {
-  background-color: #f2f4ff;
-  padding: 20px;
-}
+  body {
+    background-color: #f2f4ff;
+    
+  }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-}
+  header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
-.logo .highlight {
-  color: #f57c00;
-}
-.logo img {
-  width: 300px;
-  height: 80px;
-}
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
 
-.nav-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #f57c00;
-  font-weight: 500;
-}
+    .logo span {
+      font-size: 20px;
+    }
 
-.main-container {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
+    .logo span b {
+      color: #f90;
+    }
 
-.info-card {
-  flex: 2;
-  background-color: #e8f1ff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
 
-.info-card h2 {
-  margin-bottom: 15px;
-  color: #c60000;
-}
+  .center-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
-.info-card h3 {
-  margin-top: 20px;
-  color: #333;
-}
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+  }
 
-.info-card ul, .info-card ol {
-  padding-left: 20px;
-  margin-top: 10px;
-}
+  .info-card {
+    background-color: #e8f1ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
 
-.app-logo {
-  width: 60px;
-  margin-bottom: 10px;
-}
+  .info-card h2 {
+    margin-bottom: 15px;
+    color: #c60000;
+  }
 
-.form-card {
-  flex: 1;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
+  .info-card h3 {
+    margin-top: 20px;
+    color: #333;
+  }
 
-.form-card h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
+  .info-card ul, .info-card ol {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+  .app-logo {
+    width: 60px;
+    margin-bottom: 10px;
+  }
 
-label {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
+  .button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s;
+    text-decoration: none;
+    width: fit-content;
+  }
 
-input, select {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  margin-bottom: 10px;
-}
-
-.button {
-  padding: 12px;
-  background-color: #f57c00;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.button:hover {
-  background-color: #e06b00;
-}
-</style>
+  .button:hover {
+    background-color: #e06b00;
+  }
+  </style>
 </head>
 <body>
   <div class="page-wrapper">
@@ -143,36 +129,38 @@ input, select {
       </nav>
     </header>
 
-    <main class="centered-content">
-      <section class="info-card">
-        <img src="image/loans/bandhan.jpg" alt="Airtel Logo" class="app-logo"/>
-        <h2>Bandhan Personal Loan</h2>
-        <h3>Benefits</h3>
-        <ul>
-          <li>Quick processing</li>
-          <li>Loan up to ₹5 Lakhs</li>
-          <li>Attractive interest rates</li>
-        </ul>
-        <h3>Who Can Apply?</h3>
-        <ul>
-          <li>Salaried professionals, 23–60 years</li>
-          <li>Valid KYC and income documents</li>
-        </ul>
-        <h3>How It Works?</h3>
-        <ol>
-          <li>Apply in branch or online</li>
-          <li>Submit documents</li>
-          <li>Loan gets credited</li>
-        </ol>
-        <h3>Terms & Conditions</h3>
-        <ul>
-          <li>Processing fee applicable</li>
-          <li>T&C based on loan amount</li>
-        </ul>
-      </section>
-    </main>
-    <a href="/LBB" class="button" style="margin-left: 50%; text-decoration:none">Click Here To Continue</a>
+    <div class="center-content">
+      <main class="main-container">
+        <section class="info-card">
+          <img src="image/loans/bandhan.jpg" alt="Bandhan Bank Logo" class="app-logo"/>
+          <h2>Bandhan Personal Loan</h2>
+          <h3>Benefits</h3>
+          <ul>
+            <li>Quick processing</li>
+            <li>Loan up to ₹5 Lakhs</li>
+            <li>Attractive interest rates</li>
+          </ul>
+          <h3>Who Can Apply?</h3>
+          <ul>
+            <li>Salaried professionals, 23–60 years</li>
+            <li>Valid KYC and income documents</li>
+          </ul>
+          <h3>How It Works?</h3>
+          <ol>
+            <li>Apply in branch or online</li>
+            <li>Submit documents</li>
+            <li>Loan gets credited</li>
+          </ol>
+          <h3>Terms & Conditions</h3>
+          <ul>
+            <li>Processing fee applicable</li>
+            <li>T&C based on loan amount</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <a href="/LBB" class="button">Click Here To Continue</a>
   </div>
 </body>
-
 </html>
