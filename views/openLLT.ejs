@@ -3,107 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title> Quality Digital Services</title>
-  <style>a
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+  <title>Quality Digital Services</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-body {
-  background-color: #f2f4ff;
-  padding: 20px;
-}
+    body {
+      background-color: #f2f4ff;
+      
+    }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-}
+    header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
-.logo .highlight {
-  color: #f57c00;
-}
-.logo img {
-  width: 300px;
-  height: 80px;
-}
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
 
-.nav-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #f57c00;
-  font-weight: 500;
-}
+    .logo span {
+      font-size: 20px;
+    }
 
-.main-container {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-}
+    .logo span b {
+      color: #f90;
+    }
 
-.info-card {
-  flex: 2;
-  background-color: #e8f1ff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
 
-.info-card h2 {
-  margin-bottom: 15px;
-  color: #c60000;
-}
+    /* Center the main content */
+    .main-container {
+      display: flex;
+      gap: 20px;
+      margin: 30px auto; /* centers horizontally */
+      flex-wrap: wrap;
+      max-width: 900px; /* limit width for better layout */
+    }
 
-.info-card h3 {
-  margin-top: 20px;
-  color: #333;
-}
+    .info-card {
+      flex: 2;
+      background-color: #e8f1ff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
 
-.info-card ul, .info-card ol {
-  padding-left: 20px;
-  margin-top: 10px;
-}
+    .info-card h2 {
+      margin-bottom: 15px;
+      color: #c60000;
+    }
 
-.app-logo {
-  width: 60px;
-  margin-bottom: 10px;
-}
+    .info-card h3 {
+      margin-top: 20px;
+      color: #333;
+    }
 
+    .info-card ul, .info-card ol {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
 
-.button {
-  padding: 12px;
-  background-color: #f57c00;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+    .app-logo {
+      width: 60px;
+      margin-bottom: 10px;
+    }
 
-.button:hover {
-  background-color: #e06b00;
-}
-</style>
+    .button {
+      padding: 12px 25px;
+      background-color: #f57c00;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .button:hover {
+      background-color: #e06b00;
+    }
+
+    /* Center the button */
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
- 
+
   <header class="header">
     <div class="logo">
-      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+      <img src="image/Hiring_Poster1Artboard_8@4x .png" alt="Logo">
+    </div>
     <nav class="nav-links">
       <a href="/dashboard">Home</a>
       <a href="/aboutneed">About Us</a>
@@ -114,36 +130,36 @@ body {
 
   <main class="main-container">
     <section class="info-card">
-      <img src="image/loans/tata capital.jpg" alt="Airtel Logo" class="app-logo"/>
+      <img src="image/loans/tata capital.jpg" alt="TATA Capital Logo" class="app-logo"/>
       <h2>TATA CAPITAL Personal Loan</h2>
       <h3>Benefits</h3>
       <ul>
-        <li>  Flexible tenure & amount</li>
-        <li>  Affordable interest</li>
-        <li> Online tracking of application</li>
-    
+        <li>Flexible tenure & amount</li>
+        <li>Affordable interest</li>
+        <li>Online tracking of application</li>
       </ul>
       <h3>Who Can Apply?</h3>
       <ul>
-        <li> Salaried/self-employed</li>
+        <li>Salaried/self-employed</li>
         <li>Indian citizen, 22–58 years</li>
-        
       </ul>
       <h3>How It Works?</h3>
       <ol>
-        <li> Visit official website/app</li>
-        <li> Fill KYC and income details</li>
-        <li> Instant approval and disbursal</li>
+        <li>Visit official website/app</li>
+        <li>Fill KYC and income details</li>
+        <li>Instant approval and disbursal</li>
       </ol>
       <h3>Terms & Conditions</h3>
       <ul>
-        <li> Prepayment charges may apply</li>
-        <li>   Interest rate varies
-</li>
+        <li>Prepayment charges may apply</li>
+        <li>Interest rate varies</li>
       </ul>
     </section>
   </main>
-   <a href="/CTB" class="button" style="margin-left: 50%; text-decoration:none">Click Here To Continue</a>
+
+  <div class="button-container">
+    <a href="/CTB" class="button">Click Here To Continue</a>
+  </div>
+
 </body>
 </html>
-
