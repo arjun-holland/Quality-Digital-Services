@@ -56,6 +56,7 @@ header {
     .app-logo {
       width: 60px;
       margin-bottom: 10px;
+margin-left: 50%;
     }
     /* Button custom style */
     .btn-orange {
@@ -73,10 +74,9 @@ header {
 <body>
 
   <header class="d-flex justify-content-between align-items-center bg-white border-bottom p-3 mb-4">
-    <div class="logo">
-      <img src="image/Hiring_Poster1Artboard_8@4x .png" alt="Logo" />
-    </div>
-    <nav>
+    <a href="/dashboard"><div class="logo">
+      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div></a>
+    <nav class="nav-links">
       <a href="/dashboard">Home</a>
       <a href="/careerneed">Careers</a>
       <a href="/logoutneed">Logout</a>
@@ -86,8 +86,8 @@ header {
   <main class="d-flex justify-content-center">
     <div class="card shadow-sm" style="max-width: 700px; width: 100%;">
       <div class="card-body bg-info bg-opacity-10 rounded-3 p-4">
-        <img src="image/HDFC Bonvoy Marriott Card.png" alt="Airtel Logo" class="app-logo" />
-        <h2 class="text-danger mb-3">HDFC Marriott Bonvoy Credit Card:*</h2>
+        <img src="image/Credit Cards/HDFC Bonvoy Marriott Card.png" alt="Airtel Logo" class="app-logo" />
+        <h2 style="margin-left:35%;" class="text-danger mb-3">HDFC Marriott Bonvoy Credit Card</h2>
 
         <h3 class="mt-4 text-dark">Benefits of the Marriott Bonvoy Credit Card:</h3>
         <ul class="ps-4 mt-2">
@@ -126,16 +126,16 @@ header {
           <li>Commercial/bulk usage strictly prohibited per ExtraPe policy</li>
         </ol>
 
+      </div>
+    </div>
+  </main>
+
         <div class="d-flex justify-content-center mt-4">
          <button class="btn btn-orange px-4 py-2" onclick="location.href='/ChBB'">
   Click here to Continue
 </button>
 
         </div>
-      </div>
-    </div>
-  </main>
-
   <!-- Bootstrap 5 JS bundle (optional, for components) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
