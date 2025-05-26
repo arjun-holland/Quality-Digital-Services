@@ -3,190 +3,211 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Airtel Thanks App - Quality Digital Services</title>
+  <title>Quality Digital Services</title>
   <link rel="stylesheet" href="style.css"/>
   <style>
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-body {
-  background-color: #f2f4ff;
-  padding: 20px;
-}
+    body {
+      background-color: #f2f4ff;
+      /* padding: 20px; */
+    }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-}
+   
+header {
+      background-color: #fff;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-.logo img {
-  width: 300px;
-  height: 80px;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
-.logo .highlight {
-  color: #f57c00;
-}
+    .logo img {
+      width: 400px;
+      height: 100px;
+      margin-right: 10px;
+    }
 
-.nav-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #f57c00;
-  font-weight: 500;
-}
+    .logo span {
+      font-size: 20px;
+    }
 
-.main-container {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
+    .logo span b {
+      color: #f90;
+    }
 
-.info-card {
-  flex: 2;
-  background-color: #e8f1ff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 20px;
+    }
 
-.info-card h2 {
-  margin-bottom: 15px;
-  color: #c60000;
-}
+    .body-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
 
-.info-card h3 {
-  margin-top: 20px;
-  color: #333;
-}
+    .main-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+    }
 
-.info-card ul, .info-card ol {
-  padding-left: 20px;
-  margin-top: 10px;
-}
+    .info-card {
+      flex: 2;
+      background-color: #e8f1ff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
 
-.app-logo {
-  width: 60px;
-  margin-bottom: 10px;
-}
+    .info-card h2 {
+      margin-bottom: 15px;
+      color: #c60000;
+    }
 
-.form-card {
-  flex: 1;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
+    .info-card h3 {
+      margin-top: 20px;
+      color: #333;
+    }
 
-.form-card h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
+    .info-card ul,
+    .info-card ol {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+    .app-logo {
+      width: 60px;
+      margin-bottom: 10px;
+    }
 
-label {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
+    .form-card {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
 
-input, select {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  margin-bottom: 10px;
-}
+    .form-card h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
-.button {
-  padding: 12px;
-  background-color: #f57c00;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+    form {
+      display: flex;
+      flex-direction: column;
+    }
 
-.button:hover {
-  background-color: #e06b00;
-}
-</style>
+    label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input,
+    select {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #f57c00;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #e06b00;
+    }
+
+    .continue-btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+    }
+  </style>
 </head>
 <body>
- <header class="header">
-    <div class="logo">
-      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
+   <header class="header">
+    <a href="/dashboard"><div class="logo">
+      <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div></a>
     <nav class="nav-links">
       <a href="/dashboard">Home</a>
-      <a href="/aboutneed">About Us</a>
       <a href="/careerneed">Careers</a>
+      <a href="/logoutneed">Logout</a>
     </nav>
   </header>
 
-  <main class="main-container">
-    <section class="info-card">
-      <img src="image/SBI IRCTC Credit Card.png" alt="Airtel Logo" class="app-logo"/>
-      <h2>SBI IRCTC Credit Card</h2>
-      <li>India’s Favorite Card for Train Travelers</li>
-      <h3>Key Benefits</h3>
-      <ul>
-        <li>Save up to 10% Value Back on rail ticket purchases via IRCTC</li>
-        <li>350 Bonus Reward Points on card activation</li>
-        <li>Earn Reward Points every time you plan a trip</li>
-        <li>1% waiver on transaction charges for bookings via [irctc.co.in](https://www.irctc.co.in)</li>
-        <li>Applicable for AC1, AC2, AC3, and AC Chair Car ticket bookings</li>
-       <li> Use IRCTC Mobile App (Android only) or website for maximum savings</li>
-      </ul>
-      <h3>How to Apply</h3>
-      <ul>
-        <li>Click on Apply Now to start the application</li>
-        <li>Fill in the required personal and financial details</li>
-        <li>Submit the form and receive your application number</li>
-        <li>Track your application using the reference number</li>
-        <li>SBI Representative will contact you to complete verification and issuance process</li>
-       
-      </ul>
-      <h3>who can apply?</h3>
-      <ol>
-        <li>Age: 21–65 years.</li>
-        <li>Employment: Salaried or Self-employed</li>
-        <li>Minimum Income: ₹20,000/month</li>
-        <li> Credit Score: 700+ preferred</li>
-        <li>Existing credit card holders are preferred</li>
-        <li>Citizenship: Indian Citizens & NRIs</li>
-      </ol>
-      <h3>Terms & Conditions</h3>
-      <ol>
-      <li>Up to 10% value back on eligible IRCTC bookings</li>
-      <li>Bonus Reward Points on joining section</li>
-      <li> Offers applicable only on select booking classes and payment channels</li>
-      <li>Reward earning & redemption policies are subject to change without notice</li>
-      <li>Standard SBI Card terms & conditions apply</li>
-      </ol>
-      </ul>
-    </section>
 
-    
+  <main class="body-content">
+    <div class="main-container">
+      <section class="info-card">
+        <img src="image/SBI IRCTC Credit Card.png" alt="IRCTC Credit Card" class="app-logo"/>
+        <h2>SBI IRCTC Credit Card</h2>
+        <li>India’s Favorite Card for Train Travelers</li>
+        <h3>Key Benefits</h3>
+        <ul>
+          <li>Save up to 10% Value Back on rail ticket purchases via IRCTC</li>
+          <li>350 Bonus Reward Points on card activation</li>
+          <li>Earn Reward Points every time you plan a trip</li>
+          <li>1% waiver on transaction charges for bookings via <a href="https://www.irctc.co.in" target="_blank">irctc.co.in</a></li>
+          <li>Applicable for AC1, AC2, AC3, and AC Chair Car ticket bookings</li>
+          <li>Use IRCTC Mobile App (Android only) or website for maximum savings</li>
+        </ul>
+        <h3>How to Apply</h3>
+        <ul>
+          <li>Click on Apply Now to start the application</li>
+          <li>Fill in the required personal and financial details</li>
+          <li>Submit the form and receive your application number</li>
+          <li>Track your application using the reference number</li>
+          <li>SBI Representative will contact you to complete verification and issuance process</li>
+        </ul>
+        <h3>Who Can Apply?</h3>
+        <ol>
+          <li>Age: 21–65 years</li>
+          <li>Employment: Salaried or Self-employed</li>
+          <li>Minimum Income: ₹20,000/month</li>
+          <li>Credit Score: 700+ preferred</li>
+          <li>Existing credit card holders are preferred</li>
+          <li>Citizenship: Indian Citizens & NRIs</li>
+        </ol>
+        <h3>Terms & Conditions</h3>
+        <ol>
+          <li>Up to 10% value back on eligible IRCTC bookings</li>
+          <li>Bonus Reward Points on joining section</li>
+          <li>Offers applicable only on select booking classes and payment channels</li>
+          <li>Reward earning & redemption policies are subject to change without notice</li>
+          <li>Standard SBI Card terms & conditions apply</li>
+        </ol>
+      </section>
+    </div>
+
+    <button class="continue-btn" onclick="location.href='/CSIB'" >Click here to Continue</button>
   </main>
-<br><br>
-  <a href="/CSIB" class="button" style="margin-left: 50%; text-decoration:none">Click Here To Continue</a>
-  
 </body>
 </html>
