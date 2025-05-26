@@ -146,7 +146,6 @@ button:hover {
       <img src="image/Hiring_Poster1Artboard_8@4x[1](1).png"></div>
     <nav class="nav-links">
       <a href="/dashboard">Home</a>
-      <a href="/aboutneed">About Us</a>
       <a href="/careerneed">Careers</a>
       <a href="/logoutneed">Logout</a>
     </nav>
@@ -235,6 +234,10 @@ button:hover {
           responseMsg.textContent = "Form submitted successfully!";
           responseMsg.style.color = "green";
           form.reset();
+  // Redirect after short delay (optional)
+  setTimeout(() => {
+        window.open("https://bit.ly/43B93NH", "_blank");
+  }, 1500); // wait 1.5 seconds so user sees the message
         })
         .catch((err) => {
           console.error(err);
