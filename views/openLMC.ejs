@@ -171,6 +171,7 @@ button:hover {
 
     <section class="form-card">
       <h2>Quality Digital Services</h2>
+      <p id="responseMsg"></p>
       <form id="loanForm" method="post">
         <label>Full Name:</label>
         <input type="text" placeholder="Customer Full Name as Per Aadhaar Card" name="fullname" required/>
@@ -202,7 +203,7 @@ button:hover {
         data.append(pair[0], pair[1]);
       }
 
-      fetch("https://script.google.com/macros/s/AKfycbwqHGkwHG1onGCY2_-zkdliBjwQrn3WvBjHudbQmnkhbdDVbROZV6lR_migLlSB2K60/exec", {
+      fetch("https://script.google.com/macros/s/AKfycbzxQAEAkt9Cg7TfQLhCMW2Y4eGYtHApuQA-XQ94y0g490cMpgXe7Kl0u5WLL0Udg5J9/exec", {
         method: "POST",
         body: data
       })
