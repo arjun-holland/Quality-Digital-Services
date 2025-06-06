@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Agent Login - Quality Digital Services</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-body {
-      margin: 0;
-      padding-top: 0px;
-      font-family: "Poppins", sans-serif;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Careers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #002240, #001220);
+      color: #fff;
     }
-     header {
+    /* .navbar-brand img {
+      height: 50px;
+    }
+    .nav-link {
+      color: #ff9000 !important;
+      font-weight: 600;
+    } */
+    header {
       background-color: #fff;
       padding: 10px 40px;
       display: flex;
@@ -48,963 +54,491 @@ body {
       font-weight: bold;
       font-size: 20px;
     }
-    .content-wrapper {
-  max-width: 100%;
-  margin: auto;
-  padding: 30px;
-  background-color: #f1f5ff;
-}
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .highlight {
+      color: #ff9000;
+    }
+    .filter-btn {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-weight: 600;
+      padding: 8px 16px;
+    }
+    .box {
+      width: 155px;
+      height: 40px;
+      text-align: start;
+      border-radius: 20px;
+    }
+    
+    .kai {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 70px;
+      padding-top: 5px;
+        }
+    .card {
+      border: none;
+      border-radius: 20px;
+      position: relative;
+      height: 320px;
+    }
+    .badge-tag {
+      background: #f8f9fa;
+      color: #000;
+      font-weight: 500;
+      border-radius: 8px;
+      padding: 4px 10px;
+      font-size: 0.8rem;
+    }
+    button:hover{
+      background-color: orange;
+      color: white;
+      border: none;
+    }
+    .apply-btn {
+      background: #007bff;
+      color: #fff;
+      font-weight: 500;
+      border-radius: 20px;
+      padding: 5px 20px;
+    }
+    .company-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    .footer {
+      background-color: #06113C;
+      color: #fff;
+      padding: 40px 20px 20px;
+    }
 
-/* Heading aligned to grid */
-.section-title {
-  font-size: 37px;
-  font-weight: 800;
-  font-family: 'Segoe UI', sans-serif;
-  color: #000;
-  margin-bottom: 30px;
-    text-align: center;
-}
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-.sub-text {
-  color: #ff8c1a;
-  font-weight: 600;
-  font-size: 22px;
-  margin-left: 10px;
-}
+    .footer-column {
+      flex: 1;
+      min-width: 180px;
+      margin: 10px;
+    }
 
+    .footer-column h3 {
+      margin-bottom: 15px;
+      color: #fff;
+      font-size: 18px;
+    }
 
-/* Grid layout for cards */
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
+    .footer-column a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      margin: 8px 0;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
 
+    .footer-column a:hover {
+      color: #fff;
+    }
+    .footer-logo img {
+      height: 80px;
+      width: 300px;
+    } 
 
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 30px;
-  max-width: 1200px;
-  margin: auto;
-  background-color: #f1f5ff;
-}
+    .footer-copy {
+      font-size: 13px;
+      color: #ccc;
+    }
+ .social-icons {
+      margin-top: 10px;
+    }
 
-/* Individual loan/credit card */
-.loan-card {
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 100%;
-  transition: transform 0.2s ease;
-}
-
-.loan-card:hover {
-  transform: translateY(-5px);
-}
-
-/* Header with logo and text */
-.loan-card-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.loan-card-header img {
-  width: 45px;
-  height: 45px;
-  margin-right: 10px;
-}
-
-.loan-card-info h3 {
-  margin: 0;
-  font-size: 17px;
-}
-
-.loan-card-info p {
-  margin: 0;
-  font-size: 14px;
-  color: #444;
-}
-
-/* Offer banner */
-.offer-banner {
-  background-color: #ff8c1a;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  border-radius: 8px;
-  margin: 15px 0;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-/* Fees box */
-.fees-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #bfeaff;
-  border-radius: 6px;
-  padding: 10px;
-  margin-bottom: 15px;
-}
-
-.fee-box {
-  text-align: center;
-  flex: 1;
-  font-weight: bold;
-  color: #222;
-}
-
-.fee-divider {
-  font-size: 20px;
-  color: #555;
-  margin: 0 8px;
-}
-
-/* Features */
-.features {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0;
-  color: #333;
-  font-size: 14px;
-}
-
-.features li {
-  margin-bottom: 5px;
-}
-
-/* Buttons */
-.buttons {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.buttons button {
-  background-color: #ff8c1a;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 15px;
-  font-weight: bold;
-  cursor: pointer;
-  flex: 1;
-  font-size: 12px;
-  transition: background-color 0.2s ease;
-}
-
-.buttons button:hover {
-  background-color: #e67300;
-}
-</style>
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      margin: 0 5px;
+      vertical-align: middle;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
+
+<!-- Navbar -->
+
 <header>
-   <a href="/dashboard">
-    <div class="logo">
-      <img src="image/dashboard/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo" />
-    </div>
-  </a>
-    <nav>
-      <a href="/dashboard">Home</a>
-      <a href="/careerneed">Careers</a>
-      <a href="/logoutneed">Logout</a>
-    </nav>
-  </header>
-<div class="content-wrapper">
-    <h1 class="section-title">
-        Apply Credit Cards & Earn Upto ₹1110 
-        <span class="sub-text">(On Successful Card Activation)</span>
-    </h1>
+        
+      <a href="/main"><div class="logo">
+    <img src="image/Hiring Poster1Artboard 8@4x[1](1).jpg" alt="Logo">
+  </div></a>
+        <nav>
+          <a href="/main">Home</a>
+          <a href="/careerneeds">Careers</a>
+          <a href="/login">Login</a>
+        </nav>
+      
+      </header>
 
-    <div class="cards-container">
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/SBI Cashback Card.png" alt="SBI Card Logo">
-        <div class="loan-card-info">
-            <h3>SBI Cashback Card</h3>
-            <p>5% cashback on online purchases | Easy Bill Pay</p>
+<!-- Internships Section -->
+<div class="container py-5 text-center">
+  <h2 class="section-title mb-3">
+    Latest Internships on <span class="highlight">QUALITY DIGITAL SERVICES</span>
+  </h2>
+
+  <div class="mb-4">
+    <span class="fs-5 fw-semibold me-3">TRENDING CATEGORIES:</span>
+    <button class="filter-btn me-2">WORK FROM HOME</button>
+    <button class="filter-btn me-2">PART TIME</button>
+    <button class="filter-btn">FULL TIME</button>
+  </div>
+
+  <div class="row g-4">
+    <!-- CARD 1 -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card p-3" style="background-color: white; width: 300px;">
+          <div style="background-color: #e5dffb; height: 400px; padding-top: 25px;">
+            <div style="display: flex; gap: 110px; padding-left: 15px; margin-bottom: 20px;">
+          <span class="badge bg-light text-dark fw-bold rounded-pill px-2 py-1">16 MAY 2025</span>
+          <span class="badge bg-light text-dark fw-bold rounded-pill px-2 py-1"><i class="bi bi-bookmark"></i></span></div>
+          
+          <div class="box">
+        <h6 class="fw-bold mb-0" style="padding-left: 20px;">HDFC</h6>
+        <h5 class="fw-bold" style="padding-left: 20px;">Business Development</h5></div>
+        <div class="d-flex justify-content-end mb-2">
+          <div style="padding-bottom: 5px;">
+          <img src="image/careers/HDFC Bonvoy Marriott Card.png" class="company-logo"></div>
         </div>
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <span class="badge-tag">Internship</span>
+          <span class="badge-tag">Full Time</span>
+          <span class="badge-tag">Project Work</span>
+          <span class="badge-tag">3 months Duration</span>
+        </div></div>
+        <div class="kai">
+          <div>
+        <p class="fw-semibold mb-0">₹ 4,000/month</p>
+
+        <p class="text-muted small">AP & Telangana</p></div>
+        <div class="text-end">
+          <button class="apply-btn border-0">Apply</button>
+        </div></div>
+      </div>
     </div>
-    <div class="offer-banner">
-        <p>Earn ₹645 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 999</p>
+
+    <!-- CARD 2 -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card p-3" style="background-color: white; width: 300px;">
+          <div style="background-color: #fce3ee; height: 400px; padding-top: 25px;">
+              <div style="display: flex; gap: 110px; padding-left: 15px; margin-bottom: 20px;">
+          <span class="badge bg-light text-dark fw-bold rounded-pill px-2 py-1">16 MAY 2025</span>
+          <span class="badge bg-light text-dark fw-bold rounded-pill px-2 py-1"><i class="bi bi-bookmark"></i></span></div>
+          <div class="box" style="padding-left: 20px;">
+        <h6 class="fw-bold mb-0">SBI</h6>
+        <h5 class="fw-bold">Credit Card Telecaller</h5></div>
+        <div class="d-flex justify-content-end mb-2">
+          <img src="image/careers/SBI Simply SAVE UPI Credit Card.png" class="company-logo">
         </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 999</p>
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <span class="badge-tag">Internship</span>
+          <span class="badge-tag">Remote</span>
+          <span class="badge-tag">Project Work</span>
+          <span class="badge-tag">3 months Duration</span>
+        </div></div>
+        <div class="kai">
+        <div>
+        <p class="fw-semibold mb-0">₹ 4,000/month</p>
+        <p class="text-muted small">AP & Telangana</p></div>
+        <div class="text-end">
+          <button class="apply-btn border-0">Apply</button>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card p-3" style="background-color: white;">
+          <div style="background-color: #ffe2cd; padding-top: 25px;">
+         <div style="display: flex; gap: 110px; padding-left: 15px; margin-bottom: 20px;">
+          <span class="badge bg-light text-dark fw-bold rounded-pill px-2 py-1">16 MAY 2025</span>
+         <span class="badge bg-light text-dark fw-bold rounded-pill px-2 py-1"><i class="bi bi-bookmark"></i></span></div>
+          <div class="box" style="padding-left: 20px;">
+        <h6 class="fw-bold mb-0">HDFC</h6>
+        <h5 class="fw-bold">Field Agents</h5>
         </div>
+        <div class="d-flex justify-content-end mb-2">
+          <img src="image/careers/HDFC Bonvoy Marriott Card.png" class="company-logo">
+        </div>
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <span class="badge-tag">Internship</span>
+          <span class="badge-tag">Part Time</span>
+          <span class="badge-tag">Project Work</span>
+          <span class="badge-tag">3 months Duration</span>
+        </div></div>
+        <div class="kai">
+          <div>
+        <p class="fw-semibold mb-0">₹ 8,000/month</p>
+        <p class="text-muted small">AP & Telangana</p></div>
+        <div class="text-end">
+          <button class="apply-btn border-0">Apply</button>
+        </div></div>
+      </div>
     </div>
-    <ul class="features">
-        <li>✅ 5% cashback on online purchases, 1% on offline purchases.</li>
-        <li>✅ Easy Bill Pay</li>
-        <li>✅ 1% fuel surcharge waiver at petrol pumps</li>
-    </ul>
-    <div class="buttons">
-        <button ><a href="/openLCS" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button ><a href="/openLCS" style="text-decoration: none;color: white;">Apply Without Login</a></button>
+
+    <!-- CARD 4 -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card p-3" style="background-color: white;">
+        <div style="background-color: #d4f9ec; padding-top: 25px;">
+        <div style="display: flex; gap: 110px; padding-left: 15px; margin-bottom: 20px;">
+          <span class="badge bg-light text-dark fw-bold rounded-pill px-2 py-1">16 MAY 2025</span>
+         <span class="badge bg-light text-dark fw-bold rounded-pill px-2 py-1"><i class="bi bi-bookmark"></i></span></div>
+          <div class="box" style="padding-left: 20px;">
+        <h6 class="fw-bold mb-0">AXIS</h6>
+        <h5 class="fw-bold">Credit Card Telecaller</h5></div>
+        <div class="d-flex justify-content-end mb-2">
+          <img src="image/careers/Axis Myzone Credit Card.png" class="company-logo">
+        </div>
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <span class="badge-tag">Internship</span>
+          <span class="badge-tag">On-site</span>
+          <span class="badge-tag">Project Work</span>
+          <span class="badge-tag">3 months Duration</span>
+        </div></div>
+        <div class="kai">
+          <div>
+        <p class="fw-semibold mb-0">₹ 4,000/month</p>
+        <p class="text-muted small">AP & Telangana</p></div>
+        <div class="text-end">
+          <button class="apply-btn border-0">Apply</button>
+        </div></div>
+      </div>
     </div>
+  </div>
+
+<br><br><hr><br>
+<div class="container py-5 text-center">
+  <h2 class="section-title mb-3">
+    Latest Full Time Jobs on <span class="highlight">QUALITY DIGITAL SERVICES</span>
+  </h2>
+
+  <div class="mb-4">
+    <span class="fs-5 fw-semibold me-3">TRENDING CATEGORIES:</span>
+    <button class="filter-btn me-2">WORK FROM HOME</button>
+    <button class="filter-btn me-2">PART TIME</button>
+    <button class="filter-btn">FULL TIME</button>
+  </div>
+  <div class="row g-4">
+    <!-- CARD 1 -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card p-3" style="background-color: white;">
+        <div style="background-color: #e5dffb; padding-top: 20px;">
+       <div style="display: flex; gap: 110px; padding-left: 15px; margin-bottom: 20px;">
+          <span class="badge bg-light text-dark fw-bold rounded-pill px-2 py-1">16 MAY 2025</span>
+          <span class="badge bg-light text-dark fw-bold rounded-pill px-2 py-1"><i class="bi bi-bookmark"></i></span></div>
+          <div class="box" style="padding-left: 20px;">
+        <h6 class="fw-bold mb-0">AXIS</h6>
+        <h5 class="fw-bold">Credit Card Telecaller</h5></div>
+        <div class="d-flex justify-content-end mb-2">
+          <img src="image/careers/Axis Myzone Credit Card.png" class="company-logo">
+        </div>
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <span class="badge-tag">Full time</span>
+          <span class="badge-tag">Senior Level</span>
+          <span class="badge-tag">Remote</span>
+          <span class="badge-tag">For Freshers</span>
+        </div></div>
+        <div class="kai">
+          <div>
+        <p class="fw-semibold mb-0">₹ 10,000/month</p>
+        <p class="text-muted small">AP & Telangana</p></div>
+        <div class="text-end">
+          <button class="apply-btn border-0">Apply</button>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card p-3" style="background-color: white;">
+        <div style="background-color: #fce3ee; padding-top: 25px;">
+        <div style="display: flex; gap: 110px; padding-left: 15px; margin-bottom: 20px;">
+          <span class="badge bg-light text-dark fw-bold rounded-pill px-2 py-1">16 MAY 2025</span>
+         <span class="badge bg-light text-dark fw-bold rounded-pill px-2 py-1"><i class="bi bi-bookmark"></i></span>
+        </div>
+        <div class="box" style="padding-left: 20px;">
+        <h6 class="fw-bold mb-0">HDFC</h6>
+        <h5 class="fw-bold">Credit Card Telecaller</h5></div>
+        <div class="d-flex justify-content-end mb-2">
+          <img src="image/careers/HDFC Bonvoy Marriott Card.png" class="company-logo">
+        </div>
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <span class="badge-tag">Full Time</span>
+          <span class="badge-tag">Senior Level</span>
+          <span class="badge-tag">Remote</span>
+          <span class="badge-tag">For Freshers</span>
+        </div></div>
+        <div class="kai">
+          <div>
+        <p class="fw-semibold mb-0">₹ 10,000/month</p>
+        <p class="text-muted small">AP & Telangana</p></div>
+        <div class="text-end">
+          <button class="apply-btn border-0">Apply</button>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card p-3" style="background-color: white;">
+        <div style="background-color: #ffe2cd; padding-top: 25px;">
+       <div style="display: flex; gap: 110px; padding-left: 15px; margin-bottom: 20px;">
+          <span class="badge bg-light text-dark fw-bold rounded-pill px-2 py-1">16 MAY 2025</span>
+          <span class="badge bg-light text-dark fw-bold rounded-pill px-2 py-1"><i class="bi bi-bookmark"></i></span>
+        </div>
+        <div class="box" style="padding-left: 20px;">
+        <h6 class="fw-bold mb-0">SBI</h6>
+        <h5 class="fw-bold">Credit Card Agents</h5></div>
+        <div class="d-flex justify-content-end mb-2">
+          <img src="image/careers/SBI Simply SAVE UPI Credit Card.png" class="company-logo">
+        </div>
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <span class="badge-tag">Full Time</span>
+          <span class="badge-tag">Senior Level</span>
+          <span class="badge-tag">Work at Any Location</span>
+          <!-- <span class="badge-tag">3 months Duration</span> -->
+        </div></div>
+        <div class="kai">
+          <div>
+        <p class="fw-semibold mb-0">₹ 10,000/month</p>
+        <p class="text-muted small">AP & Telangana</p></div>
+        <div class="text-end">
+          <button class="apply-btn border-0">Apply</button>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card p-3" style="background-color: white;">
+        <div style="background-color: #d4f9ec; padding-top: 25px;">
+       <div style="display: flex; gap: 110px; padding-left: 15px; margin-bottom: 20px;">
+          <span class="badge bg-light text-dark fw-bold rounded-pill px-2 py-1">16 MAY 2025</span>
+         <span class="badge bg-light text-dark fw-bold rounded-pill px-2 py-1"><i class="bi bi-bookmark"></i></span>
+        </div>
+        <div class="box" style="padding-left: 20px;">
+        <h6 class="fw-bold mb-0">HDFC</h6>
+        <h5 class="fw-bold">Loan Agent</h5></div>
+        <div class="d-flex justify-content-end mb-2">
+          <img src="image/careers/HDFC Bonvoy Marriott Card.png" class="company-logo">
+        </div>
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <span class="badge-tag">Full Time</span>
+          <span class="badge-tag">Senior Level</span>
+          <span class="badge-tag">Work From Office</span>
+          <!-- <span class="badge-tag">3 months Duration</span> -->
+        </div></div>
+        <div style="display: flex; gap: 30px; padding-top: 5px;">
+          <div>
+         <p class="fw-semibold mb-0">₹ 15,000/month</p>
+        <p class="text-muted small">Chirala , Andhrapradesh</p></div>
+        <div class="text-end">
+          <button class="apply-btn border-0">Apply</button>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</div><br><hr>
+<footer class="footer">
+    <div class="footer-container">
+
+     
+      <div class="footer-column">
+        <h3>Service</h3>
+        <a href="/main">Bank Loans</a>
+        <a href="/main">Personal Loans</a>
+        <a href="/main">Business Loans</a>
+        <a href="/main">Gold Loans</a>
+        <a href="/main">Bookings</a>
+        <a href="/main">Credit cards</a>
+        <a href="/main">Demat Accounts</a>
+        <a href="/main">Mutual Funds</a>
+
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <a href="/main">Home</a>
+        <a href="#">Contact</a>
+      </div>
+
+<div class="footer-column newsletter">
+                 <h3 style="font-family: Arial;">Get A Call-Back From Our Team</h3>
+  <form action="https://script.google.com/macros/s/AKfycbxzOHEJTWZQX0LfVM4DQGV0TeNHwmG-AW_xOojGynU5lTt2C05C4s5-MGE93OcSwTPz/exec" method="POST" target="hidden_iframe" onsubmit="return validate()" novalidate>
+  <input type="tel" name="entry.X" required pattern="\d{10}" maxlength="10" placeholder="Enter 10-digit number" 
+         style="padding:5px;border:1px solid #ccc;border-radius:4px;" id="phone">
+  <button type="submit" style="background:none;border:none;cursor:pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="green" viewBox="0 0 24 24">
+      <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1v3.61a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1h3.6a1 1 0 011 1c0 1.25.2 2.48.57 3.58a1 1 0 01-.25 1.01l-2.3 2.2z"/>
+    </svg>
+  </button>
+</form>
+<div id="msg" style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
+background:#000;color:#fff;padding:10px 15px;border-radius:5px;z-index:999;">
+  We will contact you soon!
 </div>
 
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/HDFC Bank Credit Cards.png" alt="HDFC Card Logo">
-        <div class="loan-card-info">
-            <h3>HDFC Bank Credit Cards</h3>
-            <p>1% Fuel Surcharge Wavier | Get Reward points on every purchase</p>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹600 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 499</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 499</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ Fuel Surcharge Wavier</li>
-        <li>✅ Offers on Movie tickets & restaurants</li>
-        <li>✅ Travel benefits & Free Insurance</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCH" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLCH" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+<script>
+  function validate() {
+    const phone = document.getElementById('phone');
+    if (!/^\d{10}$/.test(phone.value)) {
+      phone.setCustomValidity("Enter exactly 10 digits");
+      phone.reportValidity();
+      return false;
+    }
+    phone.setCustomValidity(""); // Clear error
+    document.getElementById('msg').style.display = 'block';
+    setTimeout(() => {
+      msg.style.display = 'none';
+    }, 2000);
+    return true;
+  }
+</script>
 
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/POP Club Credit Card By Yes Bank.png" alt="POP Club Card Logo">
-        <div class="loan-card-info">
-            <h3>POP Club Credit Card By Yes Bank</h3>
+                 <div class="social-icons">
+          <a href="https://www.instagram.com/qualitydigitalservices?igsh=d3ptbXM1dmxtajJw" style="text-decoration:none;"><img src="image/instagram (1).png" alt="Instagram">Instagram </a>
+          <a href="https://www.facebook.com/share/19YZLo1YXp/" style="text-decoration:none;"><img src="image/facebook.png" alt="Facebook">Facebook</a>
+          <a href="https://wa.link/4wl9lj" style="text-decoration:none;"><img src="image/whatsapp.png" alt="Facebook">Whatsapp</a>
+          <a href="https://www.linkedin.com/company/qualitydigitalservices/" style="text-decoration:none;"><img src="image/linkedin.png" alt="LinkedIn">LinkedIn</a>
+          <a href="https://qualitydigitalservices.blogspot.com" style="text-decoration:none;"><img src="image/blogger.png" alt="Blogger">Blogger</a>
+          <a href="https://g.co/kgs/TQAzEqr" style="text-decoration:none;"><img src="image/logoo.png" alt="Google Maps">Address</a>
         </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹375 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 0</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 0</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ No joining fee</li>
-        <li>✅ 5000 worth joining benefits</li>
-        <li>✅ Earn 10% POPcoins on all online payments</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCP" style="text-decoration: none;color: white;">Apply With Login</a>
-</button>
-        <button><a href="/openWLCP" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
 
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/AU Credit Card.png" alt="AU Card Logo">
-        <div class="loan-card-info">
-            <h3>AU Credit Card</h3>
-            <p>4 complimentary lounge access | 3 Months of complimentary Membership</p>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹585 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 0</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 0</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ 0% off on dining at Zomato</li>
-        <li>✅ Buy one get one free movie ticket</li>
-        <li>✅ 15% off on food orders at Swiggy</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCA" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLCA" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
+        <p style="margin: 8px 0 0; font-size: 13px;">Mobile: +917382752900</p>
+        <p style="margin: 4px 0 0; font-size: 13px;">Email: tharuntejpaul@qualitycareer.in</p>
+      </div>
 
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/IDFC First Bank Free Credit Card.png" alt="IDFC Card Logo">
-        <div class="loan-card-info">
-            <h3>IDFC First Bank Free Credit Card</h3>
-            <p>Welcome benefits worth up to 1,500 | Buy 1 Get 1 offer on movie tickets</p>
-        </div>
     </div>
-    <div class="offer-banner">
-        <p>Earn ₹300 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 0</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 0</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ complimentary Railway lounge</li>
-        <li>✅ Trip cancellation covers up to 2 claims</li>
-        <li>✅ Instant Discount on Flipkart</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCI" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLCI" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
 
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/SBI IRCTC Credit Card.png" alt="SBI Card Logo">
-        <div class="loan-card-info">
-            <h3>SBI IRCTC Credit Card</h3>
-            <p>Save up to 10% as Value Back | SBI Card Get rewarded every time</p>
-        </div>
+    <div class="footer-bottom">
+      <div class="footer-logo">
+      </div>
+      <div class="footer-copy">
+      </div>
     </div>
-    <div class="offer-banner">
-        <p>Earn ₹645 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 500</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 500</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ 10% as Value Back on rail ticket </li>
-        <li>✅ 1% Transaction Charges on Train bookings.</li>
-        <li>✅ Rewarded every time you plan a trip</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCSI" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLCSI" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
 
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/SBI Simply Click Credit Card.png" alt="SBI Card Logo">
-        <div class="loan-card-info">
-            <h3>SBI Simply Click Credit Card</h3>
-            <p>5% cashback on online purchases | Easy Bill Pay annual spends of Rs 2,00,000</p>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹645 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 499</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 499</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ Cashback Privileges with maximum value-back </li>
-        <li>✅ Instant 10% discount on Flipkart, Amazon & More</li>
-        <li>✅ e-voucher worth Rs.2,000 online spends</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCSS" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLCSS" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/IDFC First Bank Rupay Card.png" alt="IDFC Card Logo">
-        <div class="loan-card-info">
-            <h3>IDFC First Bank Rupay Card</h3>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹300 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 199</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 199</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ 3X Reward Points</li>
-        <li>✅ 25% Off* on Movie Tickets</li>
-        <li>✅ Complimentary Domestic Airport Lounge</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCIF" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLCIF" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/ICICI Bank Credit Card.png" alt="ICICI Card Logo">
-        <div class="loan-card-info">
-            <h3>ICICI Bank Credit Card</h3>
-            <p>Fuel surcharge waiver at petrol pumps | No cost EMI options for high-value purchases</p>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹360 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 500</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 500</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ Airport lounge access</li>
-        <li>✅ Fuel surcharge waiver</li>
-        <li>✅ No cost EMI options for high-value purchases</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCIC" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLCIC" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-<!-- work updation started form here -->
+  </footer>
 
 
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/Indusind Bank Credit Card.png" alt="Indusind Card Logo">
-        <div class="loan-card-info">
-            <h3>Indusind Bank Credit Card</h3>
-            <p>Get EazyDiner vouchers as a welcome gift.| You get accecc to the Luxe Gift Card.</p>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹540 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 0</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 0</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ Indus Easy Credit Card.</li>
-        <li>✅ Lifetime free card.</li>
-        <li>✅ Fuel surcharge waiver</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCIn" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLCIn" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
 
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/RBL Credit Card.png" alt="RBL Card Logo">
-        <div class="loan-card-info">
-            <h3>RBL Credit Card</h3>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹360 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 0</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 0</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ 10% cashback at myntra, Uber & Zomato.</li>
-        <li>✅ 1+1 movie ticket on BookMyShow</li>
-        <li>✅ 2 complimentary lounge</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCR" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLCR" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/HSBC Platinum free Credit card.png" alt="HSBC Card Logo">
-        <div class="loan-card-info">
-            <h3>HSBC Platinum free Credit card</h3>
-            <p>Zero joining fees.|Cashback is also available on Instant EMI.</p>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹1110 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 0</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 0</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ Unlimited cashback.</li>
-        <li>✅ Complimentary airport lounge access</li>
-        <li>✅ sonyLIV 12 month membership</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLChSbc" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLChSbc" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/Standard Chartered Bank CC.png" alt="Standard Card Logo">
-        <div class="loan-card-info">
-            <h3>Standard Chartered Bank CC</h3>
-            <p>Get 4 reward points per INR 150 on all retail spends | Domestic Lounge Access</p>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹900 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 499</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 499</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ 1% Fuel Surcharge Waiver.</li>
-        <li>✅ Get 4 reward points per INR 150 on all retail spends</li>
-        <li>✅ Domestic Lounge Access</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCSC" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openLCSC" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/HDFC TATA Neu Credit Card.png" alt="HDFC Card Logo">
-        <div class="loan-card-info">
-            <h3>HDFC TATA Neu Credit Card</h3>
-            <p>Get 8 Complimentary Domestic | 4 Complimentary International Airport Lounge</p>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹600 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 0</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 0</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ Complimentary Airport Lounge Access.</li>
-        <li>✅ 5% back as NewCoins on Tata Brand</li>
-        <li>✅ 1% fuel surcharge waiver </li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLChT" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLChT" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/HDFC Rupay Credit Card.png" alt="HDFC Card Logo">
-        <div class="loan-card-info">
-            <h3>HDFC Rupay Credit Card</h3>
-            <p>vail upto 50 days of interest-free | Get 2% Cashpoints* on Utility spends</p>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹600 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 250</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 250</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ Make UPI Payments using credit card & Get cash points.</li>
-        <li>✅ get 2% Cashpoints* on Utility spends</li>
-        <li>✅ Renewal fee waived spends of Rs.25,000 or more</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLChR" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLChR" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/HDFC IRCTC Credit Card.png" alt="HSFC Card Logo">
-        <div class="loan-card-info">
-            <h3>HDFC IRCTC Credit Card</h3>
-            <p>Earn 5 Reward Points for every INR 100 spent | Get RS.500/- Worth of gift voucher</p>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹900 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 500</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 500</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ Earn 5 Reward points.</li>
-        <li>✅ Additional 5% cashback on tarin bookings</li>
-        <li>✅ Rs.500/- Worth of gift voucher</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLChI" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLChI" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/HDFC Swiggy Credit Card.png" alt="HSFC Card Logo">
-        <div class="loan-card-info">
-            <h3>HDFC Swiggy Credit Card</h3>
-            <p>Get 10% Cashback on Swiggy Platfrom | 3 months Swiggy One Membership</p>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹600 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 0</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 0</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ 10% Cashback on Swiggy.</li>
-        <li>✅ 5% Cashback on Online Shopping Spends</li>
-        <li>✅ 3 months Swiggy One Membership</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLChS" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLChS" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/Axis Myzone Credit Card.png" alt="Axis Card Logo">
-        <div class="loan-card-info">
-            <h3>Axis Myzone Credit card</h3>
-            <p>1 year Free Sony Liv Subscription | Buy one Get one free on Movie tickets</p>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹510 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 0</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 0</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ 40% off on Swiggy.</li>
-        <li>✅ 1 year Free Sony Liv Subscription</li>
-        <li>✅ Complimentary airport lounge access</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCaM" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLCaM" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/Tata Neu FD Card.png" alt="TATA Card Logo">
-        <div class="loan-card-info">
-            <h3>Tata Neu Fd Card</h3>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹165 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 0</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 0</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ Earn NeuCoins on purchases.</li>
-        <li>✅ Get up to four complimentary domestic lounge</li>
-        <li>✅ additional 1% fuel surcharge</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCtnf" style="text-decoration: none;color: white;">Apply With Login</a>
-</button>
-        <button><a href="/openLCtnf" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/Axis Flipkart Credit Card.png" alt="Axis Card Logo">
-        <div class="loan-card-info">
-            <h3>Axis Flipkart Credit Card</h3>
-            <p>Get Rs.500 Worth Flipkart Gift Voucher | 15% Cashback on 1st Myntra Order</p>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹510 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 500</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 500</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ Rs.500 Worth Flipkart Gift Voucher.</li>
-        <li>✅ Lifetime Cashback on Flipkart</li>
-        <li>✅ Lifetime Cashback on Uber, Swiggy & 1MG</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCaF" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLCaF" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/Axis Reward Credit Card.png" alt="Axis Card Logo">
-        <div class="loan-card-info">
-            <h3>Axis Reward Credit Card</h3>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹510 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 1000</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 1000</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ Earn 2 EDGE reward points for every Rs.125 spent.</li>
-        <li>✅ Get 10x reward points on apparel & departmental purchases.</li>
-        <li>✅ Receive 2 complimentary domestic lounge accesses.</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCaR" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLCaR" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/Axis Myzone Rupay Credit Card.png" alt="Axis Card Logo">
-        <div class="loan-card-info">
-            <h3>Axis Myzone Rupay Credit Card</h3>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹510 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 0</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 0</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ 1 year Free Sony Liv Subscription.</li>
-        <li>✅ Complimentary airport lounge access</li>
-        <li>✅ 40% off on Swiggy</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCAMR" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLCAMR" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/Axis Indian Oil Credit Card.png" alt="Axis Card Logo">
-        <div class="loan-card-info">
-            <h3>Axis Indian Oil Credit Card</h3>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹510 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 500</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 500</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ Earn 20 EDGE reward points.</li>
-        <li>✅ Acclerated Reward Points</li>
-        <li>✅ Enjoy a 1% fuel surcharge waiver</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCAIO" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLCAIO" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/HDFC Bonvoy Marriott Card.png" alt="HDFC Card Logo">
-        <div class="loan-card-info">
-            <h3>HDFC Bonvoy Marriott Card</h3>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹750 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 3000</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 3000</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ Golf: 2 free sessions/quater.</li>
-        <li>✅ Lounge Access</li>
-        <li>✅ Free Nights on ₹6L, ₹9L, ₹15L spends/year</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLChB" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLChB" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-
-<div class="loan-card">
-    <div class="loan-card-header">
-        <img src="image/Credit Cards/SBI Simply SAVE UPI Credit Card.png" alt="SBI Card Logo">
-        <div class="loan-card-info">
-            <h3>SBI Simply SAVE UPI Credit Card</h3>
-        </div>
-    </div>
-    <div class="offer-banner">
-        <p>Earn ₹645 on Successful Card Activation.</p>
-    </div>
-    <div class="fees-section">
-        <div class="fee-box">
-            <p><strong>Annual Fees</strong><br>₹ 499</p>
-        </div>
-        <div class="fee-divider">|</div>
-        <div class="fee-box">
-            <p><strong>Joining Fees</strong><br>₹ 499</p>
-        </div>
-    </div>
-    <ul class="features">
-        <li>✅ Earn 2,000 reward points.</li>
-        <li>✅ Easy 10x reward points on every ₹100 spent</li>
-        <li>✅ Easy UPI payments.</li>
-    </ul>
-    <div class="buttons">
-        <button><a href="/openLCsss" style="text-decoration: none;color: white;">Apply With Login</a></button>
-        <button><a href="/openWLCsss" style="text-decoration: none;color: white;">Apply Without Login</a></button>
-    </div>
-</div>
-
-</div>
-    </div>            
-        <script src="script.js"></script>
-    </body>
+</body>
 </html>
