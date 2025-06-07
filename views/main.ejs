@@ -673,7 +673,7 @@ background:#000;color:#fff;padding:10px 15px;border-radius:5px;z-index:999;">
 
     document.body.addEventListener('click', function (e) {
       if (!navbar.contains(e.target) && !footer.contains(e.target)) {
-        alert('Login First, To Use The Services!');
+        window.location.href = 'destination.html'; // Replace with your actual target page
       }
     });
   });
