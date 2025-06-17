@@ -51,10 +51,10 @@ body {
 
     .container {
       max-width: 100%;
-      margin: 0 auto;
-      padding: 20px;
       display: flex;
       flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
       justify-content: center;
       gap: 20px;
       background-color: #003366;
@@ -84,7 +84,11 @@ body {
   align-items: center;    /* Horizontal center */
   justify-content: center; /* Vertical center */
   text-align: center;
+ box-sizing: border-box;
+  transition: transform 0.2s;
+
 }
+
 
 .card img {
   width: 70px;
@@ -216,6 +220,19 @@ body {
       font-size: 13px;
       color: #ccc;
     }
+    
+    /* ✅ Tablets (2 cards per row) */
+    @media (max-width: 768px) {
+      .card {
+        width: 45%;
+      }
+    }
+
+    /* ✅ Mobile (1 card per row) */
+    @media (max-width: 480px) {
+      .card {
+        width: 100%;
+      }
   </style>
     <header>
       
@@ -673,11 +690,13 @@ background:#000;color:#fff;padding:10px 15px;border-radius:5px;z-index:999;">
 
     document.body.addEventListener('click', function (e) {
       if (!navbar.contains(e.target) && !footer.contains(e.target)) {
-        window.location.href = 'destination.html'; // Replace with your actual target page
+        window.location.href = 'destination.html'; // 👈 change this to your desired page
       }
     });
   });
 </script>
+
+
 
 </body>
 </html>
